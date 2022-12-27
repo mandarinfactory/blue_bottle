@@ -1,0 +1,47 @@
+/* logo_box */
+header nav.gnb {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #aaa;
+  background: var(--white);
+}
+header nav.gnb h1.logo {
+  width: 200px;
+}
+header nav.gnb h1.logo a figure {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+header nav.gnb h1.logo a figure img {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+header nav.gnb h1.logo a figure figcaption {
+  width: 150px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+header nav.gnb h1.logo a figure figcaption b {
+  font-size: 1.3em;
+  color: var(--blue);
+}
+header nav.gnb ul {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header nav.gnb ul li {
+  padding: 10px;
+}
+header nav.gnb ul li a {
+  text-transform: uppercase;
+}/*# sourceMappingURL=header.css.map */

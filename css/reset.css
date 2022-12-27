@@ -1,0 +1,38 @@
+body, html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  word-break: keep-all; /* 단어단위로 브레이크가 됨 */
+}
+
+li{
+  list-style: none;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+img, svg, iframe, video{ 
+  display: block;
+}
+
+input, textarea, select{
+  box-sizing: border-box;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.hidden{
+  position: fixed;
+  left: -10000px;
+}
