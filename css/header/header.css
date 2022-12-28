@@ -16,7 +16,8 @@ header nav.gnb h1.logo {
 }
 header nav.gnb h1.logo a figure {
   display: flex;
-  width: 50px;
+  justify-content: space-evenly;
+  width: 200px;
   height: 50px;
 }
 header nav.gnb h1.logo a figure img {

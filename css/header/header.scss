@@ -2,8 +2,6 @@
 
 /* logo_box */
 header{
-  
-  
   nav.gnb{
     box-sizing: border-box;
     display: flex;
@@ -21,7 +19,9 @@ header{
       a{
         figure{
           display: flex;
-          width: 50px;
+          justify-content: space-evenly;
+          
+          width: 200px;
           height: 50px;
           img{
             width: 100%;
