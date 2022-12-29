@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- ICON -->
+  <link rel="logo icon" href="./logo.ico">
   <!-- 추후에 아이콘 달기 -->
 
   <!-- Font href -->
