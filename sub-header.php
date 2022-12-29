@@ -4,8 +4,12 @@
 <!-- main  아래 본문시작 -->
 
 <section class="ik_sub_visual">
-
 </section>
+<!-- particles.js container -->
+<script src="./js/particles.js"></script>
+<script src="./js/app_particle_snow.js"></script>
+<div id="particles-js"></div>
+<!-- particles.js container -->
 <script>
   backgroundArr.forEach((v, i) => {
     $(`.ik_sub_visual`).append(`
@@ -21,6 +25,7 @@
     `)
   })
 </script>
+
 
 <hr>
 

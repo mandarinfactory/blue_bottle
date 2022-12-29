@@ -1,5 +1,11 @@
 @import "../mixin.scss";
-
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 section.ik_sub_visual {
   position: relative;
   height: 450px;
@@ -13,6 +19,9 @@ section.ik_sub_visual {
       height: 100%;
       object-fit: cover;
       object-position: center;
+      transform: scale(1.5);
+      filter: brightness(0.5);
+      transition: filter 4s, transform 30s linear;
     } //img
 
     h2.ik_sub_title,
@@ -40,13 +49,17 @@ section.ik_sub_visual {
       font-size: 0.9em;
       font-weight: 500;
       top: 50%;
-      width: 350px;
+      width: 340px;
       opacity: 0;
       transition: all 0.9s;
     } //p
 
     /* --------------- active motion ---------------- */
     &.active {
+      img {
+        transform: scale(1);
+        filter: brightness(1);
+      } //img active
       h2.ik_sub_title {
         top: 40%;
         opacity: 1;
