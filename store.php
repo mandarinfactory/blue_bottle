@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php include 'sub-header.php' ?>
 
   <!-- main  아래 본문시작 -->
   

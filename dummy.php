@@ -1,4 +1,4 @@
-<?php include 'dummy-header.php' ?>
+<?php include 'dummy-sub-header.php' ?>
 
   <!-- main  아래 본문시작 -->
   
