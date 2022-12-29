@@ -33,6 +33,7 @@ section.ik_sub_visual {
       transform: translate(-50%, -50%);
       color: var(--white);
       text-shadow: 0 0 5px rgba(#333, 0.7);
+      transition: top 0.9s opacity 0.9s;
     } // h2, p
 
     h2.ik_sub_title {
@@ -42,16 +43,16 @@ section.ik_sub_visual {
       width: 300px;
       text-transform: uppercase;
       opacity: 0;
-      transition: all 0.9s;
+      @media screen and (max-width: 1000px) {font-size: 5vw;}
     } //h2
-
+    
     p {
       font-size: 0.9em;
       font-weight: 500;
       top: 50%;
-      width: 340px;
+      width: 320px;
       opacity: 0;
-      transition: all 0.9s;
+      @media screen and (max-width: 1000px) {font-size: 1.5vw;}
     } //p
 
     /* --------------- active motion ---------------- */

@@ -54,6 +54,11 @@ header.gnb h1.logo figure a svg {
 header.gnb h1.logo figure a svg:hover {
   filter: brightness(1.2);
 }
+@media screen and (max-width: 1000px) {
+  header.gnb h1.logo figure a svg {
+    transform: scale(0.9);
+  }
+}
 header.gnb h1.logo figure figcaption {
   position: absolute;
   width: 215px;

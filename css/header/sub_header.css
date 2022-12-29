@@ -35,6 +35,7 @@ section.ik_sub_visual .ik_sub_visual_inner p {
   transform: translate(-50%, -50%);
   color: var(--white);
   text-shadow: 0 0 5px rgba(51, 51, 51, 0.7);
+  transition: top 0.9s opacity 0.9s;
 }
 section.ik_sub_visual .ik_sub_visual_inner h2.ik_sub_title {
   font-size: 3em;
@@ -43,15 +44,23 @@ section.ik_sub_visual .ik_sub_visual_inner h2.ik_sub_title {
   width: 300px;
   text-transform: uppercase;
   opacity: 0;
-  transition: all 0.9s;
+}
+@media screen and (max-width: 1000px) {
+  section.ik_sub_visual .ik_sub_visual_inner h2.ik_sub_title {
+    font-size: 5vw;
+  }
 }
 section.ik_sub_visual .ik_sub_visual_inner p {
   font-size: 0.9em;
   font-weight: 500;
   top: 50%;
-  width: 340px;
+  width: 320px;
   opacity: 0;
-  transition: all 0.9s;
+}
+@media screen and (max-width: 1000px) {
+  section.ik_sub_visual .ik_sub_visual_inner p {
+    font-size: 1.5vw;
+  }
 }
 section.ik_sub_visual .ik_sub_visual_inner.active img {
   transform: scale(1);

@@ -51,6 +51,7 @@ header.gnb {
           &:hover{
             filter: brightness(1.2);
           }
+          @media screen and (max-width: 1000px) {transform: scale(0.9);}
         } //img
       }//a
       figcaption {
