@@ -3,29 +3,50 @@ section.ik_sub_visual {
   height: 450px;
   overflow: hidden;
 }
-section.ik_sub_visual img {
+section.ik_sub_visual .ik_sub_visual_inner {
+  box-sizing: border-box;
+  /* --------------- active motion ---------------- */
+}
+section.ik_sub_visual .ik_sub_visual_inner img {
+  position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-section.ik_sub_visual h2.ik_sub_title, section.ik_sub_visual p {
+section.ik_sub_visual .ik_sub_visual_inner h2.ik_sub_title,
+section.ik_sub_visual .ik_sub_visual_inner p {
   position: absolute;
   display: block;
+  text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--white);
-  text-shadow: 2px 2px 5px var(--dark);
+  text-shadow: 0 0 5px rgba(51, 51, 51, 0.7);
 }
-section.ik_sub_visual h2.ik_sub_title {
+section.ik_sub_visual .ik_sub_visual_inner h2.ik_sub_title {
   font-size: 3em;
   font-weight: 700;
-  top: 40%;
+  top: 50%;
   width: 300px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.9s;
 }
-section.ik_sub_visual p {
+section.ik_sub_visual .ik_sub_visual_inner p {
   font-size: 0.9em;
   font-weight: 500;
+  top: 50%;
+  width: 350px;
+  opacity: 0;
+  transition: all 0.9s;
+}
+section.ik_sub_visual .ik_sub_visual_inner.active h2.ik_sub_title {
+  top: 40%;
+  opacity: 1;
+}
+section.ik_sub_visual .ik_sub_visual_inner.active p {
+  opacity: 1;
   top: 60%;
-  width: 500px;
 }/*# sourceMappingURL=sub_header.css.map */

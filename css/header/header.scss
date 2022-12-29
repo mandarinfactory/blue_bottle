@@ -87,6 +87,10 @@ header.gnb {
           font-size: 1.5vw;
         }
       } //a
+
+      &.active{
+        color: var(--blue);
+      }
     } //li
   } //ul
 } //header

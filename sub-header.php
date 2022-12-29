@@ -1,21 +1,23 @@
 <?php include 'header.php' ?>
 
-  <!-- main  아래 본문시작 -->
-  
-  <section class="ik_sub_visual">
-    <img src="./img/sub_visual/sub_visual2.jpg" alt="">
-    <h2 class="ik_sub_title">
-      SUB TITLE
-    </h2>
-    <p>
-    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain<br> 
-    was born and I will give you a complete account of the system
-    </p>
-  </section>
-  <script>
+<!-- main  아래 본문시작 -->
 
-  </script>
-  <hr>
+<section class="ik_sub_visual">
 
-
-  
+</section>
+<script>
+  backgroundArr.forEach((v, i) => {
+    $(`.ik_sub_visual`).append(`
+    <div class="ik_sub_visual_inner ik_sub_visual_inner${i}">
+      <img src='./img/sub_visual/${v.img}.jpg'>
+      <h2 class="ik_sub_title">
+        ${v.title}
+      </h2>
+      <p class="ik_sub_desc">
+        ${v.desc}
+      </p>    
+    </div>
+    `)
+  })
+</script>
+<hr>

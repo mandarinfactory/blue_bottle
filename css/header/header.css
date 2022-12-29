@@ -91,4 +91,7 @@ header.gnb ul li a {
   header.gnb ul li a {
     font-size: 1.5vw;
   }
+}
+header.gnb ul li.active {
+  color: var(--blue);
 }/*# sourceMappingURL=header.css.map */

@@ -28,14 +28,15 @@
   <link rel="stylesheet" href="./css/header/header.css">
   <link rel="stylesheet" href="./css/header/sub_header.css">
   <link rel="stylesheet" href="./css/footer/footer.css">
-  <link rel="stylesheet" href="./css/index.css">
 
   <!-- Js script src -->
   <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="./js/store.js"></script>
   <script src="./js/common.js" defer></script>
   <script src="./js/script.js" defer></script>
   <script src="./js/header.js" defer></script>
-
+  <script src="./js/sub.js" defer></script>
+  
   <title>BlueBottle Renewal</title>
 </head>
 
@@ -58,17 +59,17 @@
       <ul>
         <!-- gnb 메뉴시작 -->
         <li>
-          <a href="./brand.php">
+          <a href="./about.php">
             About us
           </a>
         </li><!-- 연혁 -->
         <li>
-          <a href="./product.php">
+          <a href="./coffee.php">
             coffee
           </a>
         </li><!--  상품소개 -->
         <li>
-          <a href="./store.php">
+          <a href="./cafes.php">
             cafes
           </a>
         </li><!-- 가게위치 -->
