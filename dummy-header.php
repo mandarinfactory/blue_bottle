@@ -28,15 +28,15 @@
   <link rel="stylesheet" href="./css/header/header.css">
   <link rel="stylesheet" href="./css/header/sub_header.css">
   <link rel="stylesheet" href="./css/footer/footer.css">
-  <link rel="stylesheet" href="./css/index.css">
 
   <!-- Js script src -->
   <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="./js/store.js"></script>
   <script src="./js/common.js" defer></script>
   <script src="./js/script.js" defer></script>
   <script src="./js/header.js" defer></script>
-  <script src="./js/store.js" defer></script>
 
+  
   <title>BlueBottle Renewal</title>
 </head>
 
@@ -75,7 +75,3 @@
         </li><!-- 가게위치 -->
       </ul>
   </header><!-- header -->
-  <hr>
-
-  <body>
-    <main>

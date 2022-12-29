@@ -27,7 +27,6 @@ var currentPageAddr = location.href
 
 $('.gnb>ul>li>a').each(function(){
   var href = $(this).attr('href').slice(1)
-  console.log(currentPageAddr, href);
   if( currentPageAddr.match( href ) ){
     $('.gnb>ul>li').removeClass('active')
     $(this).parent().addClass('active')

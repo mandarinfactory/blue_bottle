@@ -1,4 +1,5 @@
 <?php include 'header.php' ?>
+<script src="./js/sub.js" defer></script>
 
 <!-- main  아래 본문시작 -->
 
@@ -20,4 +21,8 @@
     `)
   })
 </script>
+
 <hr>
+
+<body>
+  <main>

@@ -35,7 +35,7 @@
   <script src="./js/common.js" defer></script>
   <script src="./js/script.js" defer></script>
   <script src="./js/header.js" defer></script>
-  <script src="./js/sub.js" defer></script>
+
   
   <title>BlueBottle Renewal</title>
 </head>
@@ -75,7 +75,3 @@
         </li><!-- 가게위치 -->
       </ul>
   </header><!-- header -->
-  <hr>
-
-  <body>
-    <main>
