@@ -1,8 +1,8 @@
 /* logo_box */
 header.gnb {
+  z-index: 10;
   box-sizing: border-box;
   position: absolute;
-  z-index: 10;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -39,10 +39,10 @@ header.gnb h1.logo figure {
   height: 50px;
 }
 header.gnb h1.logo figure a {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
   width: 20px;
   height: 100%;
 }
@@ -58,12 +58,16 @@ header.gnb h1.logo figure figcaption {
   text-transform: uppercase;
   transform: translateY(-50%);
 }
-header.gnb h1.logo figure figcaption b {
+header.gnb h1.logo figure figcaption > a {
+  display: block;
+  width: 100%;
+}
+header.gnb h1.logo figure figcaption > a b {
   font-size: 1.1em;
   color: var(--blue);
 }
 @media screen and (min-width: 500px) and (max-width: 1000px) {
-  header.gnb h1.logo figure figcaption b {
+  header.gnb h1.logo figure figcaption > a b {
     font-size: 1.9vw;
   }
 }

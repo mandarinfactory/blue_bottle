@@ -51,7 +51,7 @@
             </svg>
             </a>
             <figcaption>
-              <b>BlueBottle</b> <b>coffee</b>
+              <a href="./index.php"><b>BlueBottle</b> <b>coffee</b></a>
             </figcaption>
           </figure>
       </h1><!-- logo -->

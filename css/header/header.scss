@@ -2,9 +2,9 @@
 
 /* logo_box */
 header.gnb {
+  z-index: 10;
   box-sizing: border-box;
   position: absolute;
-  z-index: 10;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -38,9 +38,10 @@ header.gnb {
       width: 100%;
       height: 50px;
       a {
-        display: block;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
+        display: block;
         width: 20px;
         height: 100%;
         svg {
@@ -55,14 +56,18 @@ header.gnb {
         left: 40px;
         text-transform: uppercase;
         transform: translateY(-50%);
-        b {
-          font-size: 1.1em;
-          color: var(--blue);
+        >a {
+          display: block;
+          width: 100%;
+          b {
+            font-size: 1.1em;
+            color: var(--blue);
 
-          @media screen and (min-width: 500px) and (max-width: 1000px) {
-            font-size: 1.9vw;
-          }
-        } //b
+            @media screen and (min-width: 500px) and (max-width: 1000px) {
+              font-size: 1.9vw;
+            }
+          } //b
+        }
         @media screen and (max-width: 500px) {
           display: none;
         }
@@ -88,7 +93,7 @@ header.gnb {
         }
       } //a
 
-      &.active{
+      &.active {
         color: var(--blue);
       }
     } //li
