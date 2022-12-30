@@ -11,11 +11,13 @@ var fnHeaderSticky = ()=>{
       $(`header`).removeClass("active");
     } //if
 
-    var t = $('.ik_main_1').offset().top
+    var ikMainTop = $('.ik_main_1');
+    var t = (ikMainTop.length)&&ikMainTop.offset().top;
+
     if(scrY >= t - winH *0.8){
-      $('.ik_main_1 .ik_title_box').addClass('active')
+      $('.ik_main_1 .ik_title_box').addClass('active');
     }else{
-      $('.ik_main_1 .ik_title_box').removeClass('active')
+      $('.ik_main_1 .ik_title_box').removeClass('active');
     }
 }
 
@@ -35,7 +37,7 @@ $(window).scroll(function(){
 var currentPageAddr = location.href
 
 $('.gnb>ul>li>a').each(function(){
-  var href = $(this).attr('href').slice(1)
+  var href = $(this).attr('href').slice(1);
   if( currentPageAddr.match( href ) ){
     $('.gnb>ul>li').removeClass('active')
     $(this).parent().addClass('active')
