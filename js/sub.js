@@ -1,3 +1,7 @@
+$('#particles-js').click(function(e){
+  e.preventDefault()
+})
+
 var currentPageAddr = location.href.slice(0,-4)
 
 $(`.ik_sub_visual>div`).each(function(v,i){

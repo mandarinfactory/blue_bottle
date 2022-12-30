@@ -1,5 +1,6 @@
 #particles-js {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -35,30 +36,31 @@ section.ik_sub_visual .ik_sub_visual_inner p {
   transform: translate(-50%, -50%);
   color: var(--white);
   text-shadow: 0 0 5px rgba(51, 51, 51, 0.7);
-  transition: top 0.9s opacity 0.9s;
 }
 section.ik_sub_visual .ik_sub_visual_inner h2.ik_sub_title {
   font-size: 3em;
   font-weight: 700;
-  top: 50%;
+  top: 45%;
   width: 300px;
   text-transform: uppercase;
   opacity: 0;
+  transition: top 0.8s, opacity 0.8s;
 }
 @media screen and (max-width: 1000px) {
   section.ik_sub_visual .ik_sub_visual_inner h2.ik_sub_title {
     font-size: 5vw;
   }
 }
-section.ik_sub_visual .ik_sub_visual_inner p {
+section.ik_sub_visual .ik_sub_visual_inner p.ik_sub_desc {
   font-size: 0.9em;
   font-weight: 500;
-  top: 50%;
+  top: 55%;
   width: 320px;
   opacity: 0;
+  transition: top 0.8s, opacity 0.8s;
 }
 @media screen and (max-width: 1000px) {
-  section.ik_sub_visual .ik_sub_visual_inner p {
+  section.ik_sub_visual .ik_sub_visual_inner p.ik_sub_desc {
     font-size: 1.5vw;
   }
 }

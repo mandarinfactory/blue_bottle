@@ -1,0 +1,19 @@
+main {
+  width: 100%;
+  height: 100%;
+}
+
+section.ik_main_1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section.ik_main_1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+section.ik_main_1 svg path {
+  fill: var(--blue);
+}/*# sourceMappingURL=ik_main_1.css.map */

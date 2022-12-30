@@ -1,6 +1,7 @@
 @import "../mixin.scss";
 #particles-js {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,26 +34,27 @@ section.ik_sub_visual {
       transform: translate(-50%, -50%);
       color: var(--white);
       text-shadow: 0 0 5px rgba(#333, 0.7);
-      transition: top 0.9s opacity 0.9s;
     } // h2, p
-
+    
     h2.ik_sub_title {
       font-size: 3em;
       font-weight: 700;
-      top: 50%;
+      top: 45%;
       width: 300px;
       text-transform: uppercase;
       opacity: 0;
       @media screen and (max-width: 1000px) {font-size: 5vw;}
+      transition: top 0.8s, opacity 0.8s;
     } //h2
     
-    p {
+    p.ik_sub_desc {
       font-size: 0.9em;
       font-weight: 500;
-      top: 50%;
+      top: 55%;
       width: 320px;
       opacity: 0;
       @media screen and (max-width: 1000px) {font-size: 1.5vw;}
+      transition: top 0.8s, opacity 0.8s;
     } //p
 
     /* --------------- active motion ---------------- */
