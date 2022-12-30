@@ -7,13 +7,108 @@ section.ik_main_1 {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  background-image: url(../../img/visual/bb_visual02.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+section.ik_main_1 .ik_title_box {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  /* ----------active---------- */
+}
+section.ik_main_1 .ik_title_box h2, section.ik_main_1 .ik_title_box p {
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(51, 51, 51, 0.8);
+  opacity: 0;
+  transition: opacity 0.9s, transform 0.9s;
+}
+section.ik_main_1 .ik_title_box h2 {
+  font-size: 4em;
+  font-weight: 600;
+  transform: translateY(-50%);
+}
+section.ik_main_1 .ik_title_box p {
+  font-size: 2em;
+  font-weight: 500;
+  transform: translateY(50%);
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  section.ik_main_1 .ik_title_box h2 {
+    font-size: 6.4vw;
+  }
+  section.ik_main_1 .ik_title_box p {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.ik_main_1 .ik_title_box h2 {
+    font-size: 7.5vw;
+  }
+  section.ik_main_1 .ik_title_box p {
+    font-size: 3.7vw;
+  }
+}
+section.ik_main_1 .ik_title_box.active h2, section.ik_main_1 .ik_title_box.active p {
+  transform: translateY(0);
+  opacity: 0.9;
 }
 section.ik_main_1 svg {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
 }
-section.ik_main_1 svg path {
-  fill: var(--blue);
+section.ik_main_1 svg.ik_wave1 {
+  width: 130%;
+  left: -20px;
+  bottom: 0;
+  animation: ikWave1 7s infinite;
+}
+section.ik_main_1 svg.ik_wave1 path {
+  fill: rgba(0, 169, 224, 0.6);
+}
+section.ik_main_1 svg.ik_wave2 {
+  width: 110%;
+  left: -10px;
+  bottom: 0;
+  animation: ikWave2 10s infinite;
+}
+section.ik_main_1 svg.ik_wave2 path {
+  fill: var(--white);
+}
+@keyframes ikWave1 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(7px, -1px);
+  }
+  50% {
+    transform: translate(-5px, 3px);
+  }
+  75% {
+    transform: translate(10px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes ikWave2 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-15px, 2px);
+  }
+  50% {
+    transform: translate(5px, 0px);
+  }
+  75% {
+    transform: translate(-20px, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }/*# sourceMappingURL=ik_main_1.css.map */

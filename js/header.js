@@ -10,6 +10,13 @@ var fnHeaderSticky = ()=>{
     } else {
       $(`header`).removeClass("active");
     } //if
+
+    var t = $('.ik_main_1').offset().top
+    if(scrY >= t - winH *0.8){
+      $('.ik_main_1 .ik_title_box').addClass('active')
+    }else{
+      $('.ik_main_1 .ik_title_box').removeClass('active')
+    }
 }
 
 fnHeaderSticky()
@@ -18,6 +25,8 @@ $(window).scroll(function(){
 }).resize(function(){
   fnHeaderSticky()
 })
+
+
 
 ////////////////////////////////////////////////////////////////
 

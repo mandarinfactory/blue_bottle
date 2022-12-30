@@ -50,7 +50,9 @@ header.gnb {
           transition: filter 0.2s;
           &:hover{
             filter: brightness(1.2);
+            animation: jello 1s;
           }
+          
           @media screen and (max-width: 1000px) {transform: scale(0.9);}
         } //img
       }//a
@@ -98,6 +100,10 @@ header.gnb {
       padding: 11px;
       font-size: 0.9em;
       font-weight: 500;
+      transition: color 0.3s;
+      &:hover{
+        color: rgba(#333, 0.7);
+      }
       a {
         text-transform: uppercase;
         @media screen and (max-width: 1000px) {

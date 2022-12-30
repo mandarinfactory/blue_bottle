@@ -53,6 +53,7 @@ header.gnb h1.logo figure a svg {
 }
 header.gnb h1.logo figure a svg:hover {
   filter: brightness(1.2);
+  animation: jello 1s;
 }
 @media screen and (max-width: 1000px) {
   header.gnb h1.logo figure a svg {
@@ -101,6 +102,10 @@ header.gnb ul li {
   padding: 11px;
   font-size: 0.9em;
   font-weight: 500;
+  transition: color 0.3s;
+}
+header.gnb ul li:hover {
+  color: rgba(51, 51, 51, 0.7);
 }
 header.gnb ul li a {
   text-transform: uppercase;
