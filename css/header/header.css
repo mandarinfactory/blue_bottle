@@ -53,7 +53,8 @@ header.gnb h1.logo figure a svg {
 }
 header.gnb h1.logo figure a svg:hover {
   filter: brightness(1.2);
-  animation: jello 1s;
+  -webkit-animation: jello 1s;
+          animation: jello 1s;
 }
 @media screen and (max-width: 1000px) {
   header.gnb h1.logo figure a svg {

@@ -1,0 +1,174 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: "SCoreDream", "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hj_cafes_high_section {
+  width: 100%;
+  height: 40%;
+  background-color: var(--var(--white));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hj_cafes_high_section h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.hj_cafes_high_section h3 b {
+  color: var(--blue);
+}
+.hj_cafes_high_section ul {
+  text-align: center;
+}
+.hj_cafes_high_section ul li {
+  margin-bottom: 5px;
+  font-size: 0.8em;
+}
+
+.hj_cafes_map_section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hj_photo {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--black);
+}
+.hj_photo span {
+  position: absolute;
+  top: 45%;
+  left: 11%;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--white);
+  box-shadow: 2px 2px 3px var(--black);
+  z-index: 3;
+}
+.hj_photo figure {
+  position: absolute;
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 0;
+}
+.hj_photo figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  filter: brightness(60%) blur(1px);
+}
+.hj_photo figure figcaption {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 350px;
+}
+.hj_photo figure figcaption p {
+  line-height: 28px;
+  color: var(--white);
+  font-size: 0.8em;
+  font-weight: 500;
+  text-shadow: 2px 2px 3px var(--black);
+}
+.hj_photo p {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+.hj_photo p button {
+  position: relative;
+  font-family: inherit;
+  border: 0;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fdfbf7;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 1;
+}
+.hj_photo p button:hover {
+  color: #bebebe;
+}
+.hj_photo p button::after {
+  position: absolute;
+  display: none;
+  content: "";
+  top: 40%;
+  left: -21%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--blue);
+  transition: all 0.05s;
+}
+.hj_photo p button.active {
+  color: var(--blue);
+  text-shadow: 1px 1px 3px var(--black);
+}
+.hj_photo p button.active::after {
+  display: block;
+}
+
+#map {
+  margin: 0 auto;
+}
+
+div.hj_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 120px;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 2px 2px 0 black;
+}
+div.hj_inner h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--black);
+  text-shadow: 3px 3px 5px rgba(0, 169, 224, 0.4);
+  margin-bottom: 0;
+}
+div.hj_inner p {
+  font-size: 0.6em;
+  color: var(--black);
+  font-weight: 500;
+}/*# sourceMappingURL=cafes.css.map */

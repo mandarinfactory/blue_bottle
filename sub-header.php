@@ -25,9 +25,5 @@
     `)
   })
 </script>
-
-
-<hr>
-
 <body>
   <main>
