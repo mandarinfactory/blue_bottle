@@ -56,9 +56,9 @@ $(function () {
     ------------------------------------------------ 사진변경되면서 같이 세부사항도 변경시키게 해줌 */
 }); //document.ready(jQuery)
 
-document.querySelectorAll(".hj_photo .button button").forEach((v) => {
-    v.addEventListener("click", (e) => {
-        Array.from(e.target.parentElement.children).forEach((v) => {
+document.querySelectorAll(".hj_photo .button button").forEach(v => {
+    v.addEventListener("click", e => {
+        Array.from(e.target.parentElement.children).forEach(v => {
             if (v !== e.target) v.classList.remove("active");
         }); //forEach
         e.target.classList.add("active");
