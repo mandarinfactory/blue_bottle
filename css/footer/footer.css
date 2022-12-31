@@ -25,6 +25,8 @@
 }
 .hj_low_section .hj_footer_box .hj_footer_menu ul li {
   margin-right: 70px;
+  font-size: 1.2em;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--white);
   opacity: 1;
