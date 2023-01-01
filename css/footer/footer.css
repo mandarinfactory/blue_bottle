@@ -1,12 +1,12 @@
 .hj_high_section {
   position: relative;
   width: 100%;
-  height: 340px;
+  height: 330px;
   background-color: var(--blue);
 }
 .hj_high_section figure.high_wave svg {
   position: absolute;
-  top: -82%;
+  top: -95%;
   display: block;
   margin: 0 auto;
   -webkit-animation: wave 2.5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
@@ -16,11 +16,46 @@
   fill: var(--blue);
   stroke: var(--blue);
 }
+.hj_high_section figure.high_wave::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: 0;
+  z-index: 100;
+  display: block;
+  width: 70px;
+  height: 40px;
+  background-color: var(--blue);
+}
+.hj_high_section div.high_section_textbox {
+  position: absolute;
+  width: 500px;
+  top: -3%;
+  left: 15%;
+  z-index: 15;
+  color: var(--white);
+  font-size: 1em;
+  text-align: center;
+}
+.hj_high_section div.high_section_textbox em {
+  position: absolute;
+  left: 48%;
+  font-size: 3em;
+}
+.hj_high_section div.high_section_textbox em.up {
+  top: -70%;
+}
+.hj_high_section div.high_section_textbox em.name {
+  text-transform: uppercase;
+  bottom: -90%;
+  left: 35%;
+  font-size: 1em;
+}
 
 .hj_low_section {
   position: relative;
   width: 100%;
-  height: 325px;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,7 +64,7 @@
 }
 .hj_low_section figure.low_wave svg {
   position: absolute;
-  top: -86%;
+  top: -100%;
   left: 0%;
   display: block;
   margin: 0 auto;
@@ -52,6 +87,7 @@
   display: flex;
 }
 .hj_low_section .hj_footer_box .hj_footer_menu ul li {
+  position: relative;
   margin-right: 70px;
   font-size: 1.2em;
   font-weight: 700;
@@ -59,6 +95,7 @@
   color: var(--white);
   opacity: 1;
   transition: all 0.3s;
+  z-index: 30;
 }
 .hj_low_section .hj_footer_box .hj_footer_menu ul li:hover {
   opacity: 0.7;
