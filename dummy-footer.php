@@ -1,7 +1,6 @@
 
 
     </main>      
-  </body>
   <footer>
     <!-- footer  시작 -->
     <hr>

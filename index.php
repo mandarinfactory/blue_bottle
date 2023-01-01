@@ -24,7 +24,6 @@
     </figure>
 
   </section>
-
   <!-- main  위 본문 끝 -->
 
   <?php include 'footer.php' ?>
