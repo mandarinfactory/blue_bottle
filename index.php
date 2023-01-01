@@ -22,7 +22,14 @@
     <figure class="ik_mug">
       <img src="./img/object/mug01.png" alt="">
     </figure>
-
+    <div class="ik_motion_box">
+      <div class="ik_motion1">
+        <img src="./img/main_section/1-1.png" alt="">
+        <img src="./img/main_section/1-2.png" alt="">
+        <img src="./img/main_section/1-3.png" alt="">
+      </div>
+      <div class="ik_motion2"></div>
+    </div>
   </section>
   <!-- main  위 본문 끝 -->
 

@@ -20,10 +20,8 @@ section.ik_main_1 .ik_background_video {
   left: 50%;
   transform: translateX(-50%);
   height: 120vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 section.ik_main_1 .ik_title_box {
   position: absolute;
@@ -80,8 +78,7 @@ section.ik_main_1 svg.ik_wave1 {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  -webkit-animation: ikWave1 7s infinite;
-          animation: ikWave1 7s infinite;
+  animation: ikWave1 7s infinite;
 }
 section.ik_main_1 svg.ik_wave1 path {
   fill: rgba(0, 169, 224, 0.6);
@@ -91,28 +88,10 @@ section.ik_main_1 svg.ik_wave2 {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  -webkit-animation: ikWave2 10s infinite;
-          animation: ikWave2 10s infinite;
+  animation: ikWave2 10s infinite;
 }
 section.ik_main_1 svg.ik_wave2 path {
   fill: var(--white);
-}
-@-webkit-keyframes ikWave1 {
-  0% {
-    transform: translate(-50%);
-  }
-  25% {
-    transform: translate(-47%, -1px);
-  }
-  50% {
-    transform: translate(-50%, 3px);
-  }
-  75% {
-    transform: translate(-53%, -2px);
-  }
-  100% {
-    transform: translate(-50%);
-  }
 }
 @keyframes ikWave1 {
   0% {
@@ -126,23 +105,6 @@ section.ik_main_1 svg.ik_wave2 path {
   }
   75% {
     transform: translate(-53%, -2px);
-  }
-  100% {
-    transform: translate(-50%);
-  }
-}
-@-webkit-keyframes ikWave2 {
-  0% {
-    transform: translate(-50%);
-  }
-  25% {
-    transform: translate(-51%, 2px);
-  }
-  50% {
-    transform: translate(-50%, 0px);
-  }
-  75% {
-    transform: translate(-49%, 2px);
   }
   100% {
     transform: translate(-50%);
