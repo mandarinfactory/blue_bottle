@@ -1,5 +1,6 @@
 <?php include 'header.php' ?>
-
+<link rel="stylesheet" href="./css/main/ik_main_1.css">
+<link rel="stylesheet" href="./css/main/ik_main_2.css">
 <!-- main  아래 본문시작 -->
 <main>
   <section class="ik_main_1">
@@ -25,10 +26,5 @@
   </section>
 
   <!-- main  위 본문 끝 -->
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <?php include 'footer.php' ?>

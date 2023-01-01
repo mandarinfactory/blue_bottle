@@ -5,7 +5,24 @@
 }
 .ik_main_2 figure {
   position: absolute;
-  top: 0;
+  width: 250px;
+  top: -2.5%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
+}
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .ik_main_2 figure {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ik_main_2 figure {
+    width: 115px;
+  }
+}
+.ik_main_2 figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }/*# sourceMappingURL=ik_main_2.css.map */
