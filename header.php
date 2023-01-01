@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="./css/header/sub_header.css">
   <link rel="stylesheet" href="./css/footer/footer.css">
   <link rel="stylesheet" href="./css/main/ik_main_1.css">
+  <link rel="stylesheet" href="./css/main/ik_main_2.css">
 
   <!-- Js script src -->
   <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
