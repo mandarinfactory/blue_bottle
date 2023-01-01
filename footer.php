@@ -1,8 +1,20 @@
     </main>
     </body>
     <footer>
-      <section class="hj_high_section"></section>
+      <section class="hj_high_section">
+        <figure class="high_wave">
+            <svg viewBox="10 100 1200 369"> 
+              <path class="st0" d="M5,162.54c7.34,0,261.62-58.99,457.22-42.13S711.62,276.3,885.22,280.51C1058.81,284.73,1362,23.5,1362,23.5v316H5V162.54z"/>
+            </svg>
+        </figure>
+      </section>
       <section class="hj_low_section">
+      <figure class="low_wave">
+            <svg viewBox="10 100 1200 369"> 
+              <path class="st1" d="M5,162.54c7.34,0,261.62-58.99,457.22-42.13S711.62,276.3,885.22,280.51C1058.81,284.73,1362,23.5,1362,23.5v316H5V162.54z"/>
+            </svg>
+        </figure>
+        </figure> -->
         <div class="hj_footer_box">
           <div class="hj_footer_menu">
             <ul>
@@ -23,14 +35,9 @@
               </li><!-- 가게위치 -->
             </ul>
           </div>
-          <script>
-            document.querySelector(".hj_footer_menu ul li a").addEventListener("click", e => {
-              e.target.parentElement.classList.add("active")
-            })//addEventListener
-          </script>
           <div class="hj_footer_desc">
             <figure>
-              <img src="./HJ/img/logo.png" alt>
+              <img src="./HJ/img/logo.png" alt="">
             </figure>
             <ul>
               <li>bluebottle coffee company</li>
