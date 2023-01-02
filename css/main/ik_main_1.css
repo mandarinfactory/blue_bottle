@@ -1,4 +1,10 @@
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
+  overflow: hidden;
   width: 100%;
   height: 500%;
 }
@@ -82,7 +88,7 @@ section.ik_main_1 svg.ik_wave1 {
   animation: ikWave1 7s infinite;
 }
 section.ik_main_1 svg.ik_wave1 path {
-  fill: rgba(0, 169, 224, 0.6);
+  fill: rgba(0, 169, 224, 0.8);
 }
 section.ik_main_1 svg.ik_wave2 {
   width: 110%;
@@ -96,15 +102,15 @@ section.ik_main_1 svg.ik_wave2 path {
   fill: var(--white);
 }
 section.ik_main_1 svg.ik_wave3 {
-  width: 110%;
-  height: 25%;
+  width: 120%;
+  height: 35%;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  animation: ikWave2 3s infinite;
+  animation: ikWave2 3s linear infinite;
 }
 section.ik_main_1 svg.ik_wave3 path {
-  fill: rgba(51, 51, 51, 0.2);
+  fill: rgba(238, 238, 238, 0.8);
 }
 @keyframes ikWave1 {
   0% {

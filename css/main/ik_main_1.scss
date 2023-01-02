@@ -1,5 +1,10 @@
 @import "../mixin";
+html{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 body{
+  overflow: hidden;
   width: 100%;
   height: 500%;
   main{
@@ -88,7 +93,7 @@ section.ik_main_1 {
       bottom: 0;
       transform: translateX(-50%);
       path {
-        fill: rgba(#00a9e0, 0.6);
+        fill: rgba(#00a9e0, 0.8);
       }
       animation: ikWave1 7s infinite;
     }
@@ -103,14 +108,14 @@ section.ik_main_1 {
       animation: ikWave2 10s infinite;
     }
     &.ik_wave3 {
-      width: 110%;
-      height: 25%;
-      left: 50%; bottom: 0;
+      width: 120%;
+      height: 35%;
+      left: 50%; bottom: 0; 
       transform: translateX(-50%);
       path {
-        fill: rgba(#333, 0.2);
+        fill: rgba(#eee, 0.8);
       }
-      animation: ikWave2 3s infinite;
+      animation: ikWave2 3s linear infinite;
     }
 
     @keyframes ikWave1 {
