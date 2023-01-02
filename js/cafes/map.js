@@ -66,6 +66,11 @@ document.querySelectorAll(".hj_photo .button button").forEach(v => {
 }); //forEach
 /* button에 active-motion ------------------------------------------------ */
 
+window.onload = () => {
+    document.querySelector('div#map div div a img').style.opacity = '0'
+}//onload
+/* NAVER LOGO 지우기! ---------------------------------------------------- */
+
 function panTo1() {
     // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon1 = yeoido;
