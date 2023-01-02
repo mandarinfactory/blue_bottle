@@ -9,16 +9,16 @@ html, body {
     margin: 0 auto;
 }//body
 main {
-    margin-bottom: 400px;
+    margin-bottom: 50px;
 }
 .hj_cafes_high_section {
     width: 100%;
-    height: 40%;
-    background-color: var(--var(--white));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 60px 0;
+    background-color: var(--white);
     h3 {
         font-size: 1.4em;
         font-weight: 700;
@@ -37,7 +37,7 @@ main {
 }//hj_cafes_high_section
 .hj_cafes_map_section {
     width: 100%;
-    height: 100%;
+    height: 825px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,11 +48,11 @@ main {
     width: 50%;
     height: 100%;
     box-sizing: border-box;
-    background-color: var(--black);
+    background-color: var(--blue);
     span {
         position: absolute;
         top: 45%;
-        left: 11%;
+        left: 11.7%;
         display: block;
         width: 50px;
         height: 3px;
@@ -96,7 +96,6 @@ main {
         justify-content: center;
         align-items: flex-end;
         padding: 60px 0;
-        padding-bottom: 300px;
         box-sizing: border-box;
         button {
             position: relative;
@@ -109,10 +108,11 @@ main {
             font-size: 1.2em;
             font-weight: 600;
             transition: all 0.3s;
+            text-shadow: 2px 2px 3px var(--black);
             cursor: pointer;
             z-index: 1;
             &:hover {
-                color: #bebebe;
+                color: var(--sub-color1);
             }//:hover
             &::after {
                 position: absolute;
