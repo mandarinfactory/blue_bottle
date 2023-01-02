@@ -6,8 +6,19 @@
   .ik_main_2 {
     position: relative;
     width: 100%;
-    height: 50%;
-
+    margin-bottom: 100px;
+    @media screen and (min-width:1200px) {
+      height: 50%;
+    }
+    @media screen and (min-width:1000px) and (max-width:1200px) {
+      height: 40%;
+    }
+    @media screen and (min-width:700px) and (max-width:1000px) {
+      height: 30%;
+    }
+    @media screen and (max-width:700px) {
+      height: 25%;
+    }
     figure {
       position: absolute;
       width: 250px;
@@ -15,10 +26,10 @@
       left: 50%;
       transform: translateX(-41%);
 
-      @media screen and (min-width: 500px) and (max-width: 1000px) {
+      @media screen and (min-width: 700px) and (max-width: 1000px) {
         width: 200px;
       }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 700px) {
         width: 115px;
       }
 
@@ -35,7 +46,9 @@
       top: 0;
       width: inherit;
       height: 100%;
- 
+  
+      
+
       .ik_motion1,.ik_motion2 {
         position: absolute;
         top: 10%;
@@ -52,56 +65,48 @@
           top: 0;
           left: 0;
           width: 100%;
-          min-height: 280px;
+          min-height: 300px;
           object-fit: cover;
           object-position: center;
           
-          @media screen and (min-width:1200px) {
-            height: 100%;
-          }
-          @media screen and (min-width:1000px) and (max-width:1200px) {
-            height: 80%;
-          }
-          @media screen and (min-width:700px) and (max-width:1000px) {
-            height: 60%;
-          }
-          @media screen and (max-width:700px) {
-            height: 40%;
-          }
         }
 
         .ik_textbox {
           position: absolute;
           font-weight: 700;
           transform: translateX(-50%);
-          &.ik_textbox1{left: 32%;}
-          &.ik_textbox2 {color: var(--blue); left: 50%; }
-          &.ik_textbox3{left: 60%;}
+          &.ik_textbox2 {color: var(--blue);}
 
-          @media screen and (min-width:1200px) {
-            &.ik_textbox1{font-size: 3em; top: 35%;}
-            &.ik_textbox2{font-size: 8em; top: 40%;}
-            &.ik_textbox3{font-size: 3em; top: 50%;}
+          @media screen and (min-width:1400px){
+            &.ik_textbox1{font-size: 3em; top:33%;left: 37%;}
+            &.ik_textbox2 {font-size: 9em; top:35%; left:45%;}
+            &.ik_textbox3{font-size: 3em; top:50%;left: 67%;}
+          }
+
+          @media screen and (min-width:1200px) and (max-width:1400px) {
+            &.ik_textbox1{font-size: 3em; top: 27%; left: 37%;}
+            &.ik_textbox2{font-size: 9em; top: 28%; left: 45%;}
+            &.ik_textbox3{font-size: 3em; top: 44%; left: 67%;}
           }
           @media screen and (min-width:1000px) and (max-width:1200px) {
-            &.ik_textbox1{font-size: 2.7em; top: 30%;}
-            &.ik_textbox2{font-size: 7em; top: 35%;}
-            &.ik_textbox3{font-size: 2.7em; top: 45%;}
+            &.ik_textbox1{font-size: 2.7em; top: 27%; left: 37%;}
+            &.ik_textbox2{font-size: 6.5em; top: 28%; left: 43%;}
+            &.ik_textbox3{font-size: 2.7em; top: 42%; left: 64%;}
           }
           @media screen and (min-width:700px) and (max-width:1000px) {
-            &.ik_textbox1{font-size: 2.3em; top: 21%; left: 37%;}
-            &.ik_textbox2{font-size: 6.5em; top: 25%;}
-            &.ik_textbox3{font-size: 2.3em; top: 35%;}
+            &.ik_textbox1{font-size: 3.5vw; top: 25%; left: 35%;}
+            &.ik_textbox2{font-size: 8vw; top: 27%; left: 41%;}
+            &.ik_textbox3{font-size: 4vw; top: 41%; left: 62%;}
           }
           @media screen and (min-width:500px) and (max-width:700px) {
-            &.ik_textbox1{font-size: 1.5em; top: 15%; left: 37%;}
-            &.ik_textbox2{font-size: 3em; top: 17%;}
-            &.ik_textbox3{font-size: 1.5em; top: 24%;}
+            &.ik_textbox1{font-size: 1.2em; top: 33%; left: 35%;}
+            &.ik_textbox2{font-size: 3em; top: 35%; ;left: 40%;}
+            &.ik_textbox3{font-size: 1.5em; top: 47%; left: 61%;}
           }
           @media screen and (max-width:500px){
-            &.ik_textbox1{font-size: 1.2em; top: 14%; left: 37%;}
-            &.ik_textbox2{font-size: 2.8em; top: 16%;}
-            &.ik_textbox3{font-size: 1.2em; top: 22%;}
+            &.ik_textbox1{font-size: 1.2em; top: 33%; left: 32%;}
+            &.ik_textbox2{font-size: 2.8em; top: 35%; ;left: 40%;}
+            &.ik_textbox3{font-size: 1.2em; top: 51%; left: 61%;}
           }
         }
       }
@@ -110,4 +115,20 @@
       }
     }
   } //ik_main-2 section
-}
+
+  .ik_textbox{
+    width: 100%;
+    text-align: center;
+    h3{
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p{
+      font-weight: 500;
+    }
+  }
+
+}//ik_middle
+
+

@@ -59,12 +59,27 @@
         </div>
       </div><!-- ik_motion_box -->
     </div><!-- ik_main2 parallax-->
+
+    <div class="ik_textbox">
+      <h3>BlueBottle's Coffee</h3>
+
+      <p>Whether blend or single origin,</p>
+      <p>We treat all our coffees with equal care.</p>
+      <p>For every coffee,</p>
+      <p>We create a custom roast designed for the best</p>
+      <p>expression of that flavor profile.</p>
+      <p>with exact flavors to aim for and a scoring</p>
+      <p>system to ensure</p>
+      <p>we hit the mark everytime.</p>
+
+    </div>
+
     <div class="ik_main3">
       <ul>
-        <li class="ik_main_list"></li>
-        <li class="ik_main_list"></li>
-        <li class="ik_main_list"></li>
-        <li class="ik_main_list"></li>
+        <li class="ik_main_list">cold brew</li>
+        <li class="ik_main_list">blend</li>
+        <li class="ik_main_list">single origin</li>
+        <li class="ik_main_list">espresso</li>
         <li class="ik_main_showBox"></li>
       </ul>
     </div><!-- ik_main3 slider-->
