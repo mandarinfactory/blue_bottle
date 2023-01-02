@@ -19,7 +19,7 @@ section.ik_main_1 .ik_background_video {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 120vh;
+  height: 125vh;
   object-fit: cover;
   object-position: center;
 }

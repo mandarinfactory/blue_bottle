@@ -1,8 +1,19 @@
 
+.ik_background_flow{
+  position: relative;
+  top: 80%; left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  path{
+    fill: var(--blue);
+  }
+}
+
 .ik_main_2{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 20%;
+  background: var(--white);
 
   figure{
     position: absolute;
@@ -26,6 +37,8 @@
   }//figure
 
   div.ik_motion_box{
+    position: absolute;
+    top: 0;
     width: inherit;
     height: 100%;
     .ik_motion1{
@@ -34,7 +47,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 75%;
+      width: 100%;
+      height: 100%;
       margin: 0 auto;
       img{
         position: absolute;
@@ -44,6 +58,27 @@
         object-fit: cover;
         object-position: center;
       }
+
+      .ik_textbox{
+        position: absolute;
+        font-weight: 700;
+
+        &.ik_textbox1{
+          top: 35%; left: 32%;
+          font-size: 2em;
+        }
+        &.ik_textbox2{
+          top: 40%;
+          font-size: 5em;
+          color: var(--blue);
+        }
+        &.ik_textbox3{
+          top: 50%; left: 55%;
+          font-size: 2em;
+        }
+
+      }
+
     }
     .ik_motion2{}
 
