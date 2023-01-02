@@ -83,6 +83,7 @@ section.ik_main_1 {
     
     &.ik_wave1 {
       width: 114%;
+      height: 30%;
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
@@ -93,6 +94,7 @@ section.ik_main_1 {
     }
     &.ik_wave2 {
       width: 110%;
+      height: 25%;
       left: 50%; bottom: 0;
       transform: translateX(-50%);
       path {
