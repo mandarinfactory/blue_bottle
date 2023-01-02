@@ -48,6 +48,18 @@
       <div class="ik_motion2"></div>
     </div>
   </section>
+
+  <section class="hj_main_4">
+    <div class="hj_text_slider">
+      
+    </div>
+    <figure class="hj_cafes_photo">
+      <img src="" alt="">
+    </figure>
+    <div class="hj_cafes_area">
+
+    </div>
+  </section>
   <!-- main  위 본문 끝 -->
 
   <?php include 'footer.php' ?>
