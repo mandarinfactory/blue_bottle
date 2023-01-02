@@ -1,6 +1,6 @@
 .ik_background_flow {
-  position: relative;
-  top: 80%;
+  position: absolute;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;

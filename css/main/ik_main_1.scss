@@ -102,6 +102,16 @@ section.ik_main_1 {
       }
       animation: ikWave2 10s infinite;
     }
+    &.ik_wave3 {
+      width: 110%;
+      height: 25%;
+      left: 50%; bottom: 0;
+      transform: translateX(-50%);
+      path {
+        fill: rgba(#333, 0.2);
+      }
+      animation: ikWave2 3s infinite;
+    }
 
     @keyframes ikWave1 {
       0% {

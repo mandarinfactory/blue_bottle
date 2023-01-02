@@ -95,6 +95,17 @@ section.ik_main_1 svg.ik_wave2 {
 section.ik_main_1 svg.ik_wave2 path {
   fill: var(--white);
 }
+section.ik_main_1 svg.ik_wave3 {
+  width: 110%;
+  height: 25%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  animation: ikWave2 3s infinite;
+}
+section.ik_main_1 svg.ik_wave3 path {
+  fill: rgba(51, 51, 51, 0.2);
+}
 @keyframes ikWave1 {
   0% {
     transform: translate(-50%);
