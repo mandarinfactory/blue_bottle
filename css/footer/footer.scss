@@ -22,17 +22,17 @@ footer {
       margin: 0 auto;
       transform: scaleX(-1);
       animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-      @media screen and (min-width:1350px)and (max-width:1700px){
-        top: -68%;
+      @media screen and (min-width:1300px)and (max-width:1700px){
+        top: -40%;
       }//lg
-      @media screen and (min-width:1000px)and (max-width:1350px){
-        top: -46%;
+      @media screen and (min-width:1000px)and (max-width:1300px){
+        top: -38%;
       }//md
       @media screen and (min-width:800px)and (max-width:1000px){
-        top: -45%;
+        top: -28%;
       }//sm
       @media screen and(max-width:800px){
-        top: -35%;
+        top: -26%;
       }//sm
       path.st0 {
         fill: var(--sub-color1);
@@ -48,17 +48,17 @@ footer {
       display: block;
       margin: 0 auto;
       animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-      @media screen and (min-width:1350px)and (max-width:1700px){
-        top: -68%;
+      @media screen and (min-width:1300px)and (max-width:1700px){
+        top: -38%;
       }//lg
-      @media screen and (min-width:1000px)and (max-width:1350px){
-        top: -46%;
+      @media screen and (min-width:1000px)and (max-width:1300px){
+        top: -37%;
       }//md
       @media screen and (min-width:800px)and (max-width:1000px){
-        top: -45%;
+        top: -27%;
       }//sm
       @media screen and(max-width:800px){
-        top: -35%;
+        top: -24%;
       }//sm
       path.st1 {
         fill: var(--sub-color3);
@@ -75,17 +75,17 @@ footer {
       margin: 0 auto;
       transform: scaleX(-1);
       animation: wave 2.7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-      @media screen and (min-width:1350px)and (max-width:1700px){
-        top: -85%;
+      @media screen and (min-width:1300px)and (max-width:1700px){
+        top: -20%;
       }//lg
-      @media screen and (min-width:1000px)and (max-width:1350px){
-        top: -72%;
+      @media screen and (min-width:1000px)and (max-width:1300px){
+        top: -24%;
       }//md
       @media screen and (min-width:800px)and (max-width:1000px){
-        top: -55%;
+        top: -15%;
       }//sm
       @media screen and(max-width:800px){
-        top: -42%;
+        top: -15%;
       }//sm
       path.st2 {
         fill: var(--black);
@@ -117,10 +117,12 @@ footer {
             font-weight: 600;
           }//lg
           @media screen and (min-width:900px) and (max-width:1200px) {
+            margin-right: 40px;
             font-size: 0.8em;
             font-weight: 500;           
           }//md
           @media screen and (min-width:600px) and (max-width:900px) {
+            margin-right: 10px;
             font-size: 0.7em;
             font-weight: 500;
           }//sm
@@ -142,6 +144,9 @@ footer {
           height: 100%;
           object-fit: cover;
           object-position: center;
+        /*   @media screen and (max-width:1000px){
+            display: none;
+          } */
         } //img
       } //figure
       ul {
@@ -152,6 +157,15 @@ footer {
           margin-bottom: 7px;
           font-weight: 400;
           color: var(--sub-color1);
+          @media screen and (min-width:1200px) and (max-width:1500px) {
+            font-size: 1em;
+          }//lg
+          @media screen and (min-width:900px) and (max-width:1200px) {
+            font-size: 0.8em;       
+          }//md
+          @media screen and (min-width:600px) and (max-width:900px) {
+            font-size: 0.7em;
+          }//sm
         }
         li:first-child {
           text-transform: uppercase;
