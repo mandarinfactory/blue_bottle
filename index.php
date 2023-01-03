@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="./css/main/ik_main_3.css">
 <link rel="stylesheet" href="./css/main/hj_main_4.css">
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
 <!-- main  아래 본문시작 -->
 <main>
   <section class="ik_main_1">
@@ -91,7 +92,7 @@
     <div class="hj_text_slider">
       <div class="hj_text_track">
         <div class="content">
-          <svg viewBox="0 0 1920 374" preserveAspectRatio="none">
+          <svg viewBox="-50 0 1980 450" preserveAspectRatio="none">
             <defs>
               <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
             </defs>
@@ -99,19 +100,94 @@
               <textPath href="#text_curve">
                 <tspan>
                   We design artful and engaging spaces to be paired with your favorite coffee.
+                </tspan>
+              </textPath>
+            </text>
+          </svg>
+          <svg viewBox="-50 0 1980 450" preserveAspectRatio="none">
+            <defs>
+              <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
+            </defs>
+            <text>
+              <textPath href="#text_curve">
+                <tspan>
                   We design artful and engaging spaces to be paired with your favorite coffee.
                 </tspan>
               </textPath>
             </text>
           </svg>
-        </div>
-        <figure class="hj_cafes_photo">
-          <img src="" alt="">
-        </figure><!-- hj_cafes_photo -->
-
-        <div class="hj_cafes_area">
-
-        </div><!-- hj_cafes_area -->
+          <svg viewBox="-50 0 1980 450" preserveAspectRatio="none">
+            <defs>
+              <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
+            </defs>
+            <text>
+              <textPath href="#text_curve">
+                <tspan>
+                  We design artful and engaging spaces to be paired with your favorite coffee.
+                </tspan>
+              </textPath>
+            </text>
+          </svg>
+          <svg viewBox="-50 0 1980 450" preserveAspectRatio="none">
+            <defs>
+              <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
+            </defs>
+            <text>
+              <textPath href="#text_curve">
+                <tspan>
+                  We design artful and engaging spaces to be paired with your favorite coffee.
+                </tspan>
+              </textPath>
+            </text>
+          </svg>
+        </div><!-- content -->
+      </div><!-- hj_text_track -->
+    </div><!-- hj_text_slider -->
+    <figure class="hj_cafes_photo">
+      <img src="" alt="">
+    </figure><!-- hj_cafes_photo -->
+    <div class="hj_cafes_area">
+      <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        여의도
+      </a>
+        <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        명동
+      </a>
+        <a href="">
+          <img src="./HJ/img/marker_main.jpg" alt="">
+          광화문
+        </a>
+          <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        삼청
+      </a>
+        <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        삼청한옥
+      </a>
+        <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        한남
+      </a>
+        <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        성수
+      </a>
+        <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        역삼
+      </a>
+        <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        압구정
+      </a>
+        <a href="">
+        <img src="./HJ/img/marker_main.jpg" alt="">
+        제주
+      </a>
+    </div><!-- hj_cafes_area -->
   </section><!-- hj_main_4 -->
   <!-- main  위 본문 끝 -->
 
