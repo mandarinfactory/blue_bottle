@@ -37,9 +37,7 @@ $(function () {
         "location_blue1", "location_blue2", "location_blue3", "location_blue4", "location_blue5",
         "location_blue6", "location_blue7", "location_blue8", "location_blue9", "location_blue10"
     ]//imageName_Array
-    $('.hj_photo figure img').css({ 'display': 'none' })//깨진img지움
     $(".hj_photo p.button button").click(function () {
-        $('.hj_photo figure img').css({ 'display': 'block' })//img 변경되니까 img 살림
         let btnNum = $(this).attr("data-num")
         if (btnNum == imageName.indexOf(imageName[btnNum])) {
             $(this).parent().parent().children("figure").children("img").attr("src", "./img/location/" + imageName[btnNum] + ".jpg");

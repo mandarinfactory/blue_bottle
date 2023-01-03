@@ -18,7 +18,7 @@
   <div class="hj_photo">
     <span></span>
     <figure>
-      <img src="#" alt />
+      <img src="./HJ/img/coffee.jpg" alt />
       <figcaption>
         <p>
           맛있는 커피로 세상을 연결한다는 믿음으로
