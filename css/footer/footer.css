@@ -75,8 +75,8 @@ footer {
   }
 }
 .hj_footer_section figure.middle_wave svg path.st1 {
-  fill: var(--sub-color3);
-  stroke: var(--sub-color3);
+  fill: var(--blue);
+  stroke: var(--blue);
 }
 .hj_footer_section figure.low_wave svg {
   position: absolute;
