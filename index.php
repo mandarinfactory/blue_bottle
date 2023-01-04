@@ -9,62 +9,9 @@
 <!-- main  아래 본문시작 -->
 <script src="./HJ/JS/index_section4.js"></script>
 <main>
-  <section class="ik_main_1">
-    <video class="ik_background_video" src="http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4" autoplay muted loop>
-    </video>
-    <div class="ik_title_box">
-      <h2 class="ik_title">blue bottle</h2>
-      <p>Another Level of Coffee</p>
-    </div>
-
-    <svg class="ik_wave3" viewBox="0 0 1200 196" preserveAspectRatio="none">
-      <path d="M0,66.4c0,0,43.9-19,94.2,0c42.3,29,57.9,35,115.4,40c52.6-3,113.1,16,152.1,37s64.3,8,113.1,6c43.9,3,68.7,17.9,111.1,41	c31.2-31,68.2-51,100.4-51c32.2,3,84.8,13,120.9-4c36.1-17,79.9-41,121.9-46c53.6-10,85.8-4,134.5,6c56.5,0,136.5-35,136.5-35v140.1	H0V66.4z" />
-    </svg>
-    <svg class="ik_wave1" viewBox="0 0 1200 196" preserveAspectRatio="none">
-      <path d="M0,66.4c0,0,43.9-19,94.2,0c42.3,29,57.9,35,115.4,40c52.6-3,113.1,16,152.1,37s64.3,8,113.1,6c43.9,3,68.7,17.9,111.1,41	c31.2-31,68.2-51,100.4-51c32.2,3,84.8,13,120.9-4c36.1-17,79.9-41,121.9-46c53.6-10,85.8-4,134.5,6c56.5,0,136.5-35,136.5-35v140.1	H0V66.4z" />
-    </svg>
-    <svg class="ik_wave2" viewBox="0 0 1200 196" preserveAspectRatio="none">
-      <path d="M0,66.4c0,0,43.9-19,94.2,0c42.3,29,57.9,35,115.4,40c52.6-3,113.1,16,152.1,37s64.3,8,113.1,6c43.9,3,68.7,17.9,111.1,41	c31.2-31,68.2-51,100.4-51c32.2,3,84.8,13,120.9-4c36.1-17,79.9-41,121.9-46c53.6-10,85.8-4,134.5,6c56.5,0,136.5-35,136.5-35v140.1	H0V66.4z" />
-    </svg>
-  </section><!-- ik_main1 -->
-
+  <?php include "./main-section1.php" ?>
   <section class="ik_middle">
-    <div class="ik_main_2">
-      <figure class="ik_mug">
-        <img src="./img/object/mug01.png" alt="">
-      </figure>
-      <div class="ik_motion_box">
-        <div class="ik_motion1">
-          <img src="./img/main_section/1-1.png" alt="">
-          <img src="./img/main_section/1-2.png" alt="">
-          <img src="./img/main_section/1-3.png" alt="">
-          <p class="ik_textbox ik_textbox1">
-            We Are a
-          </p>
-          <p class="ik_textbox ik_textbox2">
-            Specialty
-          </p>
-          <p class="ik_textbox ik_textbox3">
-            Coffee Company
-          </p>
-        </div>
-        <div class="ik_motion2">
-          <img src="./img/main_section/2-1.png" alt="">
-          <img src="./img/main_section/2-2.png" alt="">
-          <img src="./img/main_section/2-3.png" alt="">
-          <p class="ik_textbox ik_textbox1">
-            That Takes
-          </p>
-          <p class="ik_textbox ik_textbox2">
-            Seriously
-          </p>
-          <p class="ik_textbox ik_textbox3">
-            Your Good Taste
-          </p>
-        </div>
-      </div><!-- ik_motion_box -->
-    </div><!-- ik_main2 parallax-->
-
+    <?php include "./main-section2.php" ?>
     <div class="ik_textbox">
       <h3>BlueBottle's Coffee</h3>
 
@@ -76,19 +23,10 @@
       <p>with exact flavors to aim for and a scoring</p>
       <p>system to ensure</p>
       <p>we hit the mark everytime.</p>
-
     </div>
-
-    <div class="ik_main3">
-      <ul>
-        <li class="ik_main_list">cold brew</li>
-        <li class="ik_main_list">blend</li>
-        <li class="ik_main_list">single origin</li>
-        <li class="ik_main_list">espresso</li>
-        <li class="ik_main_showBox"></li>
-      </ul>
-    </div><!-- ik_main3 slider-->
+    <?php include "./main-section3.php" ?>
   </section><!-- ik_middle -->
+  <?php include "./main-section4.php" ?>
   <!-- main  위 본문 끝 -->
 
   <?php include 'footer.php' ?>
