@@ -4,8 +4,11 @@
 <link rel="stylesheet" href="./css/main/ik_main_3.css">
 <link rel="stylesheet" href="./css/main/hj_main_4.css">
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<!-- CSS link -->
+
 <!-- main  아래 본문시작 -->
 <main>
+
   <?php include "./main-section1.php" ?>
 
   <section class="ik_middle">
@@ -13,6 +16,7 @@
 
     <div class="ik_textbox">
       <h3>BlueBottle's Coffee</h3>
+
       <p>Whether blend or single origin,</p>
       <p>We treat all our coffees with equal care.</p>
       <p>For every coffee,</p>
@@ -31,5 +35,5 @@
   <?php include "./main-section4.php" ?>
 
   <!-- main  위 본문 끝 -->
-
+  
   <?php include 'footer.php' ?>

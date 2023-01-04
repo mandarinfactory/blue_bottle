@@ -1,46 +1,92 @@
 .hj_main_4 {
+  position: relative;
   width: 100%;
-  height: 25%;
+  height: 20%;
   background-color: var(--white);
   display: flex;
   align-items: center;
 }
 
 .hj_text_slider {
-  width: 100%;
+  width: 500%;
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .hj_text_slider .hj_text_track {
   width: 100%;
   height: 100%;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: rotation 60s linear infinite;
 }
 .hj_text_slider .hj_text_track div.content {
-  width: 100%;
+  width: 300%;
   height: 100%;
   display: flex;
   align-items: center;
 }
 .hj_text_slider .hj_text_track div.content svg {
-  width: 100%;
-  height: 35%;
   transform: rotate(180deg);
+  height: 20%;
 }
 .hj_text_slider .hj_text_track div.content svg text {
   width: 100%;
   height: 100%;
 }
 .hj_text_slider .hj_text_track div.content svg text textPath {
-  font-size: 3.5em;
+  font-size: 6.5em;
   font-weight: 600;
-  /*                         text-transform: uppercase; */
 }
 .hj_text_slider .hj_text_track div.content svg text textPath tspan {
-  /*  fill: var(--white);
-  stroke: var(--black);
-  stroke-width: 2px; */
   font-family: "Sacramento", cursive;
 }
 
+.hj_cafes_photo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 600px;
+  height: 600px;
+  background-color: var(--blue);
+  box-shadow: 3px 3px 10px var(--black);
+  border-radius: 50%;
+}
+.hj_cafes_area {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hj_cafes_area a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--black);
+  opacity: 0.8;
+}
+.hj_cafes_area a img {
+  opacity: 0;
+  transition: all 0.5s;
+  margin-bottom: 5px;
+}
+.hj_cafes_area a:hover {
+  opacity: 1;
+}
+.hj_cafes_area a:hover img {
+  opacity: 1;
+}
+
+/* animation ------------------------------------------------------------------ */
 @keyframes rotation {
   from {
     transform: translateX(0);
