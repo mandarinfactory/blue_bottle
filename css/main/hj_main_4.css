@@ -19,8 +19,7 @@
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  -webkit-animation: rotation 60s linear infinite;
-          animation: rotation 60s linear infinite;
+  animation: rotation 60s linear infinite;
 }
 .hj_text_slider .hj_text_track div.content {
   width: 300%;
@@ -88,14 +87,6 @@
 }
 
 /* animation ------------------------------------------------------------------ */
-@-webkit-keyframes rotation {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 @keyframes rotation {
   from {
     transform: translateX(0);

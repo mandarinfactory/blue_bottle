@@ -11,12 +11,12 @@
 .hj_text_slider {
     width: 500%;
     height: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     overflow-y: hidden;
     .hj_text_track {
         width: 100%;
         height: 100%;
-        position: absolute; 
+        position: absolute;
         white-space: nowrap;
         will-change: transform;
         animation: rotation 60s linear infinite;
@@ -35,7 +35,7 @@
                         font-size: 6.5em;
                         font-weight: 600;
                         tspan {
-                            font-family: 'Sacramento', cursive;
+                            font-family: "Sacramento", cursive;
                         } //tspan
                     } //textPath
                 } //text
@@ -56,10 +56,9 @@
     border-radius: 50%;
     figure {
         img {
-            
-        }//img
-    }//figure
-}//hj_cafes_photo
+        } //img
+    } //figure
+} //hj_cafes_photo
 .hj_cafes_area {
     position: absolute;
     top: 85%;
@@ -81,15 +80,15 @@
             opacity: 0;
             transition: all 0.5s;
             margin-bottom: 5px;
-        }//img
+        } //img
         &:hover {
             opacity: 1;
             img {
                 opacity: 1;
-            }//:hover img
-        }//:hover
-    }//a
-}//hj_cafes_area
+            } //:hover img
+        } //:hover
+    } //a
+} //hj_cafes_area
 
 /* animation ------------------------------------------------------------------ */
 @keyframes rotation {
