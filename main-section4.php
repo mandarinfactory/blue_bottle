@@ -70,7 +70,7 @@
     <img src="" alt="">
   </figure><!-- hj_cafes_photo -->
   <div class="hj_cafes_area">
-    <a href="" data-num="0">
+    <a href="./cafes.php" data-num="0">
       <img src="./HJ/img/marker_main.jpg" alt="">
       여의도
     </a>
