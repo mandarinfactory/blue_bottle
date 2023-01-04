@@ -3,7 +3,7 @@
   <div class="hj_text_slider">
     <div class="hj_text_track">
       <div class="content">
-        <svg viewBox="0 0 1920 374" preserveAspectRatio="none">
+        <svg viewBox="0 10 1980 374" preserveAspectRatio="none">
           <defs>
             <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
           </defs>
@@ -15,7 +15,7 @@
             </textPath>
           </text>
         </svg>
-        <svg viewBox="0 0 1920 374" preserveAspectRatio="none">
+        <svg viewBox="0 10 1980 374" preserveAspectRatio="none">
           <defs>
             <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
           </defs>
@@ -27,7 +27,7 @@
             </textPath>
           </text>
         </svg>
-        <svg viewBox="0 0 1920 374" preserveAspectRatio="none">
+        <svg viewBox="0 10 1980 374" preserveAspectRatio="none">
           <defs>
             <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
           </defs>
