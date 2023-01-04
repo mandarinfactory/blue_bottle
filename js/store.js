@@ -15,3 +15,11 @@ window.backgroundArr=[
     desc : "It has survived not only five centuries, but also the leap into electronic typesetting",
   },
 ]
+
+window.main3Arr=[
+  {
+    title : 'cold brew',
+    desc : "If a Little Dreaming is Dangerous, <br> The Cure For It is Not To Dream Less <br> But To Dream More, To Dream All the Time <br> - MARCEL PROUST -",
+    
+  },
+]
