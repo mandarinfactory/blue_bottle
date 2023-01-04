@@ -32,9 +32,9 @@
                     width: 100%;
                     height: 100%;
                     textPath {
-                        font-size: 6.5em;
-                        font-weight: 600;
                         tspan {
+                            font-size: 6.3em;
+                            font-weight: 600;
                             font-family: "Sacramento", cursive;
                         } //tspan
                     } //textPath
@@ -54,10 +54,14 @@
     background-color: var(--blue);
     box-shadow: 3px 3px 10px var(--black);
     border-radius: 50%;
-    figure {
-        img {
-        } //img
-    } //figure
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(70%);
+    } //img
 } //hj_cafes_photo
 .hj_cafes_area {
     position: absolute;
