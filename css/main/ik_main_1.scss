@@ -4,7 +4,6 @@ html{
   overflow-y: auto;
 }
 body{
-  overflow: hidden;
   width: 100%;
   height: 500%;
   main{
@@ -79,78 +78,6 @@ section.ik_main_1 {
       p {
         transform: translateY(0);
         opacity: 0.9;
-      }
-    }
-  }
-
-  svg {
-    position: absolute;
-    
-    &.ik_wave1 {
-      width: 114%;
-      height: 30%;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      path {
-        fill: rgba(#00a9e0, 0.8);
-      }
-      animation: ikWave1 7s infinite;
-    }
-    &.ik_wave2 {
-      width: 110%;
-      height: 25%;
-      left: 50%; bottom: 0;
-      transform: translateX(-50%);
-      path {
-        fill: var(--white);
-      }
-      animation: ikWave2 10s infinite;
-    }
-    &.ik_wave3 {
-      width: 120%;
-      height: 35%;
-      left: 50%; bottom: 0; 
-      transform: translateX(-50%);
-      path {
-        fill: rgba(#eee, 0.8);
-      }
-      animation: ikWave2 3s linear infinite;
-    }
-
-    @keyframes ikWave1 {
-      0% {
-        transform: translate(-50%);
-      }
-      25% {
-        transform: translate(-47%, -1px);
-      }
-      50% {
-        transform: translate(-50%, 3px);
-      }
-      75% {
-        transform: translate(-53%, -2px);
-      }
-      100% {
-        transform: translate(-50%);
-      }
-    }
-
-    @keyframes ikWave2 { 
-      0% {
-        transform: translate(-50%);
-      }
-      25% {
-        transform: translate(-51%, 2px);
-      }
-      50% {
-        transform: translate(-50%, 0px);
-      }
-      75% {
-        transform: translate(-49%, 2px);
-      }
-      100% {
-        transform: translate(-50%);
       }
     }
   }
