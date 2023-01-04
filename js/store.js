@@ -18,16 +18,10 @@ window.backgroundArr=[
 
 window.main3Arr=[
   {
-    title : 'cold brew',
+    title : 'espresso',
     desc : "If a Little Dreaming is Dangerous, <br> The Cure For It is Not To Dream Less <br> But To Dream More, To Dream All the Time <br> - MARCEL PROUST -",
-    cup : "./img/object/main_cup01.png",
-    img : "./img/grid/bb_grid05.jpg",
-  },
-  {
-    title : 'blend',
-    desc : "If a Little Dreaming is Dangerous, <br> The Cure For It is Not To Dream Less <br> But To Dream More, To Dream All the Time <br> - MARCEL PROUST -",
-    cup : "./img/object/main_cup02.png",
-    img : "./img/grid/bb_grid02.jpg",
+    cup : "./img/object/main_cup04.png",
+    img : "./img/grid/bb_grid04.jpg",
   },
   {
     title : 'single origin',
@@ -36,9 +30,15 @@ window.main3Arr=[
     img : "./img/grid/bb_grid14.jpg",
   },
   {
-    title : 'espresso',
+    title : 'blend',
     desc : "If a Little Dreaming is Dangerous, <br> The Cure For It is Not To Dream Less <br> But To Dream More, To Dream All the Time <br> - MARCEL PROUST -",
-    cup : "./img/object/main_cup04.png",
-    img : "./img/grid/bb_grid04.jpg",
+    cup : "./img/object/main_cup02.png",
+    img : "./img/grid/bb_grid02.jpg",
+  },
+  {
+    title : 'cold brew',
+    desc : "If a Little Dreaming is Dangerous, <br> The Cure For It is Not To Dream Less <br> But To Dream More, To Dream All the Time <br> - MARCEL PROUST -",
+    cup : "./img/object/main_cup01.png",
+    img : "./img/grid/bb_grid05.jpg",
   },
 ]

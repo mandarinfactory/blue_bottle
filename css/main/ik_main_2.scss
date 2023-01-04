@@ -1,34 +1,15 @@
 .ik_middle {
   position: relative;
+  box-sizing: border-box;
   width: 100%;
-  height: 40%;
+  height: 50%;
   background: var(--white);
   .ik_main_2 {
-   
-  } //ik_main-2 section
-
-  .ik_textbox{
+    box-sizing: border-box;
     width: 100%;
-    text-align: center;
-    h3{
-      font-size: 2em;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-    ul{
-      @media screen and (min-width:1000px) {
-        width: 95%;
-        max-width: 600px;
-      }
-      @media screen and (max-width:1000px) {
-        width: 95%;
-      }
-      li{
-        font-weight: 500;
-      }
-    }
-  }
-
+    height: 50%;
+    border: 1px solid black;
+  } //ik_main-2 section
 }//ik_middle
 
 

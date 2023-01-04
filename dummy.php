@@ -1,4 +1,5 @@
 <?php include 'header.php' ?>
+<link rel="stylesheet" href="./css/main/index.css">
 <link rel="stylesheet" href="./css/main/ik_main_1.css">
 <link rel="stylesheet" href="./css/main/ik_main_2.css">
 <link rel="stylesheet" href="./css/main/ik_main_3.css">
@@ -8,26 +9,11 @@
 
 <!-- main  아래 본문시작 -->
 <main>
-
-  <?php include "./main-section1.php" ?>
-
-  <section class="ik_middle">
-    <?php include "./main-section2.php" ?>
-    <div class="ik_textbox">
-      <h3>BlueBottle's Coffee</h3>
-
-      <p>Whether blend or single origin,</p>
-      <p>We treat all our coffees with equal care.</p>
-      <p>For every coffee,</p>
-      <p>We create a custom roast designed for the best</p>
-      <p>expression of that flavor profile.</p>
-      <p>with exact flavors to aim for and a scoring</p>
-      <p>system to ensure</p>
-      <p>we hit the mark everytime.</p>
-    </div>
-    <?php include "./main-section3.php" ?>
-  </section><!-- ik_middle -->
-
-  <!-- main  위 본문 끝 -->
+  <?php include "./main-section1.php" ?><!-- section1 main-->
   
-  <?php include 'footer.php' ?>
+  <section class="ik_middle">
+    <?php include "./main-section2.php" ?><!-- section2 parallax-->
+    <?php include "./main-section3.php" ?><!-- section3 card-->
+  </section><!-- ik_middle -->
+  <!-- main  위 본문 끝 -->
+

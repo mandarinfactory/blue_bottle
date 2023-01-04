@@ -35,6 +35,7 @@
   <script src="./js/common.js" defer></script>
   <script src="./js/script.js" defer></script>
   <script src="./js/header.js" defer></script>
+  <script src="./js/main3.js" defer></script>
 
   
   <title>BlueBottle Renewal</title>

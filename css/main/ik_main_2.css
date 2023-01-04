@@ -1,29 +1,13 @@
 .ik_middle {
   position: relative;
+  box-sizing: border-box;
   width: 100%;
-  height: 40%;
+  height: 50%;
   background: var(--white);
 }
-.ik_middle .ik_textbox {
+.ik_middle .ik_main_2 {
+  box-sizing: border-box;
   width: 100%;
-  text-align: center;
-}
-.ik_middle .ik_textbox h3 {
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 1000px) {
-  .ik_middle .ik_textbox ul {
-    width: 95%;
-    max-width: 600px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .ik_middle .ik_textbox ul {
-    width: 95%;
-  }
-}
-.ik_middle .ik_textbox ul li {
-  font-weight: 500;
+  height: 50%;
+  border: 1px solid black;
 }/*# sourceMappingURL=ik_main_2.css.map */
