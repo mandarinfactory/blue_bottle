@@ -1,13 +1,19 @@
 .ik_main3{
+  width: 100%;
+  height: 50%;
+  background-image: url(../../img/grid/bb_grid02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
     li{
-      &.ik_main_list{
-
-      }//ik_main_list
-
-      &.ik_main_showBox{
-
-      }//ik_main_showBox
+      width: calc(100% - 150px);
+      height: 100%;      
     }//li
   }//ul
 }//ik_main3

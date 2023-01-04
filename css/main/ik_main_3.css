@@ -1,1 +1,19 @@
-/*# sourceMappingURL=ik_main_3.css.map */
+.ik_main3 {
+  width: 100%;
+  height: 50%;
+  background-image: url(../../img/grid/bb_grid02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.ik_main3 ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.ik_main3 ul li {
+  width: calc(100% - 150px);
+  height: 100%;
+}/*# sourceMappingURL=ik_main_3.css.map */
