@@ -7,7 +7,6 @@
 <!-- CSS link -->
 
 <!-- main  아래 본문시작 -->
-<script src="./HJ/JS/index_section4.js"></script>
 <main>
   <?php include "./main-section1.php" ?>
   <section class="ik_middle">
