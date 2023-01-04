@@ -6,7 +6,5 @@
     <p>Another Level of Coffee</p>
   </div>
 
-  <figure class="ik_mug">
-    <img src="./img/object/kettle.png" alt="">
-  </figure>
+  
 </section><!-- ik_main1 -->

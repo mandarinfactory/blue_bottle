@@ -10,7 +10,7 @@
 <!-- main  아래 본문시작 -->
 <main>
   <?php include "./main-section1.php" ?><!-- section1 main-->
-  
+
   <section class="ik_middle">
     <?php include "./main-section2.php" ?><!-- section2 parallax-->
     <?php include "./main-section3.php" ?><!-- section3 card-->

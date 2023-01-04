@@ -5,7 +5,7 @@ html {
 
 body {
   width: 100%;
-  height: 400%;
+  height: 500%;
 }
 body main {
   width: 100%;
@@ -16,7 +16,7 @@ section.ik_main_1 {
   position: relative;
   top: 0;
   width: 100%;
-  height: 25%;
+  height: 20%;
   overflow: hidden;
 }
 section.ik_main_1 .ik_background_video {
