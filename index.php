@@ -7,13 +7,11 @@
 <!-- CSS link -->
 
 <!-- main  아래 본문시작 -->
+<script src="./HJ/JS/index_section4.js"></script>
 <main>
-
   <?php include "./main-section1.php" ?>
-
   <section class="ik_middle">
     <?php include "./main-section2.php" ?>
-
     <div class="ik_textbox">
       <h3>BlueBottle's Coffee</h3>
 
@@ -26,14 +24,9 @@
       <p>system to ensure</p>
       <p>we hit the mark everytime.</p>
     </div>
-
     <?php include "./main-section3.php" ?>
-
-
   </section><!-- ik_middle -->
-
   <?php include "./main-section4.php" ?>
-
   <!-- main  위 본문 끝 -->
-  
+
   <?php include 'footer.php' ?>

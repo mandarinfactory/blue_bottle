@@ -1,16 +1,3 @@
-window.locationArr = [
-    { name: 'yeoido', lat: '37.525817', lng: '126.928338' },
-    { name: 'myungdong', lat: '37.563498', lng: '126.983001' },
-    { name: 'gwangha', lat: '37.56941', lng: '126.978827' },
-    { name: 'samchung', lat: '37.58016', lng: '126.980847' },
-    { name: 'samchungHanok', lat: '37.580052', lng: '126.980938' },
-    { name: 'hannam', lat: '37.536095', lng: '127.005211' },
-    { name: 'sungsu', lat: '37.548074', lng: '127.045691' },
-    { name: 'yeoksam', lat: '37.499717', lng: '127.032378' },
-    { name: 'apgujeong', lat: '37.525708', lng: '127.02885' },
-    { name: 'jeju', lat: '33.433223', lng: '126.750818' },
-]
-
 const yeoido = new naver.maps.LatLng(37.525817, 126.928338);
 const myungdong = new naver.maps.LatLng(37.563498, 126.983001);
 const gwangha = new naver.maps.LatLng(37.56941, 126.978827);

@@ -19,9 +19,9 @@
         position: absolute;
         white-space: nowrap;
         will-change: transform;
-        animation: rotation 60s linear infinite;
+        animation: rotation 10s linear infinite;
         div.content {
-            width: 300%;
+            width: 350%;
             height: 100%;
             display: flex;
             align-items: center;
@@ -32,9 +32,9 @@
                     width: 100%;
                     height: 100%;
                     textPath {
-                        font-size: 6.5em;
-                        font-weight: 600;
                         tspan {
+                            font-size: 6.3em;
+                            font-weight: 600;
                             font-family: "Sacramento", cursive;
                         } //tspan
                     } //textPath
@@ -52,12 +52,16 @@
     width: 600px;
     height: 600px;
     background-color: var(--blue);
-    box-shadow: 3px 3px 10px var(--black);
+    box-shadow: 7px 7px 10px var(--black);
     border-radius: 50%;
-    figure {
-        img {
-        } //img
-    } //figure
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(70%);
+    } //img
 } //hj_cafes_photo
 .hj_cafes_area {
     position: absolute;
