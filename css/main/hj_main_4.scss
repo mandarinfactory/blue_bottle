@@ -57,13 +57,13 @@ figure.hj_coffeestain {
     top: -9%;
     left: 20%;
     transform: rotate(250deg);
-    img {
+    img.stain2 {
         width: 85%;
         height: 85%;
         object-fit: contain;
         object-position: center;
         opacity: 0.8;
-    }//img
+    }//img.stain2
 }//hj_coffeestain
 figure.hj_cafes_photo {
     position: absolute;

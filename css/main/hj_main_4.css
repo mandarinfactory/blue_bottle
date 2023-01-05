@@ -61,7 +61,7 @@ figure.hj_coffeestain {
   left: 20%;
   transform: rotate(250deg);
 }
-figure.hj_coffeestain img {
+figure.hj_coffeestain img.stain2 {
   width: 85%;
   height: 85%;
   -o-object-fit: contain;
