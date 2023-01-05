@@ -19,12 +19,12 @@
         position: absolute;
         white-space: nowrap;
         will-change: transform;
-        animation: rotation 120s linear infinite;
         div.content {
             width: 350%;
             height: 100%;
             display: flex;
             align-items: center;
+            animation: roundabout 120s linear infinite;
             svg {
                 transform: rotate(180deg);
                 height: 16%;
@@ -44,6 +44,20 @@
         } //div.content
     } //.hj_text_track
 } //.hj_text_slider
+.hj_mug {
+    position: absolute;
+    top: 43%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    img.mug {
+        width: 108%;
+        height: 108%;
+        object-fit: cover;
+        object-position: center;
+    } //img.mug
+} //.hj_mug
 .hj_cafes_photo {
     position: absolute;
     top: 45%;
@@ -51,26 +65,29 @@
     display: block;
     width: 600px;
     height: 600px;
-    background-color: var(--blue);
+    background-color: transparent;
     box-shadow: 7px 7px 10px var(--black);
     transform: translate(-50%, -50%);
     border-radius: 50%;
     svg {
         width: 100%;
         height: 100%;
+        animation: rotate 100s infinite linear;
         text {
+            font-size: 0.5em;
             textPath {
                 text-transform: uppercase;
-                font-weight: 800;
+                font-weight: 600;
                 font-size: 0.49em;
                 tspan {
-                    fill: var(--white);
-                    stroke: var(--black);
-                    stroke-width: 0.4px;
-                }//tspan
-            }//textPath
-        }//text
-    }//svg
+                    display: block;
+                    fill: orangered;
+                    mix-blend-mode: exclusion;
+                    stroke-width: 0.1px;
+                } //tspan
+            } //textPath
+        } //text
+    } //svg
     img {
         width: 100%;
         height: 100%;
@@ -82,7 +99,7 @@
 } //hj_cafes_photo
 .hj_cafes_area {
     position: absolute;
-    top: 85%;
+    top: 77%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -96,15 +113,28 @@
         font-size: 1.8em;
         font-weight: 600;
         color: var(--black);
-        opacity: 0.8;
-        img {
+        opacity: 1;
+        transition: opacity 0.3s;
+        img.hj_marker {
             opacity: 0;
-            transition: all 0.5s;
             margin-bottom: 5px;
-        } //img
-        &:hover {
+            transition: all 0.3s;
+        } //img.hj_marker
+        img.hj_logo {
+            width: 70%;
+            margin-bottom: 5px;
             opacity: 1;
-            img {
+        } //img.hj_logo
+        span {
+            font-size: 0.6em;
+            opacity: 0;
+            transition: all 0.3s;
+        } //span
+        &:hover {
+            span {
+                opacity: 1;
+            } //:hover span
+            img.hj_marker {
                 opacity: 1;
             } //:hover img
         } //:hover
@@ -112,16 +142,25 @@
 } //hj_cafes_area
 
 /* animation ------------------------------------------------------------------ */
-@keyframes rotation {
+@keyframes roundabout {
     from {
         transform: translateX(0);
     }
     to {
         transform: translateX(-50%);
     }
-} //animation_rotation
+} //animation_roundabout
 @media (hover: hover) and (min-width: 700px) {
     .animated-title .content {
         transform: translateY(calc(100% - 8rem));
     }
 } //hover_animation
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
