@@ -9,16 +9,13 @@
     align-items: center;
 } //hj_main_4
 .hj_text_slider {
-    width: 500%;
+    width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     .hj_text_track {
         width: 100%;
         height: 100%;
         position: absolute;
-        white-space: nowrap;
-        will-change: transform;
+        z-index: 1;
         div.content {
             width: 100%;
             height: 100%;
@@ -28,25 +25,26 @@
                 width: 100%;
                 height: auto;
                 overflow: visible;
-            }
+            }//svgwave
             svg.svgwave path {
                 fill:transparent;
-            }  
+            }//svgwave path  
             svg.svgwave text {
                 font-family: 'Sacramento', cursive;
-                font-size:1em;
+                font-size:1.1em;
                 fill: var(--black);
-            }
+            }//svgwave text
         } //div.content
     } //.hj_text_track
 } //.hj_text_slider
-.hj_mug {
+figure.hj_mug {
     position: absolute;
     top: 43%;
     left: 49%;
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
+    z-index: 1;
     img.mug {
         width: 108%;
         height: 108%;
@@ -54,7 +52,20 @@
         object-position: center;
     } //img.mug
 } //.hj_mug
-.hj_cafes_photo {
+figure.hj_coffeestain {
+    position: absolute;
+    top: -9%;
+    left: 20%;
+    transform: rotate(250deg);
+    img {
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+        object-position: center;
+        opacity: 0.8;
+    }//img
+}//hj_coffeestain
+figure.hj_cafes_photo {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -65,6 +76,7 @@
     box-shadow: 7px 7px 10px var(--black);
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    z-index: 2;
     img {
         width: 100%;
         height: 100%;
@@ -82,6 +94,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
     a {
         display: flex;
         flex-direction: column;

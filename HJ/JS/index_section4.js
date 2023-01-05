@@ -12,4 +12,8 @@ $(function () {
             $('.hj_cafes_photo img').attr("src", "./img/location/" + cafeImageArr[hj_anchorData] + ".jpg");
         }//if
     })//mouseenter
+    $('.hj_cafes_area').mouseleave(function () {
+        $('.hj_cafes_photo svg').css({ 'display': 'block' })
+        $('.hj_cafes_photo img').css({ 'display': 'none' })
+    })//mouseleave
 })//document.ready

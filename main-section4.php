@@ -21,7 +21,10 @@
   </div><!-- ,hj_text_slider -->
   <figure class="hj_mug">
     <img class="mug" src="./HJ/img/mug.png" alt="">
-  </figure>
+  </figure><!-- hj_mug -->
+  <figure class="hj_coffeestain">
+    <img src="./img/object/coffeestain02.png" alt="">
+  </figure><!-- hj_coffeestain -->
   <figure class="hj_cafes_photo">
     <img src="" alt="">
   </figure><!-- hj_cafes_photo -->
