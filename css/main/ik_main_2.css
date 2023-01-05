@@ -29,8 +29,10 @@
 .ik_middle figure.ik_mug img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transform: scale(1.5);
 }
 .ik_middle .ik_main_2 {

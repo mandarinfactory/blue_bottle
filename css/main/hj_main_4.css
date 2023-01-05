@@ -21,25 +21,23 @@
   will-change: transform;
 }
 .hj_text_slider .hj_text_track div.content {
-  width: 350%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  animation: roundabout 120s linear infinite;
 }
-.hj_text_slider .hj_text_track div.content svg {
-  transform: rotate(180deg);
-  height: 16%;
-}
-.hj_text_slider .hj_text_track div.content svg text {
+.hj_text_slider .hj_text_track div.content svg.svgwave {
   width: 100%;
-  height: 100%;
+  height: auto;
+  overflow: visible;
 }
-.hj_text_slider .hj_text_track div.content svg text textPath tspan {
-  font-size: 6.5em;
-  font-weight: 600;
-  fill: var(--black);
+.hj_text_slider .hj_text_track div.content svg.svgwave path {
+  fill: transparent;
+}
+.hj_text_slider .hj_text_track div.content svg.svgwave text {
   font-family: "Sacramento", cursive;
+  font-size: 1em;
+  fill: var(--black);
 }
 
 .hj_mug {
@@ -53,8 +51,10 @@
 .hj_mug img.mug {
   width: 108%;
   height: 108%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .hj_cafes_photo {
@@ -69,31 +69,14 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-.hj_cafes_photo svg {
-  width: 100%;
-  height: 100%;
-  animation: rotate 100s infinite linear;
-}
-.hj_cafes_photo svg text {
-  font-size: 0.5em;
-}
-.hj_cafes_photo svg text textPath {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.49em;
-}
-.hj_cafes_photo svg text textPath tspan {
-  display: block;
-  fill: orangered;
-  mix-blend-mode: exclusion;
-  stroke-width: 0.1px;
-}
 .hj_cafes_photo img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   filter: brightness(70%);
 }
 
@@ -137,27 +120,4 @@
 }
 .hj_cafes_area a:hover img.hj_marker {
   opacity: 1;
-}
-
-/* animation ------------------------------------------------------------------ */
-@keyframes roundabout {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-@media (hover: hover) and (min-width: 700px) {
-  .animated-title .content {
-    transform: translateY(calc(100% - 8rem));
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0);
-  }
 }/*# sourceMappingURL=hj_main_4.css.map */

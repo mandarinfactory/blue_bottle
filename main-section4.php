@@ -3,63 +3,16 @@
   <div class="hj_text_slider">
     <div class="hj_text_track">
       <div class="content">
-        <svg viewBox="0 10 1920 374" preserveAspectRatio="none">
-          <defs>
-            <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
-          </defs>
-          <text>
-            <textPath href="#text_curve">
-              <tspan>
-                We design artful and engaging spaces to be paired with your favorite coffee.
-              </tspan>
-            </textPath>
-          </text>
-        </svg>
-        <svg viewBox="0 10 1920 374" preserveAspectRatio="none">
-          <defs>
-            <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
-          </defs>
-          <text>
-            <textPath href="#text_curve">
-              <tspan>
-                We design artful and engaging spaces to be paired with your favorite coffee.
-              </tspan>
-            </textPath>
-          </text>
-        </svg>
-        <svg viewBox="0 10 1920 374" preserveAspectRatio="none">
-          <defs>
-            <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
-          </defs>
-          <text>
-            <textPath href="#text_curve">
-              <tspan>
-                We design artful and engaging spaces to be paired with your favorite coffee.
-              </tspan>
-            </textPath>
-          </text>
-        </svg>
-        <svg viewBox="0 10 1920 374" preserveAspectRatio="none">
-          <defs>
-            <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
-          </defs>
-          <text>
-            <textPath href="#text_curve">
-              <tspan>
-                We design artful and engaging spaces to be paired with your favorite coffee.
-              </tspan>
-            </textPath>
-          </text>
-        </svg>
-        <svg viewBox="0 10 1920 374" preserveAspectRatio="none">
-          <defs>
-            <path id="text_curve" class="circular" d="M1920,124.94c-38.84-50-105.14-61-165.76-62c-226.38,10-355.2,270-712.3,284 c-297.42,18-464.43-293.44-799.45-303C70.5,35.5,0,79.94,0,79.94" />
-          </defs>
-          <text>
-            <textPath href="#text_curve">
-              <tspan>
-                We design artful and engaging spaces to be paired with your favorite coffee.
-              </tspan>
+        <svg class="svgwave" xmlns="http://www.w3.org/2000/svg" width="301" height="21" viewBox="0 0 301 21">
+          <path id="wavepath" d="M0,.5c30.0978,0,30.0978,20,60.1956,20S90.2948.5,120.394.5s30.1,20,60.2,20c30.1015,0,30.1015-20,60.203-20s30.1014,20,60.2029,20"></path>
+          <text text-anchor="middle">
+            <textPath class="my-text" href="#wavepath" startOffset="50%">
+              <animate attributeName="startOffset" from="50%" to="-150%" begin="0s" dur="240s" repeatCount="indefinite"></animate>
+              We design artful and engaging spaces to be paired with your favorite coffee.
+              We design artful and engaging spaces to be paired with your favorite coffee.
+              We design artful and engaging spaces to be paired with your favorite coffee.
+              We design artful and engaging spaces to be paired with your favorite coffee.
+              We design artful and engaging spaces to be paired with your favorite coffee.
             </textPath>
           </text>
         </svg>
@@ -70,20 +23,6 @@
     <img class="mug" src="./HJ/img/mug.png" alt="">
   </figure>
   <figure class="hj_cafes_photo">
-    <svg viewBox="0 0 100 100">
-      <defs>
-        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0">
-        </path>
-      </defs>
-      <text font-size="17">
-        <textPath xlink:href="#circle">
-          <tspan>
-            find your bluebottle cafe. 당신이 원하는 블루보틀 카페를 찾아보세요.
-            find your bluebottle cafe. 당신이 원하는 블루보틀 카페를 찾아보세요.
-          </tspan>
-        </textPath>
-      </text>
-    </svg>
     <img src="" alt="">
   </figure><!-- hj_cafes_photo -->
   <div class="hj_cafes_area">
