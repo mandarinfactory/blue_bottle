@@ -6,6 +6,7 @@
   background: var(--white);
 
   figure.ik_mug{
+    box-sizing: border-box;
     position: absolute;
     top: 0 ; left:50%;
     transform: translate(-50%,-50%);
@@ -26,6 +27,7 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
+      transform: scale(1.5);
     }
   
   }
