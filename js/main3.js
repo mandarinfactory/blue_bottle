@@ -13,10 +13,8 @@ $(function () {
 
       $(".ik_main3>ul.ik_main_list_container>li").removeClass("active");
     }
-    
-    prevNum = selectNum;
-
-    $(".ik_main3>ul.ik_main_list_container>li").not($(this).parent()).removeClass("active2");
-    $(this).parent().toggleClass("active2");
-  });
-});
+  })
+  
+  $('.ik_main3>ul.ik_main_list_container>li').not($(this).parent()).removeClass('active2')
+  $(this).parent().toggleClass('active2')
+})

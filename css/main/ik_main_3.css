@@ -86,7 +86,8 @@
   /* active ---------------- */
   transition: background 1s, right 1s, transform 1s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left, .ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right {
+.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left,
+.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right {
   box-sizing: border-box;
   width: 50%;
   height: 100%;
