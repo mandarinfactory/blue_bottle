@@ -18,8 +18,11 @@ $(function () {
     })//mouseleave
 
     $('.hj_cafes_area a').click(function () {
-        const anchorData = $(this).attr('data-num')
-        $(this).attr('href', './cafes.php' + '?' + anchorData)
+        $(this).attr('href', './cafes.php' + '?' + $(this).attr('data-num'))
     })//click_event
+    /* anchor click시에 href에 data-num추가해서 cafes.php URL로 이동시킴 */
+    for (i = 0; i < 10; i++) {
+        $(`.hj_cafes_area a:nth-child(${i})`).children('img.hj_logo').css({ 'animation-delay': `${i * 3}s` })
+    }//for
 })//document.ready
 

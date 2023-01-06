@@ -1,3 +1,7 @@
+const imageName = [
+    "location_blue1", "location_blue2", "location_blue3", "location_blue4", "location_blue5",
+    "location_blue6", "location_blue7", "location_blue8", "location_blue9", "location_blue10"
+]//imageName_Array
 const yeoido = new naver.maps.LatLng(37.525817, 126.928338);
 const myungdong = new naver.maps.LatLng(37.563498, 126.983001);
 const gwangha = new naver.maps.LatLng(37.56941, 126.978827);
@@ -18,15 +22,12 @@ const map = new naver.maps.Map("map", {
     scaleControl: false,
 }); //중심으로 하는 지도(남산타워로...만만하니깐)
 /* 첫 화면에서 기준이 되는 경,위도 ---------------------------------------- */
-const imageName = [
-    "location_blue1", "location_blue2", "location_blue3", "location_blue4", "location_blue5",
-    "location_blue6", "location_blue7", "location_blue8", "location_blue9", "location_blue10"
-]//imageName_Array
 
 const getUrlLink = new URL(window.location.href)
 const getUrlSearch = parseInt((getUrlLink.search).substring(1))
 const handleBtn = document.querySelectorAll('.hj_photo p.button button')
 if (getUrlSearch === imageName.indexOf(imageName[getUrlSearch])) {
+    window.scrollTo(500, 1000);
     handleBtn[getUrlSearch].click();
     handleBtn[getUrlSearch].classList.add('active');
     handleBtn[getUrlSearch].parentElement.parentElement.children[1].children[0].setAttribute('src', './img/location/' + imageName[getUrlSearch] + '.jpg')
@@ -55,7 +56,7 @@ $(function () {
     ------------------------------------------------ 사진변경되면서 같이 세부사항도 변경시키게 해줌 */
 }); //document.ready(jQuery)
 
-document.querySelectorAll(".hj_photo .button button").forEach(v => {
+handleBtn.forEach(v => {
     v.addEventListener("click", e => {
         Array.from(e.target.parentElement.children).forEach(v => {
             if (v !== e.target) v.classList.remove("active");
