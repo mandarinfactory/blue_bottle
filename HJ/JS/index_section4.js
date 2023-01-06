@@ -24,5 +24,13 @@ $(function () {
     for (i = 0; i < 10; i++) {
         $(`.hj_cafes_area a:nth-child(${i})`).children('img.hj_logo').css({ 'animation-delay': `${i * 3}s` })
     }//for
+
+    $('.hj_cafes_area a img.hj_logo').mouseenter(function () {
+        $(this).css({ 'animation': 'none' })
+    })//mouseenter
+    $('.hj_cafes_area a img.hj_logo').mouseleave(function () {
+        $(this).css({ 'animation': 'chScale 7s alternate infinite' })
+    })//mouseenter
+    /* icon mouseenter시에 animation 없앴다가 --> mouseleave시에 animation 다시 살리기! */
 })//document.ready
 
