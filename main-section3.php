@@ -15,6 +15,13 @@
 
   <ul class="ik_main_list_container">
     <li class="ik_main_list_box">
+      <!-- particles.js container -->
+      <script src="./js/particles.js"></script>
+      <script src="./js/app_particle_snow.js"></script>
+      <div id="particles-js">
+
+      </div>
+      <!-- particles.js container -->
       <p>Delicious Coffee Makes Life More Blissful</p>
       <button>
         <a href="./coffee.php">All COFFEE</a>
