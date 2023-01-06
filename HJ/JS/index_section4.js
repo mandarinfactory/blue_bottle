@@ -16,4 +16,4 @@ $(function () {
         $('.hj_cafes_photo svg').css({ 'display': 'block' })
         $('.hj_cafes_photo img').css({ 'display': 'none' })
     })//mouseleave
-})//document.ready
+})//document.readyasdf
