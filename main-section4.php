@@ -14,7 +14,6 @@
               We design artful and engaging spaces to be paired with your favorite coffee.
               We design artful and engaging spaces to be paired with your favorite coffee.
               We design artful and engaging spaces to be paired with your favorite coffee.
-              test
             </textPath>
           </text>
         </svg>
