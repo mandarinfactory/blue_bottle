@@ -18,12 +18,26 @@ const map = new naver.maps.Map("map", {
     scaleControl: false,
 }); //중심으로 하는 지도(남산타워로...만만하니깐)
 /* 첫 화면에서 기준이 되는 경,위도 ---------------------------------------- */
+const imageName = [
+    "location_blue1", "location_blue2", "location_blue3", "location_blue4", "location_blue5",
+    "location_blue6", "location_blue7", "location_blue8", "location_blue9", "location_blue10"
+]//imageName_Array
+
+const getUrlLink = new URL(window.location.href)
+const getUrlSearch = parseInt((getUrlLink.search).substring(1))
+const handleBtn = document.querySelectorAll('.hj_photo p.button button')
+if (getUrlSearch === imageName.indexOf(imageName[getUrlSearch])) {
+    handleBtn[getUrlSearch].click();
+    handleBtn[getUrlSearch].classList.add('active');
+    handleBtn[getUrlSearch].parentElement.parentElement.children[1].children[0].setAttribute('src', './img/location/' + imageName[getUrlSearch] + '.jpg')
+}//if 
+/* 
+index.php의 anchor를 click하면 --> 해당 anchor의 data-num이 URL에 추가적으로 붙어서 
+getUrlLink, Search 변수선언후 해당 값만 가져온다. --> url에 가져온 data-num === 이미지의 순서가 성립되면
+해당하는 button들에 click을 강제시켜 active를 달고, 사진을 변경시키고, 해당 위치가 있는 marker로 지도를 이동시킨다.
+ */
 
 $(function () {
-    const imageName = [
-        "location_blue1", "location_blue2", "location_blue3", "location_blue4", "location_blue5",
-        "location_blue6", "location_blue7", "location_blue8", "location_blue9", "location_blue10"
-    ]//imageName_Array
     $(".hj_photo p.button button").click(function () {
         let btnNum = $(this).attr("data-num")
         if (btnNum == imageName.indexOf(imageName[btnNum])) {

@@ -31,7 +31,7 @@
   </figure><!-- hj_coffeestain -->
 
   <div class="hj_cafes_area">
-    <a href="./cafes.php?lat=37.525817?lng=126.928338" data-num="0">
+    <a href="./cafes.php" data-num="0">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
       <img src="./HJ/img/logo/1.jpg" alt="" class="hj_logo">
       <span>여의도</span>
