@@ -25,9 +25,15 @@
     
     cup.style.left = (-motionValue *0.03)+30 +'%';
     table.style.top = (motionValue*0.008)-8+'%';
-    topImg.style.top = (-motionValue*0.05)+50+'%';
-    middleImg.style.top = (motionValue*0.05)-50+'%';
+    topImg.style.top = (motionValue*0.05)-50+'%';
+    middleImg.style.top = (-motionValue*0.05)+50+'%';
     bottomImg.style.top = (-motionValue*0.02)+20+'%';
-  })
+    
+    document.querySelectorAll('.ik_motion_box img').forEach(v=>{
+      let opa = motionValue * 0.002
+
+      v.style.opacity = opa
+    })//forEach
+  })//scroll
 
 </script>

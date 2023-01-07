@@ -44,10 +44,12 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 .ik_middle .ik_main_2 .ik_motion_box img {
   position: absolute;
@@ -55,15 +57,27 @@
   height: 100%;
   top: 0;
   left: 0;
-  /* opacity: 0; */
   object-fit: cover;
   object-position: center;
-  transition: all 1s;
+  transition: top 0.5s linear, left 1s, opacity 1s;
+}
+.ik_middle .ik_main_2 .ik_motion_box img.ik_motion_img1 {
   z-index: 1;
+  opacity: 1 !important;
+}
+.ik_middle .ik_main_2 .ik_motion_box img.ik_motion_img2 {
+  z-index: 2;
 }
 .ik_middle .ik_main_2 .ik_motion_box img.ik_motion_img3 {
+  z-index: 1;
   transition: all 0.5s;
 }
-.ik_middle .ik_main_2 .ik_motion_box img.ik_motion_text {
+.ik_middle .ik_main_2 .ik_motion_box img.ik_motion_text1 {
+  z-index: 0;
+}
+.ik_middle .ik_main_2 .ik_motion_box img.ik_motion_text2 {
+  z-index: 1;
+}
+.ik_middle .ik_main_2 .ik_motion_box img.ik_motion_text3 {
   z-index: 0;
 }/*# sourceMappingURL=ik_main_2.css.map */
