@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="./css/main/ik_main_2.css">
 <link rel="stylesheet" href="./css/main/ik_main_3.css">
 <link rel="stylesheet" href="./css/main/hj_main_4.css">
+<script src="./js/main2.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 <!-- CSS link -->
 
