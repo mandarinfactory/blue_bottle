@@ -15,16 +15,9 @@
 
   <ul class="ik_main_list_container">
     <li class="ik_main_list_box">
-      <!-- particles.js container -->
-      <script src="./js/particles.js"></script>
-      <script src="./js/app_particle_snow.js"></script>
-      <div id="particles-js">
-
-      </div>
-      <!-- particles.js container -->
       <p>Delicious Coffee Makes Life More Blissful</p>
       <button>
-        <a href="./coffee.php">All COFFEE</a>
+        <a href="./coffee.php">shop now</a>
       </button>
     </li>
   </ul>
@@ -35,15 +28,13 @@
       <li class="ik_main_list ik_main_list_${i+1}">
         <figure class="ik_left">
           <img src="${v.img}">
+          <a href="#">shop now</a>
         </figure>
         <div class="ik_right" data-n="${i+1}">
           <h3 class="ik_main3_title">${v.title}</h3>
           <p class="ik_desc">
             ${v.desc}
           </p>
-          <button>
-            <a href="#">커피보러가기</a>
-          </button>
           <img class="ik_mug" src="${v.cup}">
         </div>
       </li>

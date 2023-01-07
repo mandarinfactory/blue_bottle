@@ -13,9 +13,9 @@
     <li>블루보틀 카페에서는 맛있는 커피를 즐길 수 있는 공간 그리고 따뜻한 환대가</li>
     <li>조화롭게 더해져 블루보틀의 커피를 보다 편안하게 즐기실 수 있습니다.</li>
   </ul>
-</section><!-- hj_cafes_high_section -->
+</section>
 <section class="hj_cafes_map_section">
-  <div class="hj_photo  ">
+  <div class="hj_photo">
     <span></span>
     <figure>
       <img src="./HJ/img/coffee.jpg" alt />
@@ -40,9 +40,9 @@
       <button onclick="panTo9()" data-num="8">압구정</button>
       <button onclick="panTo10()" data-num="9">제주</button>
     </p>
-  </div><!-- hj_photo -->
+  </div>
   <div id="map" style="width: 50%; height: 100%"></div>
-</section><!-- hj_cafes_map_section -->
+</section>
 
 <script src="./js/cafes/map.js"></script>
 <script src="./js/cafes/store.js"></script>
