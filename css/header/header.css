@@ -43,30 +43,31 @@ header.gnb h1.logo figure a {
   top: 0;
   left: 0;
   display: block;
-  width: 20px;
+  width: 50px;
   height: 100%;
 }
-header.gnb h1.logo figure a svg {
+header.gnb h1.logo figure a img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  object-position: center;
   transition: filter 0.2s;
 }
-header.gnb h1.logo figure a svg:hover {
+header.gnb h1.logo figure a img:hover {
   filter: brightness(1.2);
   animation: jello 1s;
 }
 @media screen and (max-width: 1000px) {
-  header.gnb h1.logo figure a svg {
+  header.gnb h1.logo figure a img {
     transform: scale(0.9);
   }
 }
 header.gnb h1.logo figure figcaption {
   position: absolute;
   width: 215px;
-  top: 25%;
-  left: 40px;
+  top: 30%;
+  left: 50px;
   text-transform: uppercase;
-  transform: translateY(-50%);
 }
 header.gnb h1.logo figure figcaption > a {
   transition: filter 0.2s;

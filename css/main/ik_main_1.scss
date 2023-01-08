@@ -14,73 +14,66 @@ body{
 
 section.ik_main_1 {
   position: relative;
-  top:0;
-  width: 100%;
-  height: 20%;
+  width: 100%; height: 20%;
   overflow: hidden;
+  background-image: url(../../img/visual/bb_visual24.jpg);
+  background-position: center;
+  background-size: cover;
 
-  .ik_background_video {
+  .ik_menu{
     position: absolute;
-    bottom: 0; left: 50%;
-    transform: translateX(-50%);
-    height: 125vh;
-    object-fit: cover;
-    object-position: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    box-sizing: border-box;
+    width: 50%; height: 70%;
+    max-width: 600px; max-height: 600px;
+    box-shadow: 0px 0px 15px #333;
+    perspective: 1000px;
+    cursor: pointer;
+
+    
+    .ik_left, .ik_right{
+      position: relative;
+      transform-style: preserve-3d;
+      width: 50%; max-width: 300px;
+      height: 100%; max-height: 600px;
+      transition: all 1s;
+      z-index: 1;
+      img{
+        position: absolute;
+        width: 100%; height: 100%;
+        object-fit: cover;
+        object-position: center;
+        backface-visibility: hidden;
+      }
+      .ik_back{
+        width: 100%; height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+      }
+    }
+    
+    .ik_left{
+      transform-origin: left center;
+    }
+    .ik_right{
+      transform-origin:  right center;
+    }
+    
+    &.active{
+      .ik_left{
+        transform: rotateY(-180deg);
+      }
+      
+      .ik_right{
+        transform: rotateY(180deg);
+      }
+    }//active
 
   }
-
-  .ik_title_box {
-    position: absolute;
-    width: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: var(--white);
-    
-    h2, p {
-      text-transform: uppercase;
-      text-shadow: 0 0 10px rgba(#333, 0.8);
-      opacity: 0;
-      transition: opacity 0.9s, transform 0.9s;
-    }
-    h2 {
-      font-size: 5em;
-      font-weight: 700;
-      transform: translateY(50%);
-    }
-    p {
-      font-size: 2.5em;
-      font-weight: 600;
-      transform: translateY(-50%);
-    }
-    @media screen and (min-width: 600px) and (max-width: 1000px) {
-      h2 {
-        font-size: 6.4vw;
-      }
-      p {
-        font-size: 3vw;
-      }
-    } //md
-    @media screen and (max-width: 600px) {
-      h2 {
-        font-size: 7.5vw;
-      }
-      p {
-        font-size: 3.7vw;
-      }
-    } //sm
-
-    /* ----------active---------- */
-
-    &.active {
-      h2,
-      p {
-        transform: translateY(0);
-        opacity: 0.9;
-      }
-    }
-  }//title box
 
  
 }
