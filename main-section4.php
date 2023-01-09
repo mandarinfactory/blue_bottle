@@ -21,7 +21,21 @@
     </div><!-- .hj_text_track -->
   </div><!-- ,hj_text_slider -->
   <figure class="hj_mug">
+    <!--  <svg class="svg_filter">
+      <filter id="filter">
+        <feTurbulence id="water" numOctaves="3" seed="1" baseFrequency="0.2 0.01" />
+        <feDisplacementMap scale="10" in="SourceGraphic" />
+        <animate href="#water" attributeName="baseFrequency" keyTimes="0;0.5;1" values="0.002;0.008;0.002" dur="20s" repeatCount="indefinite" />
+      </filter>
+    </svg> -->
     <img class="mug" src="./HJ/img/mug.png" alt="">
+    <div class="mug_inner">
+      <img class="logo" src="./HJ/img/bottle_logo.png" alt="">
+      <figcaption>
+        당신의 카페를 찾아보세요.
+        find your cafe.
+      </figcaption>
+    </div><!-- mug_inner -->
   </figure><!-- hj_mug -->
   <figure class="hj_cafes_photo">
     <img src="" alt="">

@@ -48,12 +48,40 @@ figure.hj_mug {
     width: 600px;
     height: 600px;
     z-index: 1;
+    svg.svg_filter {
+        #filter {
+        } //filter
+    } //svg_filter
     img.mug {
         width: 108%;
         height: 108%;
         object-fit: cover;
         object-position: center;
+        position: relative;
+        filter: url(#filter);
     } //img.mug
+    div.mug_inner {
+        position: absolute;
+        top: 25%;
+        left: 43%;
+        img.logo {
+            width: 120px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            mix-blend-mode: difference;
+        } //img.logo
+        figcaption {
+            width: 200px;
+            position: absolute;
+            top: 75%;
+            left: -25%;
+            color: var(--white);
+            font-size: 1.2em;
+            font-weight: 100;
+            text-transform: uppercase;
+        } //figcaption
+    } //div.mug_inner
 } //figure.hj_mug
 figure.hj_cafes_photo {
     position: absolute;

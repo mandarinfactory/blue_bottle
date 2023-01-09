@@ -54,6 +54,30 @@ figure.hj_mug img.mug {
   height: 108%;
   object-fit: cover;
   object-position: center;
+  position: relative;
+  filter: url(#filter);
+}
+figure.hj_mug div.mug_inner {
+  position: absolute;
+  top: 25%;
+  left: 43%;
+}
+figure.hj_mug div.mug_inner img.logo {
+  width: 120px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: difference;
+}
+figure.hj_mug div.mug_inner figcaption {
+  width: 200px;
+  position: absolute;
+  top: 75%;
+  left: -25%;
+  color: var(--white);
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 figure.hj_cafes_photo {
