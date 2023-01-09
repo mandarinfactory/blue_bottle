@@ -5,15 +5,15 @@
       <img class="ik_front" src="./img/main_section/main_left.jpg">
       <div class="video_container">
         <video class="ik_back" src="http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4">
-        </video>
-      </div>
-    </div><!-- ik_left -->
-    <div class="ik_center">
-      <div class="video_container">
-        <video class="ik_back" src="http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4">
-        </video>
-      </div>
-    </div><!-- ik_center -->
+          </video>
+        </div>
+      </div><!-- ik_left -->
+      <div class="ik_center">
+        <div class="video_container">
+          <video class="ik_back" src="http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4">
+          </video>
+        </div>
+      </div><!-- ik_center -->
     <div class="ik_right">
       <img class="ik_front" src="./img/main_section/main_right.jpg">
       <div class="video_container">

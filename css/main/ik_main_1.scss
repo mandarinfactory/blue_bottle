@@ -27,7 +27,7 @@ section.ik_main_1 {
     transform: translate(-50%, -50%);
     display: flex;
     box-sizing: border-box;
-    width: 50%; height: 70%;
+    width: 50%; height: 50%;
     max-width: 600px; max-height: 600px;
     box-shadow: 0px 0px 15px #333;
     perspective: 1000px;
@@ -61,6 +61,7 @@ section.ik_main_1 {
       width: 50%; max-width: 300px;
       height: 100%; max-height: 600px;
       transition: all 1s;
+      backface-visibility: hidden;
       overflow: hidden;
       
       img {
@@ -69,7 +70,6 @@ section.ik_main_1 {
         height: 100%;
         object-fit: cover;
         object-position: center;
-        backface-visibility: hidden;
       }
       .video_container {
         position: relative;
