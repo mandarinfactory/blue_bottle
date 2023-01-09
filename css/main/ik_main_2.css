@@ -5,6 +5,18 @@
   height: 55%;
   background: var(--white);
 }
+.ik_middle .ik_onePath {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+}
+.ik_middle .ik_onePath path {
+  fill: none;
+  stroke: #333;
+  stroke-width: 3px;
+}
 .ik_middle .ik_main_2 {
   box-sizing: border-box;
   width: 100%;
@@ -38,11 +50,15 @@
   object-fit: cover;
   object-position: center;
   transform: scale(1.5);
+  transition: all 1s;
+}
+.ik_middle .ik_main_2 figure.ik_mug img.active {
+  transform: scale(1.5) rotate(-45deg);
 }
 .ik_middle .ik_main_2 .ik_motion_box {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -52,13 +68,17 @@
 }
 .ik_middle .ik_main_2 .ik_motion_box img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
   object-position: center;
   transition: top 0.5s linear, left 1s, opacity 1s;
+}
+@media screen and (min-width: 800px) {
+  .ik_middle .ik_main_2 .ik_motion_box img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 .ik_middle .ik_main_2 .ik_motion_box img.ik_motion_img1 {
   z-index: 1;
