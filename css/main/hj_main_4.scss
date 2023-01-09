@@ -7,6 +7,9 @@
     background-color: var(--white);
     display: flex;
     align-items: center;
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+        height: 19%;
+    } //sm
 } //hj_main_4
 .hj_text_slider {
     width: 500%;
@@ -48,6 +51,18 @@ figure.hj_mug {
     width: 600px;
     height: 600px;
     z-index: 1;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        top: 43.5%;
+        left: 48.5%;
+        width: 450px;
+        height: 450px;
+    } //lg
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+        top: 43.7%;
+        left: 48.7%;
+        width: 350px;
+        height: 350px;
+    } //sm
     svg.svg_filter {
         #filter {
         } //filter
@@ -64,6 +79,14 @@ figure.hj_mug {
         position: absolute;
         top: 25%;
         left: 43%;
+        @media screen and (min-width: 700px) and (max-width: 900px) {
+            top: 20%;
+            left: 40%;
+        } //lg
+        @media screen and (min-width: 500px) and (max-width: 700px) {
+            top: 12%;
+            left: 36%;
+        } //sm
         img.logo {
             width: 120px;
             height: 300px;
@@ -80,6 +103,12 @@ figure.hj_mug {
             font-size: 1.2em;
             font-weight: 100;
             text-transform: uppercase;
+            @media screen and (min-width: 700px) and (max-width: 900px) {
+                display: none;
+            } //lg
+            @media screen and (min-width: 500px) and (max-width: 700px) {
+                display: none;
+            } //sm
         } //figcaption
     } //div.mug_inner
 } //figure.hj_mug
@@ -95,6 +124,14 @@ figure.hj_cafes_photo {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 3;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        width: 455px;
+        height: 455px;
+    } //lg
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+        width: 355px;
+        height: 355px;
+    } //sm
     img {
         width: 100%;
         height: 100%;
@@ -109,6 +146,12 @@ figure.hj_coffeestain {
     top: 7%;
     left: 20%;
     opacity: 0.5;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        top: 15%;
+    } //lg
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+        top: 25%;
+    } //sm
     img {
         width: 85%;
         height: 85%;

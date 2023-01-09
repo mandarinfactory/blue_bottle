@@ -6,6 +6,11 @@
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .hj_main_4 {
+    height: 19%;
+  }
+}
 
 .hj_text_slider {
   width: 500%;
@@ -49,6 +54,22 @@ figure.hj_mug {
   height: 600px;
   z-index: 1;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_mug {
+    top: 43.5%;
+    left: 48.5%;
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  figure.hj_mug {
+    top: 43.7%;
+    left: 48.7%;
+    width: 350px;
+    height: 350px;
+  }
+}
 figure.hj_mug img.mug {
   width: 108%;
   height: 108%;
@@ -61,6 +82,18 @@ figure.hj_mug div.mug_inner {
   position: absolute;
   top: 25%;
   left: 43%;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_mug div.mug_inner {
+    top: 20%;
+    left: 40%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  figure.hj_mug div.mug_inner {
+    top: 12%;
+    left: 36%;
+  }
 }
 figure.hj_mug div.mug_inner img.logo {
   width: 120px;
@@ -79,6 +112,16 @@ figure.hj_mug div.mug_inner figcaption {
   font-weight: 100;
   text-transform: uppercase;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_mug div.mug_inner figcaption {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  figure.hj_mug div.mug_inner figcaption {
+    display: none;
+  }
+}
 
 figure.hj_cafes_photo {
   position: absolute;
@@ -92,6 +135,18 @@ figure.hj_cafes_photo {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 3;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_cafes_photo {
+    width: 455px;
+    height: 455px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  figure.hj_cafes_photo {
+    width: 355px;
+    height: 355px;
+  }
 }
 figure.hj_cafes_photo img {
   width: 100%;
@@ -107,6 +162,16 @@ figure.hj_coffeestain {
   top: 7%;
   left: 20%;
   opacity: 0.5;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_coffeestain {
+    top: 15%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  figure.hj_coffeestain {
+    top: 25%;
+  }
 }
 figure.hj_coffeestain img {
   width: 85%;
