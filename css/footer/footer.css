@@ -2,6 +2,11 @@ footer {
   margin-top: 50px;
   position: relative;
 }
+@media screen and (max-width: 600px) {
+  footer {
+    margin-top: 0;
+  }
+}
 
 .hj_footer_section {
   position: relative;
@@ -76,7 +81,7 @@ footer {
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .hj_footer_section figure.middle_wave svg {
-    top: -24%;
+    top: -23%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -119,7 +124,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
   .hj_footer_section figure.low_wave svg {
-    top: -7%;
+    top: -5%;
   }
 }
 .hj_footer_section figure.low_wave svg path.st2 {

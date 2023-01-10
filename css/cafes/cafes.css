@@ -14,6 +14,11 @@ body {
 main {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 600px) {
+  main {
+    margin-bottom: 0;
+  }
+}
 
 .hj_cafes_high_section {
   width: 100%;
@@ -55,6 +60,16 @@ main {
   height: 100%;
   box-sizing: border-box;
 }
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .hj_photo {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .hj_photo {
+    width: 20%;
+  }
+}
 .hj_photo span {
   position: absolute;
   top: 45%;
@@ -93,6 +108,7 @@ main {
   height: 100%;
   margin: 0;
   z-index: 0;
+  background-color: var(--black);
 }
 .hj_photo figure img {
   width: 100%;
@@ -100,6 +116,11 @@ main {
   object-fit: cover;
   object-position: center;
   filter: brightness(60%) blur(1px);
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .hj_photo figure img {
+    opacity: 0;
+  }
 }
 .hj_photo figure figcaption {
   position: absolute;
@@ -144,6 +165,18 @@ main {
   cursor: pointer;
   z-index: 1;
 }
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .hj_photo p button {
+    font-size: 1em;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .hj_photo p button {
+    font-size: 0.5em;
+    margin-right: 20px;
+  }
+}
 .hj_photo p button:hover {
   color: var(--sub-color1);
 }
@@ -159,6 +192,16 @@ main {
   background: var(--blue);
   transition: all 0.05s;
 }
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .hj_photo p button::after {
+    left: -30%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .hj_photo p button::after {
+    background-color: transparent;
+  }
+}
 .hj_photo p button.active {
   color: var(--blue);
   text-shadow: 1px 1px 3px var(--black);
@@ -169,6 +212,16 @@ main {
 
 #map {
   margin: 0 auto;
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  #map {
+    width: 65% !important;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  #map {
+    width: 80% !important;
+  }
 }
 
 div.hj_inner {
@@ -183,6 +236,18 @@ div.hj_inner {
   text-align: center;
   box-shadow: 2px 2px 0 black;
 }
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  div.hj_inner {
+    width: 180px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  div.hj_inner {
+    width: 140px;
+    height: 80px;
+  }
+}
 div.hj_inner h3 {
   font-size: 1em;
   font-weight: 600;
@@ -190,8 +255,28 @@ div.hj_inner h3 {
   text-shadow: 3px 3px 5px rgba(0, 169, 224, 0.4);
   margin-bottom: 0;
 }
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  div.hj_inner h3 {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  div.hj_inner h3 {
+    font-size: 0.5em;
+  }
+}
 div.hj_inner p {
   font-size: 0.8em;
   color: var(--black);
   font-weight: 500;
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  div.hj_inner p {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  div.hj_inner p {
+    font-size: 0.4em;
+  }
 }/*# sourceMappingURL=cafes.css.map */

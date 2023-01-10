@@ -3,6 +3,9 @@
 footer {
   margin-top: 50px;
   position: relative;
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
 }
 .hj_footer_section {
   position: relative;
@@ -61,7 +64,7 @@ footer {
         top: -27%;
       } //sm
       @media screen and (min-width: 600px) and(max-width:800px) {
-        top: -24%;
+        top: -23%;
       } //sm
       @media screen and (max-width: 600px) {
         top: -13%;
@@ -94,7 +97,7 @@ footer {
         top: -10%;
       } //sm
       @media screen and (max-width: 600px) {
-        top: -7%;
+        top: -5%;
       }
       path.st2 {
         fill: var(--black);
