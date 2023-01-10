@@ -72,73 +72,46 @@ window.onload = () => {
 /* NAVER LOGO 지우기! ---------------------------------------------------- */
 
 function panTo1() {
-    // 이동할 위도 경도 위치를 생성합니다
+    // 이동할 위도 경도 위치를 생성
     let moveLatLon1 = yeoido;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+    // 지도 중심을 부드럽게 이동
+    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동
     map.panTo(moveLatLon1);
 } //function_panTo1
 function panTo2() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon2 = myungdong;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon2);
 } //function_panTo2
 function panTo3() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon3 = gwangha;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon3);
 } //function_panTo3
 function panTo4() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon4 = samchung;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon4);
 } //function_panTo4
 function panTo5() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon5 = samchungHanok;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon5);
 } //function_panTo5
 function panTo6() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon6 = hannam;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon6);
 } //function_panTo6
 function panTo7() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon7 = sungsu;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon7);
 } //function_panTo7
 function panTo8() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon8 = yeoksam;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon8);
 } //function_panTo8
 function panTo9() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon9 = apgujeong;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon9);
 } //function_panTo9
 function panTo10() {
-    // 이동할 위도 경도 위치를 생성합니다
     let moveLatLon10 = jeju;
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
     map.panTo(moveLatLon10);
 } //function_panTo10
 /* button을 click하면 해당 marker로 움직이게끔 하게 해줌 ---------------------------------- */
