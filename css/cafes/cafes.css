@@ -176,7 +176,7 @@ div.hj_inner {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 240px;
   height: 120px;
   font-size: 1.2em;
   font-weight: 600;
@@ -191,7 +191,7 @@ div.hj_inner h3 {
   margin-bottom: 0;
 }
 div.hj_inner p {
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: var(--black);
   font-weight: 500;
 }/*# sourceMappingURL=cafes.css.map */
