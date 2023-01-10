@@ -7,7 +7,7 @@
     background-color: var(--white);
     display: flex;
     align-items: center;
-    @media screen and (min-width: 500px) and (max-width: 700px) {
+    @media screen and (min-width: 300px) and (max-width: 700px) {
         height: 19%;
     } //sm
 } //hj_main_4
@@ -57,7 +57,7 @@ figure.hj_mug {
         width: 450px;
         height: 450px;
     } //lg
-    @media screen and (min-width: 500px) and (max-width: 700px) {
+    @media screen and (min-width: 300px) and (max-width: 700px) {
         top: 43.7%;
         left: 48.7%;
         width: 350px;
@@ -83,7 +83,7 @@ figure.hj_mug {
             top: 20%;
             left: 40%;
         } //lg
-        @media screen and (min-width: 500px) and (max-width: 700px) {
+        @media screen and (min-width: 300px) and (max-width: 700px) {
             top: 12%;
             left: 36%;
         } //sm
@@ -106,7 +106,7 @@ figure.hj_mug {
             @media screen and (min-width: 700px) and (max-width: 900px) {
                 display: none;
             } //lg
-            @media screen and (min-width: 500px) and (max-width: 700px) {
+            @media screen and (min-width: 300px) and (max-width: 700px) {
                 display: none;
             } //sm
         } //figcaption
@@ -128,7 +128,7 @@ figure.hj_cafes_photo {
         width: 455px;
         height: 455px;
     } //lg
-    @media screen and (min-width: 500px) and (max-width: 700px) {
+    @media screen and (min-width: 300px) and (max-width: 700px) {
         width: 355px;
         height: 355px;
     } //sm
@@ -149,7 +149,7 @@ figure.hj_coffeestain {
     @media screen and (min-width: 700px) and (max-width: 900px) {
         top: 15%;
     } //lg
-    @media screen and (min-width: 500px) and (max-width: 700px) {
+    @media screen and (min-width: 300px) and (max-width: 700px) {
         top: 25%;
     } //sm
     img {
