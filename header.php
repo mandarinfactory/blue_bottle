@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="./css/coffee/coffee-1.css">
   <link rel="stylesheet" href="./css/coffee/coffee-2.css">
   <link rel="stylesheet" href="./css/coffee/coffee-3.css">
+  <link rel="stylesheet" href="./css/coffee/coffee-page1.css">
 
   <!-- Js script src -->
   <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>

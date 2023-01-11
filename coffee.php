@@ -15,7 +15,7 @@
            <p>DARK ROAST</p>
            <h3>Winter Espresso</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid01.jpg" alt="">
              </a>
            </figure>
@@ -25,7 +25,7 @@
            <p>DARK ROAST</p>
            <h3>Hayes Valley</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid02.jpg" alt="">
              </a>
            </figure>
@@ -34,7 +34,7 @@
            <p>LIGHT ROAST</p>
            <h3>17ft Ceiling</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid03.jpg" alt="">
              </a>
            </figure>
@@ -98,7 +98,7 @@
            <p>DARK ROAST</p>
            <h3>Winter Single Origin</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid07.jpg" alt="">
              </a>
            </figure>
@@ -107,7 +107,7 @@
            <p>LIGHT ROAST</p>
            <h3>Taiwan Songyue</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid08.jpg" alt="">
              </a>
            </figure>
@@ -129,7 +129,7 @@
            <p>MEADIUM ROAST</p>
            <h3>Winter Cold Brew</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid06.jpg" alt="">
              </a>
            </figure>
@@ -183,7 +183,7 @@
            <p>DARK ROAST</p>
            <h3>Winter Blends</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid11.jpg" alt="">
              </a>
            </figure>
@@ -192,7 +192,7 @@
            <p>LIGHT ROAST</p>
            <h3>Giant Steps</h3>
            <figure>
-             <a href="#">
+             <a href="./coffee-page.php">
                <img src="./img/grid/bb_grid12.jpg" alt="">
              </a>
            </figure>

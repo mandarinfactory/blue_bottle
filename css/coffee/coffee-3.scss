@@ -10,18 +10,17 @@ section.product {
       @media screen and (max-width:1200px){
         width: 100%;
       }
-      h3 {
-        position: absolute;
+      h3 {                   
+        position: absolute;        
         font-size: 2.5vw;
-        top: 20%;
+        top: 20%;    
         left: 15%;
         font-weight: 700;
         color: #fff;
         z-index: 1;
         @media screen and (max-width:1200px){
           font-size: 5vw;
-          top: 20%; 
-          width: 100%;
+          top: 20%;           
         }
       
       } //h3
