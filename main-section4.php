@@ -22,8 +22,9 @@
       </div><!-- content -->
     </div><!-- .hj_text_track -->
   </div><!-- ,hj_text_slider -->
-  <figure class="hj_no_mug">
-    <!-- <img class=no_mug src="./HJ/img/coffee_nomug.png" alt=""> -->
+  <figure class="hj_mug">
+    <div class="hj_ripples">
+    </div>
     <div class="mug_inner">
       <img class="logo" src="./HJ/img/bottle_logo.png" alt="">
       <figcaption>
@@ -31,8 +32,6 @@
         find your cafe.
       </figcaption>
     </div><!-- mug_inner -->
-  </figure><!-- hj_no_mug -->
-  <figure class="hj_mug">
     <img class="mug" src="./HJ/img/mug.png" alt="">
   </figure><!-- hj_mug -->
   <figure class="hj_cafes_photo">

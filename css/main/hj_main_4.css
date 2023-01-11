@@ -47,56 +47,37 @@
 
 figure.hj_no_mug {
   position: absolute;
-  top: 19.9%;
-  left: 35.2%;
-  width: 30%;
-  height: 50%;
+  top: 25%;
+  left: 40.5%;
+  width: 18.5%;
+  height: 40.5%;
   z-index: 4;
   background: url("../../HJ/img/coffee_nomug.png") no-repeat center;
   background-size: contain;
 }
-figure.hj_no_mug div.mug_inner {
-  position: absolute;
-  top: 23%;
-  left: 40%;
-}
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  figure.hj_no_mug div.mug_inner {
-    top: 20%;
-    left: 40%;
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  figure.hj_no_mug {
+    width: 20%;
+    height: 42%;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
-  figure.hj_no_mug div.mug_inner {
-    top: 12%;
-    left: 36%;
-  }
-}
-figure.hj_no_mug div.mug_inner img.logo {
-  width: 120px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  mix-blend-mode: difference;
-}
-figure.hj_no_mug div.mug_inner figcaption {
-  width: 200px;
-  position: absolute;
-  top: 75%;
-  left: -25%;
-  color: var(--white);
-  font-size: 1.2em;
-  font-weight: 100;
-  text-transform: uppercase;
-  mix-blend-mode: difference;
-}
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  figure.hj_no_mug div.mug_inner figcaption {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  figure.hj_no_mug {
     display: none;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
-  figure.hj_no_mug div.mug_inner figcaption {
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  figure.hj_no_mug {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  figure.hj_no_mug {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  figure.hj_no_mug {
     display: none;
   }
 }
@@ -108,7 +89,63 @@ figure.hj_mug {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
+  z-index: 2;
+}
+figure.hj_mug div.hj_ripples {
+  position: absolute;
+  top: 53%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: url("../../HJ/img/ripple.png") no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+figure.hj_mug div.mug_inner {
+  position: absolute;
+  top: 20%;
+  left: 43%;
   z-index: 1;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_mug div.mug_inner {
+    top: 20%;
+    left: 40%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  figure.hj_mug div.mug_inner {
+    display: none;
+  }
+}
+figure.hj_mug div.mug_inner img.logo {
+  width: 120px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: difference;
+}
+figure.hj_mug div.mug_inner figcaption {
+  width: 200px;
+  position: absolute;
+  top: 75%;
+  left: -25%;
+  color: var(--white);
+  font-size: 1.2em;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_mug div.mug_inner figcaption {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  figure.hj_mug div.mug_inner figcaption {
+    display: none;
+  }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   figure.hj_mug {
@@ -145,6 +182,7 @@ figure.hj_cafes_photo {
   box-shadow: 7px 7px 10px var(--black);
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  z-index: 1;
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   figure.hj_cafes_photo {
@@ -186,14 +224,14 @@ figure.hj_coffeestain {
 figure.hj_coffeestain img {
   width: 85%;
   height: 85%;
-  transform: rotate(60deg);
+  transform: rotate(70deg);
   object-fit: contain;
   object-position: center;
 }
 
 .hj_cafes_area {
   position: absolute;
-  top: 77%;
+  top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;

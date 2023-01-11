@@ -45,28 +45,64 @@
 } //.hj_text_slider
 figure.hj_no_mug {
     position: absolute;
-    top: 19.9%;
-    left: 35.2%;
-    width: 30%;
-    height: 50%;
+    top: 25%;
+    left: 40.5%;
+    width: 18.5%;
+    height: 40.5%;
     z-index: 4;
     background: url("../../HJ/img/coffee_nomug.png") no-repeat center;
     background-size: contain;
+    @media screen and (min-width: 1400px) and (max-width: 1600px) {
+        width: 20%;
+        height: 42%;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+        display: none;
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1200px) {
+        display: none;
+    }
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
+        display: none;
+    }
+    @media screen and (min-width: 600px) and (max-width: 800px) {
+        display: none;
+    }
+} //hj_no_mug
+figure.hj_mug {
+    position: absolute;
+    top: 43%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+    div.hj_ripples {
+        position: absolute;
+        top: 53%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 60%;
+        background: url("../../HJ/img/ripple.png") no-repeat center;
+        background-size: cover;
+        z-index: 5;
+    }
     div.mug_inner {
         position: absolute;
-        top: 23%;
-        left: 40%;
+        top: 20%;
+        left: 43%;
+        z-index: 1;
         @media screen and (min-width: 700px) and (max-width: 900px) {
             top: 20%;
             left: 40%;
         } //lg
         @media screen and (min-width: 300px) and (max-width: 700px) {
-            top: 12%;
-            left: 36%;
+            display: none;
         } //sm
         img.logo {
             width: 120px;
-            height: 300px;
+            height: 350px;
             object-fit: cover;
             object-position: center;
             mix-blend-mode: difference;
@@ -79,8 +115,8 @@ figure.hj_no_mug {
             color: var(--white);
             font-size: 1.2em;
             font-weight: 100;
+            text-align: center;
             text-transform: uppercase;
-            mix-blend-mode: difference;
             @media screen and (min-width: 700px) and (max-width: 900px) {
                 display: none;
             } //lg
@@ -89,15 +125,6 @@ figure.hj_no_mug {
             } //sm
         } //figcaption
     } //div.mug_inner
-} //hj_no_mug
-figure.hj_mug {
-    position: absolute;
-    top: 43%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    z-index: 1;
     @media screen and (min-width: 700px) and (max-width: 900px) {
         top: 43.5%;
         left: 48.5%;
@@ -129,6 +156,7 @@ figure.hj_cafes_photo {
     box-shadow: 7px 7px 10px var(--black);
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    z-index: 1;
     @media screen and (min-width: 700px) and (max-width: 900px) {
         width: 455px;
         height: 455px;
@@ -160,14 +188,14 @@ figure.hj_coffeestain {
     img {
         width: 85%;
         height: 85%;
-        transform: rotate(60deg);
+        transform: rotate(70deg);
         object-fit: contain;
         object-position: center;
     } //img
 } //hj_coffeestain
 .hj_cafes_area {
     position: absolute;
-    top: 77%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
