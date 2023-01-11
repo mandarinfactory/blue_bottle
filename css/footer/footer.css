@@ -44,7 +44,7 @@ footer {
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .hj_footer_section figure.high_wave svg {
-    top: -26%;
+    top: -20%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -81,7 +81,7 @@ footer {
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .hj_footer_section figure.middle_wave svg {
-    top: -23%;
+    top: -21%;
   }
 }
 @media screen and (max-width: 600px) {
