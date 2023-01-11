@@ -43,42 +43,19 @@
         } //div.content
     } //.hj_text_track
 } //.hj_text_slider
-figure.hj_mug {
+figure.hj_no_mug {
     position: absolute;
-    top: 43%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    z-index: 1;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
-        top: 43.5%;
-        left: 48.5%;
-        width: 450px;
-        height: 450px;
-    } //lg
-    @media screen and (min-width: 300px) and (max-width: 700px) {
-        top: 43.7%;
-        left: 48.7%;
-        width: 350px;
-        height: 350px;
-    } //sm
-    svg.svg_filter {
-        #filter {
-        } //filter
-    } //svg_filter
-    img.mug {
-        width: 108%;
-        height: 108%;
-        object-fit: cover;
-        object-position: center;
-        position: relative;
-        filter: url(#filter);
-    } //img.mug
+    top: 19.9%;
+    left: 35.2%;
+    width: 30%;
+    height: 50%;
+    z-index: 4;
+    background: url("../../HJ/img/coffee_nomug.png") no-repeat center;
+    background-size: contain;
     div.mug_inner {
         position: absolute;
-        top: 25%;
-        left: 43%;
+        top: 23%;
+        left: 40%;
         @media screen and (min-width: 700px) and (max-width: 900px) {
             top: 20%;
             left: 40%;
@@ -103,6 +80,7 @@ figure.hj_mug {
             font-size: 1.2em;
             font-weight: 100;
             text-transform: uppercase;
+            mix-blend-mode: difference;
             @media screen and (min-width: 700px) and (max-width: 900px) {
                 display: none;
             } //lg
@@ -111,19 +89,46 @@ figure.hj_mug {
             } //sm
         } //figcaption
     } //div.mug_inner
+} //hj_no_mug
+figure.hj_mug {
+    position: absolute;
+    top: 43%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        top: 43.5%;
+        left: 48.5%;
+        width: 450px;
+        height: 450px;
+    } //lg
+    @media screen and (min-width: 300px) and (max-width: 700px) {
+        top: 43.7%;
+        left: 48.7%;
+        width: 350px;
+        height: 350px;
+    } //sm
+    img.mug {
+        width: 108%;
+        height: 108%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+    } //img.mug
 } //figure.hj_mug
 figure.hj_cafes_photo {
     position: absolute;
-    top: 44.5%;
-    left: 50%;
+    top: 45%;
+    left: 50.1%;
     display: block;
-    width: 605px;
-    height: 605px;
+    width: 645px;
+    height: 645px;
     background-color: transparent;
     box-shadow: 7px 7px 10px var(--black);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 3;
     @media screen and (min-width: 700px) and (max-width: 900px) {
         width: 455px;
         height: 455px;

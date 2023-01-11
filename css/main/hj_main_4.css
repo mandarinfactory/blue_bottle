@@ -45,6 +45,62 @@
   font-family: "Sacramento", cursive;
 }
 
+figure.hj_no_mug {
+  position: absolute;
+  top: 19.9%;
+  left: 35.2%;
+  width: 30%;
+  height: 50%;
+  z-index: 4;
+  background: url("../../HJ/img/coffee_nomug.png") no-repeat center;
+  background-size: contain;
+}
+figure.hj_no_mug div.mug_inner {
+  position: absolute;
+  top: 23%;
+  left: 40%;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_no_mug div.mug_inner {
+    top: 20%;
+    left: 40%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  figure.hj_no_mug div.mug_inner {
+    top: 12%;
+    left: 36%;
+  }
+}
+figure.hj_no_mug div.mug_inner img.logo {
+  width: 120px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: difference;
+}
+figure.hj_no_mug div.mug_inner figcaption {
+  width: 200px;
+  position: absolute;
+  top: 75%;
+  left: -25%;
+  color: var(--white);
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  figure.hj_no_mug div.mug_inner figcaption {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  figure.hj_no_mug div.mug_inner figcaption {
+    display: none;
+  }
+}
+
 figure.hj_mug {
   position: absolute;
   top: 43%;
@@ -76,65 +132,19 @@ figure.hj_mug img.mug {
   object-fit: cover;
   object-position: center;
   position: relative;
-  filter: url(#filter);
-}
-figure.hj_mug div.mug_inner {
-  position: absolute;
-  top: 25%;
-  left: 43%;
-}
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  figure.hj_mug div.mug_inner {
-    top: 20%;
-    left: 40%;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 700px) {
-  figure.hj_mug div.mug_inner {
-    top: 12%;
-    left: 36%;
-  }
-}
-figure.hj_mug div.mug_inner img.logo {
-  width: 120px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  mix-blend-mode: difference;
-}
-figure.hj_mug div.mug_inner figcaption {
-  width: 200px;
-  position: absolute;
-  top: 75%;
-  left: -25%;
-  color: var(--white);
-  font-size: 1.2em;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  figure.hj_mug div.mug_inner figcaption {
-    display: none;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 700px) {
-  figure.hj_mug div.mug_inner figcaption {
-    display: none;
-  }
 }
 
 figure.hj_cafes_photo {
   position: absolute;
-  top: 44.5%;
-  left: 50%;
+  top: 45%;
+  left: 50.1%;
   display: block;
-  width: 605px;
-  height: 605px;
+  width: 645px;
+  height: 645px;
   background-color: transparent;
   box-shadow: 7px 7px 10px var(--black);
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  z-index: 3;
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   figure.hj_cafes_photo {
