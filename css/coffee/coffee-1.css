@@ -1,0 +1,274 @@
+nav.jey_intro {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+nav.jey_intro h3,
+nav.jey_intro p {
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+nav.jey_intro p {
+  font-size: 1.1em;
+}
+nav.jey_intro h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+section.product {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  section.product {
+    width: 100%;
+  }
+}
+section.product .jey_prd1 {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 {
+    flex-direction: column-reverse;
+  }
+}
+section.product .jey_prd1 .jey_left {
+  width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_left {
+    width: 100%;
+  }
+}
+section.product .jey_prd1 .jey_left ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+section.product .jey_prd1 .jey_left ul li {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+section.product .jey_prd1 .jey_left ul li h3,
+section.product .jey_prd1 .jey_left ul li p {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+section.product .jey_prd1 .jey_left ul li h3 {
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.3em;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_left ul li h3 {
+    font-size: 3vw;
+  }
+}
+section.product .jey_prd1 .jey_left ul li p {
+  color: var(--blue);
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_left ul li p {
+    font-size: 2vw;
+  }
+}
+section.product .jey_prd1 .jey_left ul li figure {
+  width: 100%;
+  overflow: hidden;
+}
+section.product .jey_prd1 .jey_left ul li figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.3);
+}
+section.product .jey_prd1 .jey_left ul .jey_li1 img,
+section.product .jey_prd1 .jey_left ul .jey_li2 img,
+section.product .jey_prd1 .jey_left ul .jey_li3 img {
+  transition: all 0.8s;
+  filter: grayscale(100%) brightness(0.9);
+}
+section.product .jey_prd1 .jey_left ul .jey_li1 h3,
+section.product .jey_prd1 .jey_left ul .jey_li2 h3,
+section.product .jey_prd1 .jey_left ul .jey_li3 h3 {
+  transition: all 0.8s;
+}
+section.product .jey_prd1 .jey_left ul .jey_li1 p,
+section.product .jey_prd1 .jey_left ul .jey_li2 p,
+section.product .jey_prd1 .jey_left ul .jey_li3 p {
+  transition: all 0.8s;
+  opacity: 0;
+  color: #fff;
+  top: 45%;
+}
+section.product .jey_prd1 .jey_left ul .jey_li1:hover h3,
+section.product .jey_prd1 .jey_left ul .jey_li2:hover h3,
+section.product .jey_prd1 .jey_left ul .jey_li3:hover h3 {
+  color: var(--blue);
+  transform: translate(-50%);
+  font-weight: 600;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_left ul .jey_li1:hover h3,
+section.product .jey_prd1 .jey_left ul .jey_li2:hover h3,
+section.product .jey_prd1 .jey_left ul .jey_li3:hover h3 {
+    font-size: 4vw;
+  }
+}
+section.product .jey_prd1 .jey_left ul .jey_li1:hover p,
+section.product .jey_prd1 .jey_left ul .jey_li2:hover p,
+section.product .jey_prd1 .jey_left ul .jey_li3:hover p {
+  opacity: 1;
+}
+section.product .jey_prd1 .jey_left ul .jey_li1:hover figure img,
+section.product .jey_prd1 .jey_left ul .jey_li2:hover figure img,
+section.product .jey_prd1 .jey_left ul .jey_li3:hover figure img {
+  filter: grayscale(0) brightness(1);
+  transform: scale(1.8);
+}
+section.product .jey_prd1 .jey_left ul .jey_li4 p {
+  color: var(--blue);
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  font-size: 1.2em;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_left ul .jey_li4 p {
+    font-size: 1.5vw;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
+section.product .jey_prd1 .jey_right {
+  flex: 1;
+  position: relative;
+}
+section.product .jey_prd1 .jey_right h2,
+section.product .jey_prd1 .jey_right p {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+}
+section.product .jey_prd1 .jey_right h2 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  top: 15%;
+  left: 10%;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_right h2 {
+    font-size: 5vw;
+    top: 20%;
+  }
+}
+section.product .jey_prd1 .jey_right p {
+  font-size: 1.2em;
+  max-width: 60%;
+  top: 30%;
+  left: 10%;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_right p {
+    font-size: 3vw;
+    top: 40%;
+    max-width: 50%;
+  }
+}
+section.product .jey_prd1 .jey_right figure {
+  width: 100%;
+  position: relative;
+}
+section.product .jey_prd1 .jey_right figure img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_right figure img.jey_icon1 {
+    display: none;
+  }
+}
+section.product .jey_prd1 .jey_right figure img.jey_icon2 {
+  position: absolute;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_right figure img.jey_icon2 {
+    display: none;
+  }
+}
+section.product .jey_prd1 .jey_right figure img.jey_icon3 {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  section.product .jey_prd1 .jey_right figure img.jey_icon3 {
+    display: block;
+  }
+}
+
+/* animation----------------------------------------- */
+@keyframes icon {
+  0% {
+    transform: rotateX(25deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotateX(25deg);
+  }
+}
+.jey_prd1 .jey_li4 figure {
+  position: relative;
+}
+.jey_prd1 .jey_li4 .wave {
+  opacity: 0.9;
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  background: rgb(99, 58, 42);
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-bottom: -301px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  transition-duration: 0.9s;
+  transition-property: margin-bottom;
+  transition-timing-function: linear;
+}
+.jey_prd1 .jey_li4:hover .wave, .jey_prd1 .jey_li4.active .wave {
+  margin-bottom: -250px;
+  animation: rotate 3000ms infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=coffee-1.css.map */
