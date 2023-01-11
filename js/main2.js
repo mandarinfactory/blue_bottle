@@ -6,7 +6,7 @@ let fnKettle = () =>{
   var kettle = document.querySelector('.ik_mug img')
     var kettleTop = $('.ik_mug').offset().top
     
-    if(scrY >= kettleTop - winH * 0.8){
+    if(scrY >= kettleTop - winH * 0.7){
       kettle.classList.add('active')
     }else{
       kettle.classList.remove('active')
@@ -38,12 +38,12 @@ const fnCalcDashoffset = (scrollY, el, length) => {
 }// 최초의 length값 -> 0으로 가도록 계산하고 strokeDashOffset에 대입해준다
 
 const fnSvgScroll = ()=>{
-  let scrollY = window.scrollY + (window.innerHeight *0.8)
+  let scrollY = window.scrollY + (window.innerHeight*0.6)
   path.style.strokeDashoffset = fnCalcDashoffset(scrollY, middle, pathLength)
 }
 
 path.style.strokeDasharray = pathLength // path가 나타난 경우
-path.style.strokeDashoffset = fnCalcDashoffset(window.innerHeight *0.8,middle,pathLength) // path가 사라진경우
+path.style.strokeDashoffset = fnCalcDashoffset(window.innerHeight*0.6,middle,pathLength) // path가 사라진경우
 
 window.addEventListener('scroll',fnSvgScroll)
 

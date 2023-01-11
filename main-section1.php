@@ -22,7 +22,9 @@
       </div>
     </div><!-- ik_right -->
   </div>
-
+  <figure class="ik_mug">
+    <img src="./img/object/kettle.png" alt="">
+  </figure>
 </section><!-- ik_main1 -->
 
 <script>

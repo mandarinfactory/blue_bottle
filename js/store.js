@@ -42,3 +42,30 @@ window.main3Arr=[
     img : "./img/main_section/bb_grid14.jpg",
   },
 ]
+
+window.middleBeanArr = [
+  {
+    src : './img/object/bean01.png',
+  },
+  {
+    src : './img/object/bean02.png',
+  },
+  {
+    src : './img/object/bean01.png',
+  },
+  {
+    src : './img/object/bean02.png',
+  },
+  {
+    src : './img/object/bean01.png',
+  },
+  {
+    src : './img/object/bean02.png',
+  },
+  {
+    src : './img/object/bean01.png',
+  },
+  {
+    src : './img/object/bean02.png',
+  },
+]
