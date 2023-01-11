@@ -25,8 +25,15 @@
           </div>
         </li>
         <li class="jey_li2">
+          <div class="j_textbox">
+            <span>FLAVOL PROFILE</span>
+            <p>Dark Chocolate</p>
+            <p>Scotch</p>
+            <p>Raspberry</p>
+          </div>
           <figure>
             <img src="https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_1920,q_auto/Coffee/Robust/Robusta-Tasting-Notes-Desktop.gif" alt="">
+          
           </figure>
         </li>
         <li class="jey_li3">

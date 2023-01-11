@@ -51,6 +51,31 @@ section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li1 .jey_textbox {
 }
 section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li2 {
   width: 35%;
+  position: relative;
+}
+section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li2 div.j_textbox {
+  width: 100%;
+  position: absolute;
+}
+section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li2 div.j_textbox span {
+  display: block;
+  position: absolute;
+  background: var(--black);
+  width: 100%;
+  height: 50px;
+  color: #FFF;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li2 div.j_textbox p {
+  font-size: 3em;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 150px;
+  mix-blend-mode: difference;
 }
 section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li2 figure img {
   width: 100%;
