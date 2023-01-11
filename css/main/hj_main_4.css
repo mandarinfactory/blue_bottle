@@ -93,10 +93,10 @@ figure.hj_mug div.mug_inner figcaption {
   width: 200px;
   position: absolute;
   top: 75%;
-  left: -25%;
+  left: -29%;
   color: var(--white);
-  font-size: 1.2em;
-  font-weight: 100;
+  font-size: 0.9em;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }

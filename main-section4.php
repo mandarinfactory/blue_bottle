@@ -28,7 +28,7 @@
     <div class="mug_inner">
       <img class="logo" src="./HJ/img/bottle_logo.png" alt="">
       <figcaption>
-        당신의 카페를 찾아보세요.
+        당신의 카페를 찾아보세요. <br>
         find your cafe.
       </figcaption>
     </div><!-- mug_inner -->
