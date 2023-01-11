@@ -48,22 +48,22 @@ window.middleBeanArr = [
     src : './img/object/bean01.png',
   },
   {
-    src : './img/object/bean02.png',
-  },
-  {
-    src : './img/object/bean01.png',
+    src : './img/object/bean03.png',
   },
   {
     src : './img/object/bean02.png',
   },
   {
-    src : './img/object/bean01.png',
+    src : './img/object/bean04.png',
   },
   {
-    src : './img/object/bean02.png',
+    src : './img/object/bean05.png',
   },
   {
-    src : './img/object/bean01.png',
+    src : './img/object/bean06.png',
+  },
+  {
+    src : './img/object/bean07.png',
   },
   {
     src : './img/object/bean02.png',
