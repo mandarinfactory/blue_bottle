@@ -3,12 +3,12 @@
 .hj_main_4 {
     position: relative;
     width: 100%;
-    height: 25%;
+    height: 100%;
     background-color: var(--white);
     display: flex;
     align-items: center;
     @media screen and (min-width: 300px) and (max-width: 700px) {
-        height: 19%;
+        height: 80%;
     } //sm
 } //hj_main_4
 .hj_text_slider {
@@ -50,7 +50,55 @@ figure.hj_mug {
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    z-index: 1;
+    z-index: 2;
+    div.hj_ripples {
+        position: absolute;
+        top: 53%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 60%;
+        background: url("../../HJ/img/ripple.png") no-repeat center;
+        background-size: cover;
+        z-index: 5;
+    } //hj_ripples
+    div.mug_inner {
+        position: absolute;
+        top: 20%;
+        left: 43%;
+        z-index: 1;
+        @media screen and (min-width: 700px) and (max-width: 900px) {
+            top: 15%;
+            left: 40%;
+        } //lg
+        @media screen and (min-width: 300px) and (max-width: 700px) {
+            display: none;
+        } //sm
+        img.logo {
+            width: 120px;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+            mix-blend-mode: difference;
+        } //img.logo
+        figcaption {
+            width: 200px;
+            position: absolute;
+            top: 75%;
+            left: -29%;
+            color: var(--white);
+            font-size: 0.9em;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            @media screen and (min-width: 700px) and (max-width: 900px) {
+                display: none;
+            } //lg
+            @media screen and (min-width: 300px) and (max-width: 700px) {
+                display: none;
+            } //sm
+        } //figcaption
+    } //div.mug_inner
     @media screen and (min-width: 700px) and (max-width: 900px) {
         top: 43.5%;
         left: 48.5%;
@@ -63,74 +111,32 @@ figure.hj_mug {
         width: 350px;
         height: 350px;
     } //sm
-    svg.svg_filter {
-        #filter {
-        } //filter
-    } //svg_filter
     img.mug {
         width: 108%;
         height: 108%;
         object-fit: cover;
         object-position: center;
         position: relative;
-        filter: url(#filter);
     } //img.mug
-    div.mug_inner {
-        position: absolute;
-        top: 25%;
-        left: 43%;
-        @media screen and (min-width: 700px) and (max-width: 900px) {
-            top: 20%;
-            left: 40%;
-        } //lg
-        @media screen and (min-width: 300px) and (max-width: 700px) {
-            top: 12%;
-            left: 36%;
-        } //sm
-        img.logo {
-            width: 120px;
-            height: 300px;
-            object-fit: cover;
-            object-position: center;
-            mix-blend-mode: difference;
-        } //img.logo
-        figcaption {
-            width: 200px;
-            position: absolute;
-            top: 75%;
-            left: -25%;
-            color: var(--white);
-            font-size: 1.2em;
-            font-weight: 100;
-            text-transform: uppercase;
-            @media screen and (min-width: 700px) and (max-width: 900px) {
-                display: none;
-            } //lg
-            @media screen and (min-width: 300px) and (max-width: 700px) {
-                display: none;
-            } //sm
-        } //figcaption
-    } //div.mug_inner
 } //figure.hj_mug
 figure.hj_cafes_photo {
     position: absolute;
-    top: 44.5%;
-    left: 50%;
+    top: 45%;
+    left: 50.1%;
     display: block;
-    width: 605px;
-    height: 605px;
+    width: 645px;
+    height: 645px;
     background-color: transparent;
     box-shadow: 7px 7px 10px var(--black);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 3;
+    z-index: 1;
     @media screen and (min-width: 700px) and (max-width: 900px) {
-        width: 455px;
-        height: 455px;
+        width: 495px;
+        height: 495px;
     } //lg
     @media screen and (min-width: 300px) and (max-width: 700px) {
-        width: 355px;
-        height: 355px;
+        display: none;
     } //sm
     img {
         width: 100%;
@@ -143,53 +149,76 @@ figure.hj_cafes_photo {
 } //figure.hj_cafes_photo
 figure.hj_coffeestain {
     position: absolute;
-    top: 7%;
+    top: 0;
     left: 20%;
     opacity: 0.5;
     @media screen and (min-width: 700px) and (max-width: 900px) {
         top: 15%;
     } //lg
     @media screen and (min-width: 300px) and (max-width: 700px) {
-        top: 25%;
+        display: none;
     } //sm
     img {
         width: 85%;
         height: 85%;
-        transform: rotate(60deg);
+        transform: rotate(70deg);
         object-fit: contain;
         object-position: center;
     } //img
 } //hj_coffeestain
 .hj_cafes_area {
+    width: 70%;
     position: absolute;
-    top: 77%;
+    bottom: 3%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        width: 90%;
+        bottom: 10%;
+    }
+    @media screen and (min-width: 300px) and (max-width: 700px) {
+        width: 90%;
+        top: 45%;
+        z-index: 7;
+    }
     a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 40px;
+        margin: 5px;
         font-size: 1.8em;
         font-weight: 600;
         color: var(--black);
         opacity: 1;
         transition: opacity 0.3s;
+        @media screen and (min-width: 700px) and (max-width: 900px) {
+            margin: 10px;
+        }
+        @media screen and (min-width: 300px) and (max-width: 700px) {
+            margin: 5px;
+        }
         img.hj_marker {
             opacity: 0;
             margin-bottom: 5px;
             transition: all 0.3s;
         } //img.hj_marker
         img.hj_logo {
-            width: 70%;
+            width: 50%;
             margin-bottom: 5px;
             opacity: 1;
             transition: all 0.3s;
             animation: chScale 7s alternate infinite;
+            @media screen and (min-width: 700px) and (max-width: 900px) {
+                width: 80%;
+            }
+            @media screen and (min-width: 300px) and (max-width: 700px) {
+                width: 120%;
+                animation-play-state: paused !important;
+            }
         } //img.hj_logo
         span {
             font-size: 0.6em;

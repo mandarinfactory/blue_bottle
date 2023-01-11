@@ -46,6 +46,7 @@ path.style.strokeDasharray = pathLength // path가 나타난 경우
 path.style.strokeDashoffset = fnCalcDashoffset(window.innerHeight*0.6,middle,pathLength) // path가 사라진경우
 
 window.addEventListener('scroll',fnSvgScroll)
+window.addEventListener('resize',fnSvgScroll)
 
 /* ---------------scroll section2----------------------- */
 var bg = document.querySelector('.ik_motion_img1')
@@ -78,7 +79,21 @@ window.addEventListener('scroll', function() {
     let opa = motionValue * 0.0015
     v.style.opacity = opa
   }) //forEach
+
 }) //scroll
 
-/* ----------------------------------------------------- */
-})
+/* --------------middle text box-------------------------------- */
+
+const fnActiveText = () => {
+  let scrY = window.scrollY
+  let winH = window.innerHeight
+  let textBox = document.querySelector('.ik_middle>.ik_textbox') 
+  let t = textBox.offsetTop
+  return (scrY > t - winH * 0.5)? textBox.classList.add('active') : textBox.classList.remove('active')
+}
+
+fnActiveText()
+window.addEventListener('scroll', ()=>{fnActiveText()})
+window.addEventListener('resize', ()=>{fnActiveText()})
+
+})//ready

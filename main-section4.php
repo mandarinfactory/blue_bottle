@@ -1,4 +1,6 @@
 <script src="./HJ/JS/index_section4.js"></script>
+<script src="./HJ/JS/jquery.ripples.js"></script>
+<!-- <script src="./HJ/JS/jquery.ripples-min.js"></script> -->
 <section class="hj_main_4">
   <div class="hj_text_slider">
     <div class="hj_text_track">
@@ -21,21 +23,16 @@
     </div><!-- .hj_text_track -->
   </div><!-- ,hj_text_slider -->
   <figure class="hj_mug">
-    <!--  <svg class="svg_filter">
-      <filter id="filter">
-        <feTurbulence id="water" numOctaves="3" seed="1" baseFrequency="0.2 0.01" />
-        <feDisplacementMap scale="10" in="SourceGraphic" />
-        <animate href="#water" attributeName="baseFrequency" keyTimes="0;0.5;1" values="0.002;0.008;0.002" dur="20s" repeatCount="indefinite" />
-      </filter>
-    </svg> -->
-    <img class="mug" src="./HJ/img/mug.png" alt="">
+    <div class="hj_ripples">
+    </div>
     <div class="mug_inner">
       <img class="logo" src="./HJ/img/bottle_logo.png" alt="">
       <figcaption>
-        당신의 카페를 찾아보세요.
+        당신의 카페를 찾아보세요. <br>
         find your cafe.
       </figcaption>
     </div><!-- mug_inner -->
+    <img class="mug" src="./HJ/img/mug.png" alt="">
   </figure><!-- hj_mug -->
   <figure class="hj_cafes_photo">
     <img src="" alt="">
@@ -43,56 +40,55 @@
   <figure class="hj_coffeestain">
     <img src="./img/object/coffeestain02.png" alt="">
   </figure><!-- hj_coffeestain -->
-
   <div class="hj_cafes_area">
     <a href="./cafes.php" data-num="0">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/1.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_01.png" alt="" class="hj_logo">
       <span>여의도</span>
     </a>
     <a href="./cafes.php" data-num="1">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/2.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_02.png" alt="" class="hj_logo">
       <span>명동</span>
     </a>
     <a href="./cafes.php" data-num="2">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/3.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_03.png" alt="" class="hj_logo">
       <span>광화문</span>
     </a>
     <a href="./cafes.php" data-num="3">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/4.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_04.png" alt="" class="hj_logo">
       <span>삼청</span>
     </a>
     <a href="./cafes.php" data-num="4">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/5.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_05.png" alt="" class="hj_logo">
       <span>삼청한옥</span>
     </a>
     <a href="./cafes.php" data-num="5">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/6.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_06.png" alt="" class="hj_logo">
       <span>한남</span>
     </a>
     <a href="./cafes.php" data-num="6">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/7.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_07.png" alt="" class="hj_logo">
       <span>성수</span>
     </a>
     <a href="./cafes.php" data-num="7">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/8.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_08.png" alt="" class="hj_logo">
       <span>역삼</span>
     </a>
     <a href="./cafes.php" data-num="8">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/9.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_09.png" alt="" class="hj_logo">
       <span>압구정</span>
     </a>
     <a href="./cafes.php" data-num="9">
       <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-      <img src="./HJ/img/logo/10.jpg" alt="" class="hj_logo">
+      <img src="./HJ/img/icon/icon_10.png" alt="" class="hj_logo">
       <span>제주도</span>
     </a>
   </div><!-- hj_cafes_area -->

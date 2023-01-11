@@ -2,7 +2,7 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 55%;
+  height: 200%;
   overflow: hidden;
   background: var(--white);
 }
@@ -23,7 +23,7 @@
 }
 .ik_middle > .ik_textbox {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, -50%);
@@ -33,12 +33,18 @@
   align-items: center;
   height: 20%;
   width: 50%;
+  opacity: 0;
   text-align: center;
+  transition: all 2s;
 }
 @media screen and (max-width: 1000px) {
   .ik_middle > .ik_textbox {
     width: 100%;
   }
+}
+.ik_middle > .ik_textbox.active {
+  opacity: 1;
+  top: 50%;
 }
 .ik_middle > .ik_textbox > h3 {
   font-size: 2em;
