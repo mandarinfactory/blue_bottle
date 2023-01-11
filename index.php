@@ -38,6 +38,8 @@
         `<img class='ik_bean ik_bean${i+1}' src='${v.src}'>`
       )
     })
+
+
   </script>
 
   <?php include "./main-section4.php" ?><!-- section4 location-->
