@@ -85,8 +85,10 @@ figure.hj_mug div.mug_inner {
 figure.hj_mug div.mug_inner img.logo {
   width: 120px;
   height: 350px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   mix-blend-mode: difference;
 }
 figure.hj_mug div.mug_inner figcaption {
@@ -129,8 +131,10 @@ figure.hj_mug div.mug_inner figcaption {
 figure.hj_mug img.mug {
   width: 108%;
   height: 108%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   position: relative;
 }
 
@@ -155,15 +159,20 @@ figure.hj_cafes_photo {
 }
 @media screen and (min-width: 300px) and (max-width: 700px) {
   figure.hj_cafes_photo {
-    display: none;
+    display: block;
+    width: 215px;
+    height: 215px;
+    z-index: 2;
   }
 }
 figure.hj_cafes_photo img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   filter: brightness(70%);
 }
 
@@ -187,8 +196,10 @@ figure.hj_coffeestain img {
   width: 85%;
   height: 85%;
   transform: rotate(70deg);
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .hj_cafes_area {
@@ -210,6 +221,7 @@ figure.hj_coffeestain img {
 }
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .hj_cafes_area {
+    position: relative;
     width: 90%;
     top: 45%;
     z-index: 7;
@@ -233,7 +245,7 @@ figure.hj_coffeestain img {
 }
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .hj_cafes_area a {
-    margin: 5px;
+    display: none;
   }
 }
 .hj_cafes_area a img.hj_marker {
@@ -246,7 +258,8 @@ figure.hj_coffeestain img {
   margin-bottom: 5px;
   opacity: 1;
   transition: all 0.3s;
-  animation: chScale 7s alternate infinite;
+  -webkit-animation: chScale 7s alternate infinite;
+          animation: chScale 7s alternate infinite;
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .hj_cafes_area a img.hj_logo {
@@ -256,7 +269,8 @@ figure.hj_coffeestain img {
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .hj_cafes_area a img.hj_logo {
     width: 120%;
-    animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
   }
 }
 .hj_cafes_area a span {
@@ -272,12 +286,23 @@ figure.hj_coffeestain img {
 }
 
 /* animation ------------------------------- */
+@-webkit-keyframes chScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes chScale {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);

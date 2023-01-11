@@ -25,7 +25,8 @@ footer {
   display: block;
   margin: 0 auto;
   transform: scaleX(-1);
-  animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 }
 @media screen and (min-width: 1300px) and (max-width: 1700px) {
   .hj_footer_section figure.high_wave svg {
@@ -62,7 +63,8 @@ footer {
   left: -40%;
   display: block;
   margin: 0 auto;
-  animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 2.3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 }
 @media screen and (min-width: 1300px) and (max-width: 1700px) {
   .hj_footer_section figure.middle_wave svg {
@@ -100,7 +102,8 @@ footer {
   display: block;
   margin: 0 auto;
   transform: scaleX(-1);
-  animation: wave 2.7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-animation: wave 2.7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 2.7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 }
 @media screen and (min-width: 1300px) and (max-width: 1700px) {
   .hj_footer_section figure.low_wave svg {
@@ -194,8 +197,10 @@ footer {
 .hj_footer_section .hj_footer_box .hj_footer_desc figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   /*   @media screen and (max-width:1000px){
     display: none;
   } */
@@ -232,6 +237,18 @@ footer {
 }
 .hj_footer_section .hj_footer_box .hj_footer_desc ul li:first-child {
   text-transform: uppercase;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -70px;
+  }
+  100% {
+    margin-left: 0;
+  }
 }
 
 @keyframes wave {

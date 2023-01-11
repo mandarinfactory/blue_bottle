@@ -46,8 +46,10 @@ section.ik_main_1 figure.ik_mug {
 section.ik_main_1 figure.ik_mug img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transform: scale(1.5);
   transition: all 1s;
 }
@@ -191,7 +193,8 @@ section.ik_main_1 .pamphlet .side {
 }
 section.ik_main_1 .pamphlet .face {
   position: absolute;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -211,8 +214,10 @@ section.ik_main_1 .pamphlet .face.back {
 }
 section.ik_main_1 .pamphlet video {
   position: absolute;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 section.ik_main_1 .pamphlet .cover {
   position: absolute;

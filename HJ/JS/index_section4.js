@@ -24,12 +24,12 @@ $(function () {
         $('.hj_cafes_photo svg').css({ 'display': 'block' })
         $('.hj_cafes_photo img').css({ 'display': 'none' })
     })//mouseleave
-
+    
     $('.hj_cafes_area a').click(function () {
         $(this).attr('href', './cafes.php' + '?' + $(this).attr('data-num'))
     })//click_event
     /* anchor click시에 href에 data-num추가해서 cafes.php URL로 이동시킴 */
-
+    
     for (i = 0; i < 10; i++) {
         $(`.hj_cafes_area a:nth-child(${i})`).children('img.hj_logo').css({ 'animation-delay': `${i * 3}s` })
     }//for
@@ -40,5 +40,20 @@ $(function () {
         $(this).css({ 'animation': 'chScale 7s alternate infinite' })
     })//mouseenter
     /* icon mouseenter시에 animation 없앴다가 --> mouseleave시에 animation 다시 살리기! */
+    function smallMugCoffee() {
+        const winWidth = $(window).innerWidth()
+        console.log(winWidth);
+        if(winWidth <= 700){
+            for (var i = 0;i < 10;i++){
+                let mugPicture = $('.hj_cafes_photo img').attr("src", "./img/location/" + cafeImageArr[i] + ".jpg");
+                mugPicture.css({'display':'block'})
+            }
+        }//if
+    }//function_smallMugCoffee
+    $(window).resize(function () {
+        smallMugCoffee()
+    })
 })//document.ready
+
+
 
