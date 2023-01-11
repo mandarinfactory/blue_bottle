@@ -157,8 +157,17 @@
    </article><!-- jey_prd2 ------------------------------------------------------------>
 
    <article class="jey_prd3">
-     <div class="jey_left">
-       <h3>BLENDS</h3>
+     <div class="jey_left">      
+        <h3 class="j_text">
+          
+          <span>B</span>
+          <span>L</span>
+          <span>E</span>
+          <span>N</span>
+          <span>D</span>
+          <span>S</span>
+
+        </h3>      
        <p>
          A natural Ethiopian coffee
          with jammy berry notes brings a glimmer of fruit
