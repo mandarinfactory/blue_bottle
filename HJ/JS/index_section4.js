@@ -3,6 +3,9 @@ $(function () {
         "location_blue1", "location_blue2", "location_blue3", "location_blue4", "location_blue5",
         "location_blue6", "location_blue7", "location_blue8", "location_blue9", "location_blue10"
     ]//cafeImageArr
+    const locationNumArr = [
+        '2', '3', '4', '5', '6', '7', '8', '9', '10'
+    ]//locationImageArr
     $('.hj_ripples').ripples({
         resolution: 700,
         dropRadius: 19,
@@ -40,19 +43,6 @@ $(function () {
         $(this).css({ 'animation': 'chScale 7s alternate infinite' })
     })//mouseenter
     /* icon mouseenter시에 animation 없앴다가 --> mouseleave시에 animation 다시 살리기! */
-    function smallMugCoffee() {
-        if (window.innerWidth < 700) {
-            $('.hj_cafes_photo img').remove()
-            cafeImageArr.forEach(function (array) {
-                $('.hj_cafes_photo').append(`
-                    <img src="./img/location/${array}.jpg" alt>
-                    `)
-            })//forEach
-        } else return false
-    }//function_smallMugCoffee
-    $(window).resize(function () {
-        smallMugCoffee()
-    })
 })//document.ready
 
 

@@ -7,7 +7,7 @@
     background-color: var(--white);
     display: flex;
     align-items: center;
-    @media screen and (min-width: 300px) and (max-width: 700px) {
+    @media screen and (min-width: 300px) and (max-width: 600px) {
         height: 80%;
     } //sm
 } //hj_main_4
@@ -67,11 +67,11 @@ figure.hj_mug {
         top: 20%;
         left: 43%;
         z-index: 1;
-        @media screen and (min-width: 700px) and (max-width: 900px) {
+        @media screen and (min-width: 600px) and (max-width: 900px) {
             top: 15%;
             left: 40%;
         } //lg
-        @media screen and (min-width: 300px) and (max-width: 700px) {
+        @media screen and (min-width: 300px) and (max-width: 600px) {
             display: none;
         } //sm
         img.logo {
@@ -91,21 +91,18 @@ figure.hj_mug {
             font-weight: 400;
             text-align: center;
             text-transform: uppercase;
-            @media screen and (min-width: 700px) and (max-width: 900px) {
+            @media screen and (min-width: 300px) and (max-width: 900px) {
                 display: none;
-            } //lg
-            @media screen and (min-width: 300px) and (max-width: 700px) {
-                display: none;
-            } //sm
+            }
         } //figcaption
     } //div.mug_inner
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: 600px) and (max-width: 900px) {
         top: 43.5%;
         left: 48.5%;
         width: 450px;
         height: 450px;
     } //lg
-    @media screen and (min-width: 300px) and (max-width: 700px) {
+    @media screen and (min-width: 300px) and (max-width: 600px) {
         top: 43.7%;
         left: 48.7%;
         width: 350px;
@@ -131,15 +128,17 @@ figure.hj_cafes_photo {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 1;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: 600px) and (max-width: 900px) {
         width: 495px;
         height: 495px;
     } //lg
-    @media screen and (min-width: 300px) and (max-width: 700px) {
-        display: block;
-        width: 215px;
-        height: 215px;
-        z-index: 2;
+    @media screen and (min-width: 300px) and (max-width: 600px) {
+        width: 375px;
+        height: 375px;
+        img {
+            width: 100%;
+            height: 100%;
+        } //img
     } //sm
     img {
         width: 100%;
@@ -149,16 +148,16 @@ figure.hj_cafes_photo {
         object-position: center;
         filter: brightness(70%);
     } //img
-} //figure.hj_cafes_photo
+} //div.img_box
 figure.hj_coffeestain {
     position: absolute;
     top: 0;
     left: 20%;
     opacity: 0.5;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: 600px) and (max-width: 900px) {
         top: 15%;
     } //lg
-    @media screen and (min-width: 300px) and (max-width: 700px) {
+    @media screen and (min-width: 300px) and (max-width: 600px) {
         display: none;
     } //sm
     img {
@@ -179,15 +178,15 @@ figure.hj_coffeestain {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: 600px) and (max-width: 900px) {
         width: 90%;
         bottom: 10%;
     }
-    @media screen and (min-width: 300px) and (max-width: 700px) {
-        position: relative;
-        width: 90%;
-        top: 45%;
-        z-index: 7;
+    @media screen and (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+        top: 85%;
+        left: 50%;
+        z-index: 2;
     }
     a {
         display: flex;
@@ -199,11 +198,15 @@ figure.hj_coffeestain {
         color: var(--black);
         opacity: 1;
         transition: opacity 0.3s;
-        @media screen and (min-width: 700px) and (max-width: 900px) {
+        @media screen and (min-width: 750px) and (max-width: 900px) {
             margin: 10px;
         }
-        @media screen and (min-width: 300px) and (max-width: 700px) {
-            display: none;
+        @media screen and (min-width: 600px) and (max-width: 750px) {
+            font-size: 1em;
+            margin: 3px;
+        }
+        @media screen and (min-width: 300px) and (max-width: 600px) {
+            font-size: 0.5em;
         }
         img.hj_marker {
             opacity: 0;
@@ -216,10 +219,10 @@ figure.hj_coffeestain {
             opacity: 1;
             transition: all 0.3s;
             animation: chScale 7s alternate infinite;
-            @media screen and (min-width: 700px) and (max-width: 900px) {
+            @media screen and (min-width: 600px) and (max-width: 900px) {
                 width: 80%;
             }
-            @media screen and (min-width: 300px) and (max-width: 700px) {
+            @media screen and (min-width: 300px) and (max-width: 600px) {
                 width: 120%;
                 animation-play-state: paused !important;
             }
