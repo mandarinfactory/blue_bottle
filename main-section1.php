@@ -1,10 +1,13 @@
 <section class="ik_main_1">
 
-  <!-- http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4 -->
-  <!-- ./img/main_section/main_left.jpg  -->
+<figure class="ik_main1_background">
+  <img src="./img/visual/bb_visual24.jpg">
+</figure>
+
   <div class="ik_pamphlet">
     <div class="ik_click">
-      <button>Click Me!</button>
+      <button> Click <br> Me!</button>
+      <i class="fa-solid fa-arrow-down-long"></i>
     </div>
 
     <div class="ik_center">

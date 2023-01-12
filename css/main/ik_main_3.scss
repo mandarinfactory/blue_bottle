@@ -6,7 +6,6 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  background: var(--white);
   overflow: hidden;
   height: 50%;
 
@@ -210,7 +209,7 @@
 
     
     
-    li.ik_main_list_box{ // 첫 번째 list box
+    li.ik_first_list_box{ // 첫 번째 list box
       box-sizing: border-box;
       position: absolute;
       top: 0; right: 0;
