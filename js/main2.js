@@ -3,8 +3,8 @@ $(function(){
 
 /* ---------------------kettle------------------------- */
 let fnKettle = () =>{
-  var kettle = document.querySelector('.ik_mug img')
-    var kettleTop = $('.ik_mug').offset().top
+  var kettle = document.querySelector('.ik_kettle img')
+    var kettleTop = $('.ik_kettle').offset().top
     
     if(scrY >= kettleTop - winH * 0.7){
       kettle.classList.add('active')
@@ -49,30 +49,50 @@ window.addEventListener('scroll',fnSvgScroll)
 window.addEventListener('resize',fnSvgScroll)
 
 /* ---------------scroll section2----------------------- */
-var bg = document.querySelector('.ik_motion_img1')
-var cup = document.querySelector('.ik_motion_img2')
-var table = document.querySelector('.ik_motion_img3')
-var topImg = document.querySelector('.ik_motion_text1')
-var middleImg = document.querySelector('.ik_motion_text2')
-var bottomImg = document.querySelector('.ik_motion_text3')
+var bg1 = document.querySelector('.ik_motion_img1_lg')
+var cup1 = document.querySelector('.ik_motion_img2_lg')
+var table1 = document.querySelector('.ik_motion_img3_lg')
+var topImg1 = document.querySelector('.ik_motion_text1_lg')
+var middleImg1 = document.querySelector('.ik_motion_text2_lg')
+var bottomImg1 = document.querySelector('.ik_motion_text3_lg')
+
+var bg2 = document.querySelector('.ik_motion_img1_sm')
+var cup2 = document.querySelector('.ik_motion_img2_sm')
+var table2 = document.querySelector('.ik_motion_img3_sm')
+var topImg2 = document.querySelector('.ik_motion_text1_sm')
+var middleImg2 = document.querySelector('.ik_motion_text2_sm')
+var bottomImg2 = document.querySelector('.ik_motion_text3_sm')
 
 window.addEventListener('scroll', function() {
   var motionValue = window.scrollY;
+  var motionValue2 = window.scrollY * 1.2;
 
   if (motionValue <= 700) {
-    bg.style.top = (motionValue * 0.003) + '%'
-    cup.style.left = (motionValue * 0.03) - 30 + '%';
-    table.style.top = (-motionValue * 0.008) + 8 + '%';
-    topImg.style.left = (motionValue * 0.08) - 80 + '%';
-    middleImg.style.top = (-motionValue * 0.04) + 40 + '%';
-    bottomImg.style.top = (-motionValue * 0.02) + 20 + '%';
+    bg1.style.top = (motionValue * 0.004) + '%'
+    cup1.style.left = (motionValue * 0.03) - 30 + '%';
+    table1.style.top = (-motionValue * 0.008) + 8 + '%';
+    topImg1.style.left = (motionValue * 0.08) - 80 + '%';
+    middleImg1.style.top = (-motionValue * 0.04) + 40 + '%';
+    bottomImg1.style.top = (-motionValue * 0.02) + 20 + '%';
+    /////////////////////   lg   sm
+    cup2.style.left = (motionValue * 0.03) - 30 + '%';
+    table2.style.left = (-motionValue * 0.008) + 8 + '%';
+    topImg2.style.left = (motionValue * 0.08) - 80 + '%';
+    middleImg2.style.top = (-motionValue * 0.04) + 40 + '%';
+    bottomImg2.style.top = (-motionValue * 0.04) + 40 + '%';
   } else {
-    bg.style.top = 0 + '%'
-    cup.style.left = 0 + '%';
-    table.style.top = 0 + '%';
-    topImg.style.left = 0 + '%';
-    middleImg.style.top = 0 + '%';
-    bottomImg.style.top = 0 + '%';
+    bg1.style.top = 0 + '%'
+    cup1.style.left = 0 + '%';
+    table1.style.top = 0 + '%';
+    topImg1.style.left = 0 + '%';
+    middleImg1.style.top = 0 + '%';
+    bottomImg1.style.top = 0 + '%';
+    /////////////////////   lg   sm
+    cup2.style.left = 0 + '%';
+    table2.style.left = 0 + '%';
+    topImg2.style.left = 0 + '%';
+    middleImg2.style.top = 0 + '%';
+    bottomImg2.style.top = 0 + '%';
 
   }
   document.querySelectorAll('.ik_motion_box img').forEach(v => {
@@ -89,7 +109,7 @@ const fnActiveText = () => {
   let winH = window.innerHeight
   let textBox = document.querySelector('.ik_middle>.ik_textbox') 
   let t = textBox.offsetTop
-  return (scrY > t - winH * 0.5)? textBox.classList.add('active') : textBox.classList.remove('active')
+  return (scrY > t - winH * 0.2)? textBox.classList.add('active') : textBox.classList.remove('active')
 }
 
 fnActiveText()

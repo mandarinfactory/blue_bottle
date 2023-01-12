@@ -1,0 +1,22 @@
+#coffee-container{
+  overflow: hidden;
+}
+
+#coffee-container img{
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  animation-name: leaf-particle;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes leaf-particle{
+  0%{
+    top:-10%;
+    transform: translateX(1000%);
+  }
+  100%{
+    top: 110%;
+    transform: translateX(-1000%);
+  }
+}
