@@ -95,10 +95,8 @@ section.product .jey_prd3 div.jey_right ul li figure {
 section.product .jey_prd3 div.jey_right ul li figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 section.product .jey_prd3 div.jey_right ul li.jey_li1 p,
 section.product .jey_prd3 div.jey_right ul li.jey_li4 p {
