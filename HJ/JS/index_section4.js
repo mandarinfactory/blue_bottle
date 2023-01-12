@@ -50,9 +50,18 @@ $(function () {
         findPhotoImg.css({ 'display': 'block' })
         let hj_anchorData = parseInt($(this).attr('data-num'))
         if (hj_anchorData === cafeImageArr.indexOf(cafeImageArr[hj_anchorData])) {
-            findPhotoImg.attr("src", "./img/location/" + cafeImageArr[hj_anchorData] + ".jpg");
+            let chPhotoImg = findPhotoImg.attr("src", "./img/location/" + cafeImageArr[hj_anchorData] + ".jpg");
+            chPhotoImg.parent().css({ 'filter': 'brightness(60%)' })
+            chPhotoImg.append(`<button></button>`)
+
         }//if
-    })//touchmove
+    })//touchstart
+    /*     $('.hj_cafes_area').bind('touchend', function (e) {
+            e.preventDefault();
+            findPhoto.css({ 'z-index': 1 })
+            findPhotoSvg.css({ 'display': 'block' })
+            findPhotoImg.css({ 'display': 'none' })
+        })//touchend */
     /* icon mouseenter시에 animation 없앴다가 --> mouseleave시에 animation 다시 살리기! */
     $(window).resize(function () {
         if ($(window).innerWidth() < 500) {
