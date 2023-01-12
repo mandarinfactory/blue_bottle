@@ -16,8 +16,10 @@
 }
 .ik_main_2 .ik_motion_box .ik_lg img, .ik_main_2 .ik_motion_box .ik_sm img {
   position: absolute;
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   transition: top 0.5s linear, left 1s, opacity 1s;
   top: 0;
   left: 0;

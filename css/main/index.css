@@ -75,8 +75,10 @@
 
 .ik_bean {
   position: absolute;
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   z-index: 8;
   transition: all 1s;
   /* ----------------animation-------------------------- */
@@ -183,28 +185,47 @@
   }
 }
 .ik_bean.ik_bean1 {
-  animation: jump 5s linear infinite;
+  -webkit-animation: jump 5s linear infinite;
+          animation: jump 5s linear infinite;
 }
 .ik_bean.ik_bean2 {
-  animation: slide 7s linear infinite;
+  -webkit-animation: slide 7s linear infinite;
+          animation: slide 7s linear infinite;
 }
 .ik_bean.ik_bean3 {
-  animation: jump 7s linear infinite;
+  -webkit-animation: jump 7s linear infinite;
+          animation: jump 7s linear infinite;
 }
 .ik_bean.ik_bean4 {
-  animation: slide 6s linear infinite;
+  -webkit-animation: slide 6s linear infinite;
+          animation: slide 6s linear infinite;
 }
 .ik_bean.ik_bean5 {
-  animation: slide 8s linear infinite;
+  -webkit-animation: slide 8s linear infinite;
+          animation: slide 8s linear infinite;
 }
 .ik_bean.ik_bean6 {
-  animation: jump 6s linear infinite;
+  -webkit-animation: jump 6s linear infinite;
+          animation: jump 6s linear infinite;
 }
 .ik_bean.ik_bean7 {
-  animation: slide 5.3s linear infinite;
+  -webkit-animation: slide 5.3s linear infinite;
+          animation: slide 5.3s linear infinite;
 }
 .ik_bean.ik_bean8 {
-  animation: jump 4s linear infinite;
+  -webkit-animation: jump 4s linear infinite;
+          animation: jump 4s linear infinite;
+}
+@-webkit-keyframes jump {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 @keyframes jump {
   0% {
@@ -215,6 +236,17 @@
   }
   100% {
     margin-top: 0;
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: 0px;
   }
 }
 @keyframes slide {

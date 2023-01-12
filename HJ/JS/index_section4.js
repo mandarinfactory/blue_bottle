@@ -30,7 +30,7 @@ $(function () {
 
     $('.hj_cafes_area a').click(function () {
         $(this).attr('href', './cafes.php' + '?' + $(this).attr('data-num'))
-    })//click_event
+    })
     /* anchor click시에 href에 data-num추가해서 cafes.php URL로 이동시킴 */
 
     for (i = 0; i < 10; i++) {
@@ -44,17 +44,33 @@ $(function () {
     })//mouseenter
 
     $('.hj_cafes_area a').bind('touchstart', function (e) {
+        const photoData = $('.hj_cafes_photo a').each(function (v, i) {
+            
+        })
         e.preventDefault();
         findPhoto.css({ 'z-index': 3 })
         findPhotoSvg.css({ 'display': 'none' })
         findPhotoImg.css({ 'display': 'block' })
+        $('.hj_cafes_photo button').css({'display':'block'})
+
+        if($(this).attr('data-num') == photoData){
+            $('.hj_cafes_photo a').css({'opacity':1})
+            $('.hj_cafes_photo a').bind('touchstart', function () {
+                $('.hj_cafes_photo a').css({'z-index':9})
+                $(this).attr('href', './cafes.php' + '?' + $(this).attr('data-num'))
+            })//touchstart
+        } else {
+            $('.hj_cafes_photo a').css({'opacity':0})
+        }
         let hj_anchorData = parseInt($(this).attr('data-num'))
         if (hj_anchorData === cafeImageArr.indexOf(cafeImageArr[hj_anchorData])) {
-            let chPhotoImg = findPhotoImg.attr("src", "./img/location/" + cafeImageArr[hj_anchorData] + ".jpg");
-            chPhotoImg.parent().css({ 'filter': 'brightness(60%)' })
-            chPhotoImg.append(`<button></button>`)
-
+            findPhotoImg.attr("src", "./img/location/" + cafeImageArr[hj_anchorData] + ".jpg");
+            findPhoto.css({ 'filter': 'brightness(85%)' })
         }//if
+    })//touchstart
+    $('hj_cafes_photo button').bind('touchstart', function (e) {
+        e.preventDefault();
+        $(this).css({'color':'var(--blue)'})
     })//touchstart
     /*     $('.hj_cafes_area').bind('touchend', function (e) {
             e.preventDefault();
@@ -62,6 +78,7 @@ $(function () {
             findPhotoSvg.css({ 'display': 'block' })
             findPhotoImg.css({ 'display': 'none' })
         })//touchend */
+
     /* icon mouseenter시에 animation 없앴다가 --> mouseleave시에 animation 다시 살리기! */
     $(window).resize(function () {
         if ($(window).innerWidth() < 500) {

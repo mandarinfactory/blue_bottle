@@ -22,8 +22,10 @@ section.ik_sub_visual .ik_sub_visual_inner img {
   z-index: -1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transform: scale(1.5);
   filter: brightness(0.5);
   transition: filter 4s, transform 30s linear;

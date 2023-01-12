@@ -35,6 +35,16 @@
     <img class="mug" src="./HJ/img/mug.png" alt="">
   </figure><!-- hj_mug -->
   <figure class="hj_cafes_photo">
+    <a href="./cafes.php" data-num="0">매장으로 가기</a>
+    <a href="./cafes.php" data-num="1">매장으로 가기</a>
+    <a href="./cafes.php" data-num="2">매장으로 가기</a>
+    <a href="./cafes.php" data-num="3">매장으로 가기</a>
+    <a href="./cafes.php" data-num="4">매장으로 가기</a>
+    <a href="./cafes.php" data-num="5">매장으로 가기</a>
+    <a href="./cafes.php" data-num="6">매장으로 가기</a>
+    <a href="./cafes.php" data-num="7">매장으로 가기</a>
+    <a href="./cafes.php" data-num="8">매장으로 가기</a>
+    <a href="./cafes.php" data-num="9">매장으로 가기</a>
     <img src="" alt="">
   </figure><!-- hj_cafes_photo -->
   <figure class="hj_coffeestain">
