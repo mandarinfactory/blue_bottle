@@ -184,6 +184,7 @@ span{
 
 
 span:nth-child(1){
+  animation-delay: 0.2s
   animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both, fadeIn 1s both;
 }
 

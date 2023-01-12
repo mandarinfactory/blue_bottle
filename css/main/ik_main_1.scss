@@ -7,6 +7,7 @@ body {
   width: 100%;
   height: 100%;
   main {
+    position: relative;
     display: inline;
     width: 100%;
     height: 100%;
@@ -21,7 +22,7 @@ section.ik_main_1 {
   background-position: center;
   background-size: cover;
 
-  figure.ik_mug {
+  figure.ik_kettle {
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
@@ -53,13 +54,14 @@ section.ik_main_1 {
     }
   }
 
-  .pamphlet {
+  .ik_pamphlet {
     perspective: 1000px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-width: 600px;
+    cursor: pointer;
+
     &::before {
       content: "";
       display: block;
@@ -68,22 +70,105 @@ section.ik_main_1 {
 
     @media screen and (orientation: landscape) {
       width: 60%;
+      max-width: 600px;
+      transition: all 1s;
+      &.active {
+        width: 80%;
+        max-width: 1000px;
+        .ik_click {
+          display: none;
+        }
+      }
     } //pamphlet land
     @media screen and (orientation: portrait) {
-      width: 95%;
+      transition: width 0.1s;
+      width: 85%;
+      &.active {
+        width: 100%;
+        .ik_click {
+          display: none;
+        }
+      }
     } //pamphlet port
 
-    .center {
+    .ik_click {
+      position: absolute;
+      z-index: 30;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: clickMe 3s infinite linear;
+
+      button {
+        position: relative;
+        mix-blend-mode: difference;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          width: 10px;
+          height: 10px;
+          background-color: var(--blue);
+          border-radius: 50%;
+        } //button::before
+        @media screen and (orientation: landscape) {
+          button {
+            font-size: 1.5em;
+            font-weight: 700;
+          }
+        }
+        @media screen and (orientation: portrait) {
+          button {
+            font-size: 1em;
+            font-weight: 700;
+          }
+        }
+      } // button
+
+      @keyframes clickMe {
+        0% {
+          top: 50%;
+          opacity: 1;
+          color: #333;
+        }
+        25% {
+          top: 45%;
+          opacity: 0.8;
+          color: var(--blue);
+        }
+        50% {
+          top: 50%;
+          opacity: 1;
+          color: #333;
+        }
+        75% {
+          top: 45%;
+          opacity: 0.8;
+          color: var(--blue);
+        }
+        100% {
+          top: 50%;
+          opacity: 1;
+          color: #333;
+        }
+      } //clickMe
+    } // click
+
+    .ik_center {
+      box-sizing: border-box;
       position: absolute;
       overflow: hidden;
       width: 100%;
       height: 100%;
-      top:0;
-      left:0;
-      .face{
-        left:50%;
-        top:50%;
-        transform: translate(-50%,-50%);
+      top: 0;
+      left: 0;
+      .ik_face {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         @media screen and (orientation: landscape) {
           width: 200%;
           height: 100%;
@@ -92,30 +177,61 @@ section.ik_main_1 {
           width: 100%;
           height: 200%;
         } //pamphlet port
-        video{
+        video {
           width: 100%;
           height: 100%;
-
         }
-      }//face
-    }//center
+        .ik_textbox {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          mix-blend-mode: difference;
 
-    .side{
+          @media screen and (orientation: landscape) {
+            h2 {
+              text-transform: uppercase;
+              font-size: 5em;
+              font-weight: 800;
+            }
+            p {
+              font-size: 2em;
+              font-weight: 600;
+            }
+          } //pamphlet land
+          @media screen and (orientation: portrait) {
+            h2 {
+              text-transform: uppercase;
+              font-size: 3em;
+              font-weight: 800;
+            }
+            p {
+              font-size: 1.5em;
+              font-weight: 600;
+            }
+          } //pamphlet port
+        }
+      } //face
+    } //center
+
+    .ik_side {
+      box-sizing: border-box;
       position: absolute;
       transform-style: preserve-3d;
       transition: transform 1s;
       @media screen and (orientation: landscape) {
         width: 50%;
         height: 100%;
-        top:0;
+        top: 0;
       } //pamphlet land
       @media screen and (orientation: portrait) {
-        left:0;
+        left: 0;
         width: 100%;
         height: 50%;
       } //pamphlet port
 
-      .back video{
+      .ik_back video {
         @media screen and (orientation: landscape) {
           width: 400%;
           height: 100%;
@@ -124,33 +240,32 @@ section.ik_main_1 {
           width: 100%;
           height: 400%;
         } //pamphlet port
-      }//back
-    }//side
+      } //back
+    } //side
 
-    .left{
+    .ik_left {
       @media screen and (orientation: landscape) {
-        left:0;
+        left: 0;
         transform-origin: left center;
         transform: rotateY(0);
       } //left land
       @media screen and (orientation: portrait) {
-        top:0;
+        top: 0;
         transform-origin: center top;
         transform: rotateX(0);
       } //left port
-      .back video{
+      .ik_back video {
         @media screen and (orientation: landscape) {
           left: 0;
-          top:0;
+          top: 0;
         } //back land
         @media screen and (orientation: portrait) {
           top: 0;
-          left:0;
+          left: 0;
         } //back port
-        
-      }//back
-    }//left
-    .right{
+      } //back
+    } //left
+    .ik_right {
       @media screen and (orientation: landscape) {
         right: 0;
         transform-origin: right center;
@@ -161,28 +276,27 @@ section.ik_main_1 {
         transform-origin: center bottom;
         transform: rotateX(0);
       } //pamphlet port
-      .back video{
+      .ik_back video {
         @media screen and (orientation: landscape) {
           right: 0;
-          top:0;
+          top: 0;
         } //back land
         @media screen and (orientation: portrait) {
           bottom: 0;
-          left:0;
+          left: 0;
         } //back port
-      }//back
-    }//right
+      } //back
+    } //right
 
-    .face{
+    .ik_face {
       position: absolute;
       backface-visibility: hidden;
       position: absolute;
       width: 100%;
       height: 100%;
-      &.front{
-
+      &.ik_front {
       }
-      &.back{
+      &.ik_back {
         overflow: hidden;
         @media screen and (orientation: landscape) {
           transform: rotateY(180deg);
@@ -190,49 +304,50 @@ section.ik_main_1 {
         @media screen and (orientation: portrait) {
           transform: rotateX(180deg);
         } //back port
-      }//back
-    }//face
+      } //back
+    } //face
 
-    video{
+    video {
       position: absolute;
       object-fit: cover;
       object-position: center;
     }
 
-    .cover{
+    .ik_cover {
       position: absolute;
       width: 100%;
       height: 100%;
       @media screen and (orientation: landscape) {
-        &.cover-top,&.cover-bottom{
+        &.ik_cover-top,
+        &.ik_cover-bottom {
           display: none;
         }
       } //back land
       @media screen and (orientation: portrait) {
-        &.cover-left,&.cover-right{
+        &.ik_cover-left,
+        &.ik_cover-right {
           display: none;
         }
       } //back port
-    }//cover
+    } //cover
     ///////////////////////////////////////////////////////////////
-    &.active{
-      .left{
+    &.active {
+      .ik_left {
         @media screen and (orientation: landscape) {
           transform: rotateY(-180deg);
         } //left land
         @media screen and (orientation: portrait) {
           transform: rotateX(180deg);
         } //left port
-      }//left
-      .right{
+      } //left
+      .ik_right {
         @media screen and (orientation: landscape) {
           transform: rotateY(180deg);
         } //pamphlet land
         @media screen and (orientation: portrait) {
           transform: rotateX(-180deg);
         } //pamphlet port
-      }//right
-    }//active
+      } //right
+    } //active
   } //pamphlet
-  
 } //section

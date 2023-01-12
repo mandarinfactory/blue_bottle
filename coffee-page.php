@@ -26,10 +26,8 @@
         </li>
         <li class="jey_li2">
           <div class="j_textbox">
-            <span>FLAVOL PROFILE</span>
-            <p>Dark Chocolate</p>
-            <p>Scotch</p>
-            <p>Raspberry</p>
+            <span><i>FLAVOL PROFILE</i></span>
+            <p>Dark Chocolate<br>Scotch<br>Raspberry</p>
           </div>
           <figure>
             <img src="https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_1920,q_auto/Coffee/Robust/Robusta-Tasting-Notes-Desktop.gif" alt="">
@@ -41,10 +39,11 @@
           <div class="jey_btns">
             <em>Light</em>
             <span>
-              <button data-n="1"></button>
+              <button class="j_btn_sm" data-n="1"></button>
               <button data-n="2"></button>
               <button data-n="3"></button>
               <button data-n="4"></button>
+      
             </span>
             <em>Dark</em>
           </div>
@@ -56,7 +55,7 @@
     <div class="menubox">    
     <h5>You can try <b class="roast"></b> roast coffee</h5> 
    
-      <ul>
+      <ul class="jey_ul">
       </ul>
     </div>
   </article>

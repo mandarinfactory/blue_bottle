@@ -43,8 +43,9 @@ $(function () {
    $('.jey_prd_menu .jey_menu3 .menubox ul').append(`  
            
    <li class="${v.class}"> 
-    <h5>You can try <b>${v.roast}</b> roast coffee</h5>        
+           
    <figure>
+   <h5>You can try <b>${v.roast}</b> roast coffee</h5> 
    <img src = "${v.img}">
    <figcaption>${v.menu}</figcaption>
    </figure>
@@ -62,13 +63,8 @@ $(function () {
     $(this).css({'background':'#00a9e0'})  
         
   })//click
-  
-  
- 
-  
- 
-    
-   
+  /*btn -------------------------------------- */
+
 
 
   /* prd 3 end----------------------------------------------------- */

@@ -2,42 +2,44 @@
 
   <!-- http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4 -->
   <!-- ./img/main_section/main_left.jpg  -->
-  <div class="pamphlet">
+  <div class="ik_pamphlet">
+    <div class="ik_click">
+      <button>Click Me!</button>
+    </div>
 
-    <div class="center">
-      <div class="face front">
+    <div class="ik_center">
+      <div class="ik_face ik_front">
         <video class="ik_main_video" src="http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4" muted autoplay playsinline></video>
+        <div class="ik_textbox">
+          <h2> bluebottle </h2>
+          <p>Another Level of Coffee</p>
+        </div>
       </div><!-- front -->
     </div><!--center  -------------------->
 
-    <div class="side left">
+    <div class="ik_side ik_left">
       <div class="face front">
-        <img class="cover cover-left" src="./img/main_section/main_left.jpg" alt="">
-        <img class="cover cover-top" src="./img/main_section/main_top.jpg" alt="">
+        <img class="ik_cover ik_cover-left" src="./img/main_section/main_left.jpg">
+        <img class="ik_cover ik_cover-top" src="./img/main_section/main_top.jpg">
       </div><!-- front -->
-      <div class="face back">
+      <div class="ik_face ik_back">
         <video class="ik_main_video" src="http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4" muted autoplay playsinline></video>
       </div><!-- back -->
     </div><!--left  -------------------->
 
-    <div class="side right">
-      <div class="face front">
-        <img class="cover cover-right" src="./img/main_section/main_right.jpg" alt="">
-        <img class="cover cover-bottom" src="./img/main_section/main_bottom.jpg" alt="">
+    <div class="ik_side ik_right">
+      <div class="ik_face ik_front">
+        <img class="ik_cover ik_cover-right" src="./img/main_section/main_right.jpg">
+        <img class="ik_cover ik_cover-bottom" src="./img/main_section/main_bottom.jpg">
       </div><!-- front -->
-      <div class="face back">
+      <div class="ik_face ik_back">
         <video class="ik_main_video" src="http://cameleon89.synology.me/blue_bottle/video/bluebottle.mp4" muted autoplay playsinline></video>
       </div><!-- back -->
     </div><!-- right ----------------->
   </div>
 
-  <figure class="ik_mug">
-    <img src="./img/object/kettle.png" alt="">
+  <figure class="ik_kettle">
+    <img src="./img/object/kettle.png">
   </figure>
 </section><!-- ik_main1 -->
 
-<script>
-/*   $('.pamphlet').click(function() {
-    $(this).toggleClass('active')
-  }) */
-</script>

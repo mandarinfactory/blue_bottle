@@ -1,3 +1,6 @@
+
+
+
 .ik_middle{
   position: relative;
   box-sizing: border-box;
@@ -5,6 +8,7 @@
   height: 200%;
   overflow: hidden;
   background: var(--white);
+
 
   .ik_onePath{
     position: absolute;
@@ -85,27 +89,27 @@
   @media screen and (min-width:700px){
     &.ik_bean1{
       top: 7%; left: 80%;
-      width: 100px; height: 100px;
+      width: 80px; height: 80px;
     }
     &.ik_bean2{
       top: 10%; left: 70%;
-      width: 80px; height: 80px;
+      width: 60px; height: 60px;
     }
     &.ik_bean3{
       top: 40%; left: 12%;
-      width: 90px; height: 90px;
+      width: 70px; height: 70px;
     }
     &.ik_bean4{
       top: 32%; left: 85%;
-      width: 100px; height: 100px;
+      width: 80px; height: 80px;
     }
     &.ik_bean5{
       top: 50%; left: 70%;
-      width: 120px; height: 120px;
+      width: 90px; height: 90px;
     }
     &.ik_bean6{
       top: 57%; left: 20%;
-      width: 80px; height: 80px;
+      width: 60px; height: 60px;
     }
     &.ik_bean7{
       top: 61%; left: 14%;
@@ -113,7 +117,7 @@
     }
     &.ik_bean8{
       top:64%; left: 90%;
-      width: 100px; height: 100px;
+      width: 80px; height: 80px;
     }  
     
     
@@ -129,7 +133,7 @@
       width: 40px; height: 40px;
     }
     &.ik_bean3{
-      top: 25%; left: 12%;
+      top: 31%; left: 12%;
       width: 90px; height: 90px;
     }
     &.ik_bean4{
@@ -154,40 +158,24 @@
     }
   }
 /* ----------------animation-------------------------- */
-  &.ik_bean1{
-    animation: jump 5s linear infinite;
-  } 
-  &.ik_bean2{
-    animation: slide 7s linear infinite;
-  }    
-  &.ik_bean3{
-    animation: jump 7s linear infinite;
-  } 
-  &.ik_bean4{
-    animation: slide 6s linear infinite;
-  }
-  &.ik_bean5{
-    animation: slide 8s linear infinite;
-  }  
-  &.ik_bean6{
-    animation: jump 6s linear infinite;
-  }  
-  &.ik_bean7{
-    animation: slide 5.3s linear infinite;
-  }
-  &.ik_bean8{
-    animation: jump 4s linear infinite;
-  }
+  &.ik_bean1{ animation: jump 5s linear infinite; } 
+  &.ik_bean2{ animation: slide 7s linear infinite; }    
+  &.ik_bean3{ animation: jump 7s linear infinite; } 
+  &.ik_bean4{ animation: slide 6s linear infinite; }
+  &.ik_bean5{ animation: slide 8s linear infinite; }  
+  &.ik_bean6{ animation: jump 6s linear infinite; }  
+  &.ik_bean7{ animation: slide 5.3s linear infinite; }
+  &.ik_bean8{ animation: jump 4s linear infinite; }
 
   @keyframes jump {
-    0%{ transform: translateY(0%); }
-    50%{ transform: translateY(20%); }
-    100%{ transform: translateY(0%); }
+    0%{ margin-top: 0; }
+    50%{ margin-top: 20px; }
+    100%{ margin-top: 0; }
   }
   @keyframes slide {
-    0%{ transform: translateX(0%); }
-    50%{ transform: translateX(20%); }
-    100%{ transform: translateX(0%); }
+    0%{ margin-left: 0px ; }
+    50%{ margin-left: 20px ; }
+    100%{ margin-left: 0px ; }
   }
 
   /* ----------------hover------------------- */
