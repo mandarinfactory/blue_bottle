@@ -102,11 +102,17 @@ figure.hj_mug {
         width: 450px;
         height: 450px;
     } //lg
-    @media screen and (min-width: 300px) and (max-width: 600px) {
+    @media screen and (min-width: 450px) and (max-width: 600px) {
         top: 43.7%;
         left: 48.7%;
         width: 350px;
         height: 350px;
+    } //md
+    @media screen and (min-width: 300px) and (max-width: 450px) {
+        top: 43.7%;
+        left: 48.7%;
+        width: 270px;
+        height: 270px;
     } //sm
     img.mug {
         width: 108%;
@@ -132,9 +138,17 @@ figure.hj_cafes_photo {
         width: 495px;
         height: 495px;
     } //lg
-    @media screen and (min-width: 300px) and (max-width: 600px) {
+    @media screen and (min-width: 450px) and (max-width: 600px) {
         width: 375px;
         height: 375px;
+        img {
+            width: 100%;
+            height: 100%;
+        } //img
+    } //md
+    @media screen and (min-width: 300px) and (max-width: 450px) {
+        width: 290px;
+        height: 290px;
         img {
             width: 100%;
             height: 100%;
@@ -223,8 +237,10 @@ figure.hj_coffeestain {
                 width: 80%;
             }
             @media screen and (min-width: 300px) and (max-width: 600px) {
-                width: 120%;
+                width: 90%;
                 animation-play-state: paused !important;
+            }
+            @media (hover: hover) and (pointer: fine) {
             }
         } //img.hj_logo
         span {
@@ -234,7 +250,7 @@ figure.hj_coffeestain {
         } //span
         &:hover {
             span {
-                opacity: 1;
+                opacity: 1 !important;
             } //:hover span
             img.hj_marker {
                 opacity: 1;
