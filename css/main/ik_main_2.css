@@ -14,38 +14,43 @@
   overflow: hidden;
   scroll-behavior: smooth;
 }
-.ik_main_2 .ik_motion_box img {
+.ik_main_2 .ik_motion_box .ik_lg img, .ik_main_2 .ik_motion_box .ik_sm img {
   position: absolute;
+  object-fit: contain;
   object-position: center;
   transition: top 0.5s linear, left 1s, opacity 1s;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
-@media screen and (max-width: 800px) {
-  .ik_main_2 .ik_motion_box img {
-    height: 150vh;
-  }
-}
-.ik_main_2 .ik_motion_box img.ik_motion_img1 {
+.ik_main_2 .ik_motion_box .ik_lg img.ik_motion_img1_lg, .ik_main_2 .ik_motion_box .ik_lg img.ik_motion_img1_sm, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_img1_lg, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_img1_sm {
   z-index: 2;
   opacity: 1 !important;
 }
-.ik_main_2 .ik_motion_box img.ik_motion_img2 {
+.ik_main_2 .ik_motion_box .ik_lg img.ik_motion_img2_lg, .ik_main_2 .ik_motion_box .ik_lg img.ik_motion_img2_sm, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_img2_lg, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_img2_sm {
   z-index: 3;
 }
-.ik_main_2 .ik_motion_box img.ik_motion_img3 {
+.ik_main_2 .ik_motion_box .ik_lg img.ik_motion_img3_lg, .ik_main_2 .ik_motion_box .ik_lg img.ik_motion_img3_sm, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_img3_lg, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_img3_sm {
   z-index: 2;
   transition: all 0.5s;
 }
-.ik_main_2 .ik_motion_box img.ik_motion_text1 {
+.ik_main_2 .ik_motion_box .ik_lg img.ik_motion_text1_lg, .ik_main_2 .ik_motion_box .ik_lg img.ik_motion_text1_sm, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_text1_lg, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_text1_sm {
   z-index: 0;
 }
-.ik_main_2 .ik_motion_box img.ik_motion_text2 {
+.ik_main_2 .ik_motion_box .ik_lg img.ik_motion_text2_lg, .ik_main_2 .ik_motion_box .ik_lg img.ik_motion_text2_sm, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_text2_lg, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_text2_sm {
   z-index: 1;
 }
-.ik_main_2 .ik_motion_box img.ik_motion_text3 {
+.ik_main_2 .ik_motion_box .ik_lg img.ik_motion_text3_lg, .ik_main_2 .ik_motion_box .ik_lg img.ik_motion_text3_sm, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_text3_lg, .ik_main_2 .ik_motion_box .ik_sm img.ik_motion_text3_sm {
   z-index: 0;
+}
+@media screen and (orientation: landscape) {
+  .ik_main_2 .ik_motion_box .ik_sm {
+    display: none !important;
+  }
+}
+@media screen and (orientation: portrait) {
+  .ik_main_2 .ik_motion_box .ik_lg {
+    display: none !important;
+  }
 }/*# sourceMappingURL=ik_main_2.css.map */
