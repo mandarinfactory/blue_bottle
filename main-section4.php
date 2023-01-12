@@ -41,18 +41,18 @@
     <img src="./img/object/coffeestain02.png" alt="">
   </figure><!-- hj_coffeestain -->
   <div class="hj_cafes_area">
-      <a href="./cafes.php" data-num="0">
-        <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-        <img src="./HJ/img/icon/icon_01.png" alt="" class="hj_logo">
-        <span>여의도</span>
-      </a>
-      <a href="./cafes.php" data-num="1">
-        <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
-        <img src="./HJ/img/icon/icon_02.png" alt="" class="hj_logo">
-        <span>명동</span>
-      </a>
-      <a href="./cafes.php" data-num="2">
-        <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
+    <a href="./cafes.php" data-num="0">
+      <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
+      <img src="./HJ/img/icon/icon_01.png" alt="" class="hj_logo">
+      <span>여의도</span>
+    </a>
+    <a href="./cafes.php" data-num="1">
+      <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
+      <img src="./HJ/img/icon/icon_02.png" alt="" class="hj_logo">
+      <span>명동</span>
+    </a>
+    <a href="./cafes.php" data-num="2">
+      <img src="./HJ/img/marker_main.jpg" alt="" class="hj_marker">
       <img src="./HJ/img/icon/icon_03.png" alt="" class="hj_logo">
       <span>광화문</span>
     </a>
