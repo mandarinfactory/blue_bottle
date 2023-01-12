@@ -1,225 +1,237 @@
-@import '../mixin.scss';
+@import "../mixin.scss";
 
 .ik_main3 {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1600px;
+  width: 100%; height: 50%;
+  max-width: 1800px;
   margin: 0 auto;
   overflow: hidden;
-  height: 50%;
 
   > ul.ik_main_list_container {
     display: flex;
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     box-sizing: border-box;
+    width: 100%; height: 45%;
     z-index: 2;
+    align-items: center;
 
-      align-items: center;
-      width: 100%;
-      height: 45%;
+    li.ik_main_list {
+      box-sizing: border-box;
+      position: absolute;
+      width: 85%;
+      height: 100%;
+      display: flex;
+      cursor: pointer;
 
-      li.ik_main_list {
+      .ik_left,
+      .ik_right {
+        position: relative;
         box-sizing: border-box;
-        position: absolute;
-        width: 85%;
+        width: 50%;
         height: 100%;
-        display: flex;
-        cursor: pointer;
-  
-        
-        .ik_left, .ik_right{
-          position: relative;
-          box-sizing: border-box;
-          width: 50%;
+      }
+
+      .ik_left {
+        overflow: hidden;
+        img {
+          width: 100%;
           height: 100%;
+          object-fit: cover;
+          object-position: center;
         }
-  
-        .ik_left {
-          overflow: hidden;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-          }
-          a {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            top: 60%; left: 50%;
-            transform: translate(-50%,-50%);
-            width: 40%; height: 40px;
-            background: rgba(#fbfdf7,0.8);
-            text-transform: uppercase;
-            font-weight: 600;
-            color: #333;
-            transition: background 0.3s, color 0.3s, opacity 0.5s, top 0.5s;
-            transition-delay: 0s, 0s, 0.8s, 0.8s;
-            &:hover{
-              background: var(--blue);
-              color: var(--white);
-            }
-          }
-        }
-  
-        .ik_right {
-          width: 50%;
-          height: 100%;
-          transition: filter 0.3s;
+        a {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 40%;
+          height: 40px;
+          background: rgba(#fbfdf7, 0.8);
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #333;
+          transition: background 0.3s, color 0.3s, opacity 0.5s, top 0.5s;
+          transition-delay: 0s, 0s, 0.8s, 0.8s;
           &:hover {
-            filter: brightness(1.2);
-          }
-  
-          h3 {
-            position: absolute;
-            top: 5%; left: calc(99% - 1.3em);
-            transform-origin: left top;
-            writing-mode: vertical-rl;
+            background: var(--blue);
             color: var(--white);
-            font-size: 2em;
-            font-weight: 800;
-            text-transform: uppercase;
-            transition: all 1s;
-          }//title
-          p{
-            position:  absolute;
-            opacity: 0;
-            top: 10%; left: 5%;
-            width: 60%;
-            font-size: 1.1em;
-            font-weight: 500;
-            color: var(--white);
-            transition: all 1s;
-            transition-delay: 0.5s;
-            &::before{
-              position: absolute;
-              content: "";
-              top: -20px;
-              left: 0;
-              width: 7%;
-              height: 2px;
-              background: var(--white);
-            }
-          } //desc
-         
-          img.ik_mug {
+          }
+        }
+      }
+
+      .ik_right {
+        width: 50%;
+        height: 100%;
+        transition: filter 0.3s;
+        &:hover {
+          filter: brightness(1.2);
+        }
+
+        h3 {
+          position: absolute;
+          top: 5%;
+          left: calc(99% - 1.3em);
+          transform-origin: left top;
+          writing-mode: vertical-rl;
+          color: var(--white);
+          font-size: 2em;
+          font-weight: 800;
+          text-transform: uppercase;
+          transition: all 1s;
+        } //title
+        p {
+          position: absolute;
+          opacity: 0;
+          top: 10%; left: 5%;
+          width: 60%; height: 60%;
+          font-size: 1.1em;
+          font-weight: 500;
+          color: var(--white);        
+          transition: all 1s;
+          transition-delay: 0.5s;
+
+          &::before {
             position: absolute;
-            bottom: 5%; right: -3%;
-            transform: rotate(-90deg);
-            width: 40%; height: 40%;
-            object-fit: contain;
-            object-position: center;
-            transition: all 1s;
+            content: "";
+            top: -20px;
+            left: 0;
+            width: 7%;
+            height: 2px;
+            background: var(--white);
           }
+        } //desc
+
+        img.ik_mug {
+          position: absolute;
+          bottom: 5%;
+          right: -3%;
+          transform: rotate(-90deg);
+          width: 35%;
+          height: 35%;
+          object-fit: contain;
+          object-position: center;
+          transition: all 1s;
         }
-  
-        /* active ---------------- */
-  
-        &.ik_main_list_1 {
+      }
+
+      /* active ---------------- */
+
+      &.ik_main_list_1 {
+        top: 0;
+        right: 80%;
+        background: var(--black);
+
+        &.active {
           top: 0;
-          right: 80%;
-          background: var(--black);
-  
-          &.active{
-            top: 0; right:0;
-            .ik_right{
-              img.ik_mug{
-                transform: rotate(90deg);
-              }
-            }//ik-right
-          }
-        }
-        &.ik_main_list_2 {
-          top: 0;
-          right: 85%;
-          background: var(--sub-color2);
-  
-          &.active{
-            top: 0; right: 5%;
-            .ik_right{
-              img.ik_mug{
-                transform: rotate(180deg);
-              }
-            }//ik-right
-          }
-        }
-        &.ik_main_list_3 {
-          top: 0;
-          right: 90%;
-          background: var(--sub-color3);
-  
-          &.active{
-            top: 0; right: 10%;
-            .ik_right{
-              img.ik_mug{
-                transform: rotate(270deg);
-              }
-            }//ik-right
-          }
-        }
-        &.ik_main_list_4 {
-          top: 0;
-          right: 95%;
-          background: var(--sub-color1);
-  
-          &.active{
-            top: 0; right: 15%;
-            .ik_right{
-              img.ik_mug{
-                transform: rotate(360deg);
-              }
-            }//ik-right
-          }
-        }
-        
-        transition: background 1s, right 1s;
-  
-        &.active2 {
-          background: var(--blue);
-          .ik_left{
-            >a{
-              opacity: 1;
-              top: 50%; left: 50%;
+          right: 0;
+          .ik_right {
+            img.ik_mug {
+              transform: rotate(90deg);
             }
+          } //ik-right
+        }
+      }
+      &.ik_main_list_2 {
+        top: 0;
+        right: 85%;
+        background: var(--sub-color2);
+
+        &.active {
+          top: 0;
+          right: 5%;
+          .ik_right {
+            img.ik_mug {
+              transform: rotate(180deg);
+            }
+          } //ik-right
+        }
+      }
+      &.ik_main_list_3 {
+        top: 0;
+        right: 90%;
+        background: var(--sub-color3);
+
+        &.active {
+          top: 0;
+          right: 10%;
+          .ik_right {
+            img.ik_mug {
+              transform: rotate(270deg);
+            }
+          } //ik-right
+        }
+      }
+      &.ik_main_list_4 {
+        top: 0;
+        right: 95%;
+        background: var(--sub-color1);
+
+        &.active {
+          top: 0;
+          right: 15%;
+          .ik_right {
+            img.ik_mug {
+              transform: rotate(360deg);
+            }
+          } //ik-right
+        }
+      }
+
+      transition: background 1s, right 1s;
+
+      &.active2 {
+        background: var(--blue);
+        .ik_left {
+          > a {
+            opacity: 1;
+            top: 50%;
+            left: 50%;
           }
-  
-          .ik_right{
-            h3{
+        }
+
+        .ik_right {
+          h3 {            
+            @media screen and (orientation : landscape) {
               left: 5%;
               font-size: 2.8em;
               transform: rotate(-90deg) translateX(-100%);
             }
-            p{
-              top: 30%;
-              opacity: 1;
+            @media screen and (orientation : portrait) {
+              
             }
-            img.ik_mug{
-              transform: rotate(90deg);
-            }
+
           }
-        }//li.active2
-      } //li
+          p {
+            top: 30%;
+            opacity: 1;
+          }
+          img.ik_mug {
+            transform: rotate(90deg);
+          }
+        }
+      } //li.active2
+    } //li
 
-
-
-    
-    
-    li.ik_first_list_box{ // 첫 번째 list box
+    li.ik_first_list_box {
+      // 첫 번째 list box
       box-sizing: border-box;
       position: absolute;
-      top: 0; right: 0;
-      width: 80%; height: 100%;
+      top: 0;
+      right: 0;
+      width: 80%;
+      height: 100%;
       background-image: url(../../img/sub_visual/coffee.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
-
 
       p {
         position: absolute;
@@ -234,14 +246,15 @@
       }
       button {
         position: absolute;
-        top: 50%; left: 50%;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
         width: 30%;
         height: 40px;
         font-size: 0.9em;
         font-weight: 600;
         text-transform: uppercase;
-        background: rgba(#fbfdf7,0.8);
+        background: rgba(#fbfdf7, 0.8);
         color: var(--black);
         transition: all 0.3s;
         &:hover {
@@ -249,6 +262,6 @@
           color: var(--white);
         }
       }
-    } 
+    }
   } //ul
 } //ik_main3

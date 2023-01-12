@@ -2,10 +2,10 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1600px;
+  height: 50%;
+  max-width: 1800px;
   margin: 0 auto;
   overflow: hidden;
-  height: 50%;
 }
 .ik_main3 > ul.ik_main_list_container {
   display: flex;
@@ -14,10 +14,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  z-index: 2;
-  align-items: center;
   width: 100%;
   height: 45%;
+  z-index: 2;
+  align-items: center;
 }
 .ik_main3 > ul.ik_main_list_container li.ik_main_list {
   box-sizing: border-box;
@@ -29,7 +29,8 @@
   /* active ---------------- */
   transition: background 1s, right 1s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left, .ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right {
+.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left,
+.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right {
   position: relative;
   box-sizing: border-box;
   width: 50%;
@@ -92,6 +93,7 @@
   top: 10%;
   left: 5%;
   width: 60%;
+  height: 60%;
   font-size: 1.1em;
   font-weight: 500;
   color: var(--white);
@@ -112,8 +114,8 @@
   bottom: 5%;
   right: -3%;
   transform: rotate(-90deg);
-  width: 40%;
-  height: 40%;
+  width: 35%;
+  height: 35%;
   object-fit: contain;
   object-position: center;
   transition: all 1s;
@@ -174,10 +176,12 @@
   top: 50%;
   left: 50%;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_right h3 {
-  left: 5%;
-  font-size: 2.8em;
-  transform: rotate(-90deg) translateX(-100%);
+@media screen and (orientation: landscape) {
+  .ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_right h3 {
+    left: 5%;
+    font-size: 2.8em;
+    transform: rotate(-90deg) translateX(-100%);
+  }
 }
 .ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_right p {
   top: 30%;
