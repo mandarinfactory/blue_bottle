@@ -143,10 +143,8 @@ section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li2 figure img {
 @media screen and (max-width: 1200px) {
   section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li2 figure img {
     max-height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    object-fit: cover;
+    object-position: center;
   }
 }
 section.jey_prd_menu .jey_menu2 div.menubox1 ul .jey_li3 {

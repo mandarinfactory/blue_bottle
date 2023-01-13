@@ -27,10 +27,8 @@ section.product .jey_prd2 div.jey_top ul li figure {
 section.product .jey_prd2 div.jey_top ul li figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 section.product .jey_prd2 div.jey_top ul .jey_li1 {
   width: 50%;
@@ -188,10 +186,8 @@ section.product .jey_prd2 div.jey_bottom ul li figure {
 section.product .jey_prd2 div.jey_bottom ul li figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 section.product .jey_prd2 div.jey_bottom ul li.jey_li1 {
   width: 25%;
@@ -326,18 +322,8 @@ section.product .jey_prd2 .j_waviy.active {
 section.product .jey_prd2 .j_waviy.active span {
   position: relative;
   display: inline-block;
-  -webkit-animation: waviy 1.3s infinite;
-          animation: waviy 1.3s infinite;
-  -webkit-animation-delay: calc(0.1s * var(--i));
-          animation-delay: calc(0.1s * var(--i));
-}
-@-webkit-keyframes waviy {
-  0%, 40%, 100% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-10px);
-  }
+  animation: waviy 1.3s infinite;
+  animation-delay: calc(0.1s * var(--i));
 }
 @keyframes waviy {
   0%, 40%, 100% {
@@ -350,15 +336,8 @@ section.product .jey_prd2 .j_waviy.active span {
 section.product .jey_prd2 .j_waviy2.active span {
   position: relative;
   display: inline-block;
-  -webkit-animation: flip 1.4s infinite;
-          animation: flip 1.4s infinite;
-  -webkit-animation-delay: calc(0.1s * var(--i));
-          animation-delay: calc(0.1s * var(--i));
-}
-@-webkit-keyframes flip {
-  0%, 80% {
-    transform: rotateY(360deg);
-  }
+  animation: flip 1.4s infinite;
+  animation-delay: calc(0.1s * var(--i));
 }
 @keyframes flip {
   0%, 80% {

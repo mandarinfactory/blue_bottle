@@ -158,13 +158,13 @@ figure.hj_cafes_photo {
         position: absolute;
         top: 48%;
         left: 30%;
-        color: var(--blue);
-        font-size: 2.5em;
+        color: var(--white);
+        font-size: 1.3em;
         font-weight: 400;
         z-index: 8;
         text-shadow: 1px 1px 5px var(--black);
         opacity: 0;
-    }//a
+    } //a
     img {
         width: 100%;
         height: 100%;
@@ -215,11 +215,10 @@ figure.hj_coffeestain {
     }
     @media screen and (min-width: 300px) and (max-width: 450px) {
         display: flex;
-        width: 140%;
+        width: 100%;
         top: 80%;
         left: 50%;
         z-index: 2;
-        overflow-x: scroll;
     }
     a {
         display: flex;
@@ -240,6 +239,7 @@ figure.hj_coffeestain {
         }
         @media screen and (min-width: 300px) and (max-width: 600px) {
             font-size: 0.5em;
+            margin: 0;
         }
         img.hj_marker {
             opacity: 0;
@@ -260,7 +260,7 @@ figure.hj_coffeestain {
                 animation-play-state: paused !important;
             }
             @media screen and (min-width: 300px) and (max-width: 450px) {
-                width: 75%;
+                width: 85%;
                 animation-play-state: paused !important;
             }
         } //img.hj_logo

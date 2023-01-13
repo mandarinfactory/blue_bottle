@@ -44,23 +44,21 @@ $(function () {
     })//mouseenter
 
     $('.hj_cafes_area a').bind('touchstart', function (e) {
-        const photoData = $('.hj_cafes_photo a').each(function (v, i) {
-            
-        })
+        const photoData = $('.hj_cafes_photo a').attr('data-num')
         e.preventDefault();
         findPhoto.css({ 'z-index': 3 })
         findPhotoSvg.css({ 'display': 'none' })
         findPhotoImg.css({ 'display': 'block' })
-        $('.hj_cafes_photo button').css({'display':'block'})
+        $('.hj_cafes_photo button').css({ 'display': 'block' })
 
-        if($(this).attr('data-num') == photoData){
-            $('.hj_cafes_photo a').css({'opacity':1})
+        if ($(this).attr('data-num') == photoData) {
+            $('.hj_cafes_photo a').css({ 'opacity': 1 })
             $('.hj_cafes_photo a').bind('touchstart', function () {
-                $('.hj_cafes_photo a').css({'z-index':9})
+                $('.hj_cafes_photo a').css({ 'z-index': 9 })
                 $(this).attr('href', './cafes.php' + '?' + $(this).attr('data-num'))
             })//touchstart
         } else {
-            $('.hj_cafes_photo a').css({'opacity':0})
+            $('.hj_cafes_photo a').css({ 'opacity': 0 })
         }
         let hj_anchorData = parseInt($(this).attr('data-num'))
         if (hj_anchorData === cafeImageArr.indexOf(cafeImageArr[hj_anchorData])) {
@@ -70,7 +68,7 @@ $(function () {
     })//touchstart
     $('hj_cafes_photo button').bind('touchstart', function (e) {
         e.preventDefault();
-        $(this).css({'color':'var(--blue)'})
+        $(this).css({ 'color': 'var(--blue)' })
     })//touchstart
     /*     $('.hj_cafes_area').bind('touchend', function (e) {
             e.preventDefault();

@@ -47,10 +47,8 @@ section.ik_main_1 figure.ik_kettle {
 section.ik_main_1 figure.ik_kettle img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   transform: scale(1.5);
   transition: all 1s;
 }
@@ -102,8 +100,7 @@ section.ik_main_1 .ik_pamphlet .ik_click {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-animation: clickMe 3s infinite linear;
-          animation: clickMe 3s infinite linear;
+  animation: clickMe 3s infinite linear;
 }
 section.ik_main_1 .ik_pamphlet .ik_click button {
   position: relative;
@@ -129,33 +126,6 @@ section.ik_main_1 .ik_pamphlet .ik_click button::before {
   section.ik_main_1 .ik_pamphlet .ik_click button button {
     font-size: 1em;
     font-weight: 700;
-  }
-}
-@-webkit-keyframes clickMe {
-  0% {
-    top: 50%;
-    opacity: 1;
-    color: #333;
-  }
-  25% {
-    top: 45%;
-    opacity: 0.8;
-    color: var(--blue);
-  }
-  50% {
-    top: 50%;
-    opacity: 1;
-    color: #333;
-  }
-  75% {
-    top: 45%;
-    opacity: 0.8;
-    color: var(--blue);
-  }
-  100% {
-    top: 50%;
-    opacity: 1;
-    color: #333;
   }
 }
 @keyframes clickMe {
@@ -332,8 +302,7 @@ section.ik_main_1 .ik_pamphlet .ik_side {
 }
 section.ik_main_1 .ik_pamphlet .ik_face {
   position: absolute;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -353,10 +322,8 @@ section.ik_main_1 .ik_pamphlet .ik_face.ik_back {
 }
 section.ik_main_1 .ik_pamphlet video {
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 section.ik_main_1 .ik_pamphlet .ik_cover {
   position: absolute;

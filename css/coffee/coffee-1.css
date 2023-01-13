@@ -94,10 +94,8 @@ section.product .jey_prd1 .jey_left ul li figure {
 section.product .jey_prd1 .jey_left ul li figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   transform: scale(1.3);
 }
 section.product .jey_prd1 .jey_left ul .jey_li1 img,
@@ -203,10 +201,8 @@ section.product .jey_prd1 .jey_right figure {
 }
 section.product .jey_prd1 .jey_right figure img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   top: 0;
   right: 0;
 }
@@ -233,17 +229,6 @@ section.product .jey_prd1 .jey_right figure img.jey_icon3 {
 }
 
 /* animation----------------------------------------- */
-@-webkit-keyframes icon {
-  0% {
-    transform: rotateX(25deg);
-  }
-  50% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotateX(25deg);
-  }
-}
 @keyframes icon {
   0% {
     transform: rotateX(25deg);
@@ -276,17 +261,7 @@ section.product .jey_prd1 .jey_right figure img.jey_icon3 {
 }
 .jey_prd1 .jey_li4:hover .wave, .jey_prd1 .jey_li4.active .wave {
   margin-bottom: -250px;
-  -webkit-animation: rotate 3000ms infinite linear;
-          animation: rotate 3000ms infinite linear;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  from {
-    transform: rotate(360deg);
-  }
+  animation: rotate 3000ms infinite linear;
 }
 
 @keyframes rotate {
