@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="./css/main/ik_main_1.css">
 <link rel="stylesheet" href="./css/main/ik_main_2.css">
 <link rel="stylesheet" href="./css/main/ik_main_3.css">
+<link rel="stylesheet" href="./css/main/ik_main_3 sm.css">
 <link rel="stylesheet" href="./css/main/hj_main_4.css">
 <link rel="stylesheet" href="./css/plugin/coffee-particle.css">
 <script src="./js/main2.js"></script>

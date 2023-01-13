@@ -7,7 +7,7 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.ik_main3 > ul.ik_main_list_container {
+.ik_main3 > ul.ik_main_list_container_lg {
   display: flex;
   position: absolute;
   top: 50%;
@@ -19,7 +19,12 @@
   z-index: 2;
   align-items: center;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list {
+@media screen and (max-width: 750px) {
+  .ik_main3 > ul.ik_main_list_container_lg {
+    display: none !important;
+  }
+}
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list {
   box-sizing: border-box;
   position: absolute;
   width: 85%;
@@ -29,24 +34,24 @@
   /* active ---------------- */
   transition: background 1s, right 1s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left,
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_left,
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_right {
   position: relative;
   box-sizing: border-box;
   width: 50%;
   height: 100%;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_left {
   overflow: hidden;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left img {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_left img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform 20s linear;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left a {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_left a {
   position: absolute;
   display: flex;
   align-items: center;
@@ -64,36 +69,36 @@
   transition: background 0.3s, color 0.3s, opacity 0.5s, top 0.5s;
   transition-delay: 0s, 0s, 0.8s, 0.8s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left a:hover {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_left a:hover {
   background: var(--blue);
   color: var(--white);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_right {
   width: 50%;
   height: 100%;
   transition: filter 0.3s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right:hover {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_right:hover {
   filter: brightness(1.2);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right h3 {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_right h3 {
   position: absolute;
   top: 5%;
   left: calc(99% - 1.3em);
   transform-origin: left top;
   writing-mode: vertical-rl;
   color: var(--white);
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: 800;
   text-transform: uppercase;
   transition: all 1s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right p {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_right p {
   position: absolute;
   opacity: 0;
   top: 10%;
   left: 5%;
-  width: 60%;
+  width: 40%;
   height: 60%;
   font-size: 1.1em;
   font-weight: 500;
@@ -101,7 +106,7 @@
   transition: all 1s;
   transition-delay: 0.5s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right p::before {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_right p::before {
   position: absolute;
   content: "";
   top: -20px;
@@ -110,7 +115,7 @@
   height: 2px;
   background: var(--white);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_right img.ik_mug {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list .ik_right img.ik_mug {
   position: absolute;
   bottom: 5%;
   right: -3%;
@@ -121,80 +126,80 @@
   object-position: center;
   transition: all 1s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_1 {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_1 {
   top: 0;
   right: 80%;
   background: var(--black);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_1.active {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_1.active {
   top: 0;
   right: 0;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_1.active .ik_right img.ik_mug {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_1.active .ik_right img.ik_mug {
   transform: rotate(90deg);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_2 {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_2 {
   top: 0;
   right: 85%;
   background: var(--sub-color2);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_2.active {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_2.active {
   top: 0;
   right: 5%;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_2.active .ik_right img.ik_mug {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_2.active .ik_right img.ik_mug {
   transform: rotate(180deg);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_3 {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_3 {
   top: 0;
   right: 90%;
   background: var(--sub-color3);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_3.active {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_3.active {
   top: 0;
   right: 10%;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_3.active .ik_right img.ik_mug {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_3.active .ik_right img.ik_mug {
   transform: rotate(270deg);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_4 {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_4 {
   top: 0;
   right: 95%;
   background: var(--sub-color1);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_4.active {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_4.active {
   top: 0;
   right: 15%;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.ik_main_list_4.active .ik_right img.ik_mug {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.ik_main_list_4.active .ik_right img.ik_mug {
   transform: rotate(360deg);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.active2 {
   background: var(--blue);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_left img {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.active2 .ik_left img {
   transform: scale(1.5);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_left > a {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.active2 .ik_left > a {
   opacity: 1;
   top: 50%;
   left: 50%;
 }
 @media screen and (orientation: landscape) {
-  .ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_right h3 {
+  .ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.active2 .ik_right h3 {
     left: 5%;
-    font-size: 2.8em;
+    font-size: 3.5em;
     transform: rotate(-90deg) translateX(-100%);
   }
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_right p {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.active2 .ik_right p {
   top: 30%;
   opacity: 1;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_main_list.active2 .ik_right img.ik_mug {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_main_list.active2 .ik_right img.ik_mug {
   transform: rotate(90deg);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_first_list_box {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_first_list_box {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -203,7 +208,7 @@
   height: 100%;
   overflow: hidden;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_first_list_box .ik_first_bg {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_first_list_box .ik_first_bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -211,7 +216,7 @@
   transition: transform 20s;
   animation: closeUp 100s linear infinite;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_first_list_box p {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_first_list_box p {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -222,7 +227,7 @@
   text-shadow: 1px 1px 5px black;
   color: var(--white);
 }
-.ik_main3 > ul.ik_main_list_container li.ik_first_list_box button {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_first_list_box button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -236,7 +241,7 @@
   color: var(--black);
   transition: all 0.3s;
 }
-.ik_main3 > ul.ik_main_list_container li.ik_first_list_box button:hover {
+.ik_main3 > ul.ik_main_list_container_lg li.ik_first_list_box button:hover {
   background: var(--blue);
   color: var(--white);
 }

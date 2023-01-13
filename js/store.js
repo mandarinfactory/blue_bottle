@@ -19,25 +19,25 @@ window.backgroundArr = [
 window.main3Arr = [
   {
     title: 'espresso',
-    desc: "Limited-edition espresso with notes of dark chocolate, dried raspberry, and salted toffee <br><br> Our Winter Espresso is rich, complex, and velvety. It is pure luxury, and everyone deserves a moment of luxury this holiday season.",
+    desc: "짙은 다크 초콜릿으로 뒤덮인 과일의 풍미와 에티오피아 커피 특유의 화사한 프로필이 돋보이며 균형 잡힌 한 잔의 완벽한 커피를 즐길 수 있습니다.",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid18.jpg",
   },
   {
     title: 'single origin',
-    desc: "Ethiopia Gedeb METAD Natural <br><br> Every holiday season, we find ourselves craving this single origin.",
+    desc: "최상의 에티오피아 커피의 강렬한 베리와 핵과류에서 느껴지는 밝고 다채로운 풍미로 홀리데이 시즌의 설렘과 기쁨을 선사합니다.",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid10.jpg",
   },
   {
     title: 'winter blend',
-    desc: "Deeply fruited, limited-edition blend with notes of dark chocolate and molasses <br><br> Warm and full-bodied with a glimmer of brightness from an Ethiopian component, this blend is a beautiful embodiment of the season’s comfort.",
+    desc: "다크 초콜릿처럼 묵직하면서도 잼처럼 달콤하게 조린 과일의 풍미를 선사하며 사랑하는 이들과 마주 앉아 안락함을 느낄 수 있습니다.",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid02.jpg",
   },
   {
     title: 'cold brew',
-    desc: "Whole Bean Coffee Blends <br><br> We often call this trio of African coffees the single origin lover’s blend. ",
+    desc: "에티오피아 예가체프 할로 바리티의 섬세하고 정돈된 풍미는 입안 가득 넓게 퍼지는 시원함으로 청량감 마저 느낄 수 있습니다.",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid14.jpg",
   },
