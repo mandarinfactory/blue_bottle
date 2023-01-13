@@ -43,34 +43,6 @@ $(function () {
         $(this).css({ 'animation': 'chScale 7s alternate infinite' })
     })//mouseenter
 
-    $('.hj_cafes_area a').bind('touchstart', function (e) {
-
-        const photoData = $('.hj_cafes_photo a').attr('data-num')
-
-        e.preventDefault();
-        findPhoto.css({ 'z-index': 3 })
-        findPhotoSvg.css({ 'display': 'none' })
-        findPhotoImg.css({ 'display': 'block' })
-        $('.hj_cafes_photo button').css({ 'display': 'block' })
-        if ($(this).attr('data-num') == photoData) {
-            $('.hj_cafes_photo a').css({ 'opacity': 1 })
-            $('.hj_cafes_photo a').bind('touchstart', function () {
-                $('.hj_cafes_photo a').css({ 'z-index': 9 })
-                $(this).attr('href', './cafes.php' + '?' + $(this).attr('data-num'))
-            })//touchstart
-        } else {
-            $('.hj_cafes_photo a').css({ 'opacity': 0 })
-        }
-
-        let hj_anchorData = parseInt($(this).attr('data-num'))
-        if (hj_anchorData === cafeImageArr.indexOf(cafeImageArr[hj_anchorData])) {
-            let chPhotoImg = findPhotoImg.attr("src", "./img/location/" + cafeImageArr[hj_anchorData] + ".jpg");
-            chPhotoImg.parent().css({ 'filter': 'brightness(60%)' })
-            chPhotoImg.append(`<button></button>`)
-
-        }//if
-    })//touchstart
-
     $('hj_cafes_photo button').bind('touchstart', function (e) {
         e.preventDefault();
         $(this).css({ 'color': 'var(--blue)' })
@@ -83,9 +55,17 @@ $(function () {
             findPhotoImg.css({ 'display': 'none' })
         })//touchend */
     /* icon mouseenter시에 animation 없앴다가 --> mouseleave시에 animation 다시 살리기! */
+    if ($(window).innerWidth() < 500) {
+        $('.hj_cafes_area a span').css({ 'opacity': '1' })
+        $('.hj_cafes_area a .hj_marker').css({ 'opacity': '0' })
+    } else {
+        $('.hj_cafes_area a span').addClass('hover')
+        $('.hj_cafes_area a span').css({ 'opacity': '0' })
+    }//if-else
     $(window).resize(function () {
         if ($(window).innerWidth() < 500) {
             $('.hj_cafes_area a span').css({ 'opacity': '1' })
+            $('.hj_cafes_area a .hj_marker').css({ 'opacity': '0' })
         } else {
             $('.hj_cafes_area a span').addClass('hover')
             $('.hj_cafes_area a span').css({ 'opacity': '0' })

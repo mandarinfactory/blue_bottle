@@ -44,9 +44,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-
   transition: transform 20s linear;
-
 }
 .ik_main3 > ul.ik_main_list_container li.ik_main_list .ik_left a {
   position: absolute;

@@ -113,14 +113,12 @@ section.ik_main_1 .ik_pamphlet .ik_click button {
     font-weight: 600;
   }
 }
-
 section.ik_main_1 .ik_pamphlet .ik_click i {
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
-
 @keyframes clickMe {
   0% {
     top: 50%;
