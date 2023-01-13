@@ -1,5 +1,4 @@
 <section class="ik_main_2">
-
   <div class="ik_motion_box">
     <figure class="ik_lg">
       <img class="ik_motion_img ik_motion_img1_lg" src="./img/main_section/lg_1_1.png" alt="">
@@ -17,5 +16,10 @@
       <img class="ik_motion_text ik_motion_text2_sm" src="./img/main_section/sm_text_2.png" alt="">
       <img class="ik_motion_text ik_motion_text3_sm" src="./img/main_section/sm_text_3.png" alt="">
     </figure>
+    <div class="ik_btn_box">
+      
+      <button><a href="./about.php">Brand Story</a></button>
+    </div>
   </div><!-- ik_motion_box -->
+  
 </section><!-- ik_main2 parallax-->

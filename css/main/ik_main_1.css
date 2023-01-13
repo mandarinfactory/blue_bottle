@@ -60,6 +60,26 @@ section.ik_main_1 .ik_pamphlet::before {
   display: block;
   padding-top: 100%;
 }
+section.ik_main_1 .ik_pamphlet:hover {
+  animation: select 0.7s;
+}
+@keyframes select {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotateY(20deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotateY(-20deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateY(0);
+  }
+}
+section.ik_main_1 .ik_pamphlet.active:hover {
+  animation: none;
+}
 @media screen and (orientation: landscape) {
   section.ik_main_1 .ik_pamphlet {
     width: 60%;
@@ -89,29 +109,37 @@ section.ik_main_1 .ik_pamphlet::before {
 section.ik_main_1 .ik_pamphlet .ik_click {
   position: absolute;
   z-index: 30;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 100%;
+  right: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  animation: clickMe 8s infinite linear;
+  transform: rotate(-45deg);
+  font-weight: 600;
+  color: var(--black);
+  animation: clickMe 2s infinite linear;
+}
+@media screen and (orientation: landscape) {
+  section.ik_main_1 .ik_pamphlet .ik_click {
+    width: 70px;
+    height: 70px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (orientation: portrait) {
+  section.ik_main_1 .ik_pamphlet .ik_click {
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+  }
 }
 section.ik_main_1 .ik_pamphlet .ik_click button {
   position: relative;
   text-align: center;
   padding: 10px 10px;
   transition: all 0.3s;
-}
-@media screen and (orientation: landscape) {
-  section.ik_main_1 .ik_pamphlet .ik_click button {
-    font-size: 1.2em;
-    font-weight: 600;
-  }
-}
-@media screen and (orientation: portrait) {
-  section.ik_main_1 .ik_pamphlet .ik_click button {
-    font-size: 1em;
-    font-weight: 600;
-  }
 }
 section.ik_main_1 .ik_pamphlet .ik_click i {
   position: absolute;
@@ -121,33 +149,28 @@ section.ik_main_1 .ik_pamphlet .ik_click i {
 }
 @keyframes clickMe {
   0% {
-    top: 50%;
-    opacity: 1;
-    color: #eee;
+    bottom: 92%;
+    right: 92%;
     background-color: var(--blue);
   }
   25% {
-    top: 45%;
-    opacity: 0.8;
-    color: var(--blue);
+    bottom: 95%;
+    right: 95%;
     background-color: var(--white);
   }
   50% {
-    top: 50%;
-    opacity: 1;
-    color: #eee;
+    bottom: 92%;
+    right: 92%;
     background-color: var(--blue);
   }
   75% {
-    top: 45%;
-    opacity: 0.8;
-    color: var(--blue);
+    bottom: 95%;
+    right: 95%;
     background-color: var(--white);
   }
   100% {
-    top: 50%;
-    opacity: 1;
-    color: #eee;
+    bottom: 92%;
+    right: 92%;
     background-color: var(--blue);
   }
 }

@@ -62,6 +62,9 @@ body main {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+.ik_middle > .ik_textbox h3 b {
+  color: var(--blue);
+}
 .ik_middle > .ik_textbox ul.ik_text {
   margin: 15px auto;
   width: 95%;
@@ -69,6 +72,9 @@ body main {
 }
 .ik_middle > .ik_textbox ul.ik_text li {
   font-weight: 500;
+}
+.ik_middle > .ik_textbox ul.ik_text li b {
+  color: var(--blue);
 }
 @media screen and (max-width: 700px) {
   .ik_middle > .ik_textbox {
@@ -244,30 +250,27 @@ body main {
     margin-left: 0px;
   }
 }
-.ik_bean:active {
-  cursor: grabbing;
-}
-.ik_bean:active.ik_bean1 {
+.ik_bean:hover.ik_bean1 {
   transform: rotate(240deg);
 }
-.ik_bean:active.ik_bean2 {
+.ik_bean:hover.ik_bean2 {
   transform: rotate(200deg);
 }
-.ik_bean:active.ik_bean3 {
+.ik_bean:hover.ik_bean3 {
   transform: rotate(240deg);
 }
-.ik_bean:active.ik_bean4 {
+.ik_bean:hover.ik_bean4 {
   transform: rotate(-340deg);
 }
-.ik_bean:active.ik_bean5 {
+.ik_bean:hover.ik_bean5 {
   transform: rotate(-180deg);
 }
-.ik_bean:active.ik_bean6 {
+.ik_bean:hover.ik_bean6 {
   transform: rotate(-250deg);
 }
-.ik_bean:active.ik_bean7 {
+.ik_bean:hover.ik_bean7 {
   transform: rotate(250deg);
 }
-.ik_bean:active.ik_bean8 {
+.ik_bean:hover.ik_bean8 {
   transform: rotate(-360deg);
 }/*# sourceMappingURL=index.css.map */

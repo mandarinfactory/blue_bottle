@@ -24,16 +24,14 @@
     </svg>
     <?php include "./main-section2.php" ?><!-- section2 parallax-->
     <div class="ik_textbox">
-      <h3>BlueBottle's Coffee</h3>
+      <h3><b>BlueBottle</b>'s Coffee</h3>
       <ul class="ik_text">
-        <li>Whether blend or single origin,</li>
-        <li>We treat all our coffees with equal care.</li>
-        <li>For every coffee,</li>
-        <li>We create a custom roast designed for the best</li>
-        <li>expression of that flavor profile.</li>
-        <li>with exact flavors to aim for and a scoring</li>
-        <li>system to ensure</li>
-        <li>we hit the mark every time.</li>
+        <li>Good Morning from our <b>Cupping LAB</b>.</li>
+        <li><b>블루보틀</b>은 언제나 여러분을 특별한 자리로 초대합니다.</li>
+        <li>매일 커피의 향을 맡아보고, 천천히 넘겨 음미하고</li>
+        <li>후르릅 소리를 내며 들이마시는<b> Cupping</>.</li>
+        <li>최고의 맛과 향미의 <b>Peak Flavor Point</b>를 찾아</li>
+        <li>즐거운 커피 여정으로 여러분을 초대합니다</li>
       </ul><!-- ul. text -->
     </div><!-- textbox -->
     <?php include "./main-section3.php" ?><!-- section3 card-->

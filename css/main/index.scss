@@ -58,6 +58,9 @@ body {
       font-weight: 900;
       margin-bottom: 10px;
       text-transform: uppercase;
+      b{
+        color: var(--blue);
+      }
     }
     
     ul.ik_text {
@@ -66,6 +69,9 @@ body {
       max-width: 600px;
       li {
         font-weight: 500;
+        b{
+          color: var(--blue);
+        }
       } //li
     } //ik_text
     @media screen and (max-width:700px) {
@@ -191,8 +197,7 @@ body {
 
   /* ----------------hover------------------- */
 
-  &:active{
-    cursor: grabbing;
+  &:hover{
     &.ik_bean1{
       transform: rotate(240deg);
     }
