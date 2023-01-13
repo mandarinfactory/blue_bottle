@@ -1,6 +1,6 @@
 <section class="ik_main3">
   <ul class="ik_main_list_container">
-    <li class="ik_main_list_box">
+    <li class="ik_first_list_box">
       <p>Delicious Coffee Makes Life More Blissful</p>
       <button>
         <a href="./coffee.php">shop now</a>

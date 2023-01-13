@@ -4,7 +4,7 @@
   width: 100%;
   height: 200%;
   overflow: hidden;
-  background: var(--white);
+  background-color: var(--white);
 }
 .ik_middle .ik_onePath {
   position: absolute;
@@ -80,6 +80,7 @@
   -o-object-position: center;
      object-position: center;
   z-index: 8;
+  cursor: grab;
   transition: all 1s;
   /* ----------------animation-------------------------- */
   /* ----------------hover------------------- */
@@ -260,27 +261,30 @@
     margin-left: 0px;
   }
 }
-.ik_bean:hover.ik_bean1 {
+.ik_bean:active {
+  cursor: grabbing;
+}
+.ik_bean:active.ik_bean1 {
   transform: rotate(240deg);
 }
-.ik_bean:hover.ik_bean2 {
+.ik_bean:active.ik_bean2 {
   transform: rotate(200deg);
 }
-.ik_bean:hover.ik_bean3 {
+.ik_bean:active.ik_bean3 {
   transform: rotate(240deg);
 }
-.ik_bean:hover.ik_bean4 {
+.ik_bean:active.ik_bean4 {
   transform: rotate(-340deg);
 }
-.ik_bean:hover.ik_bean5 {
+.ik_bean:active.ik_bean5 {
   transform: rotate(-180deg);
 }
-.ik_bean:hover.ik_bean6 {
+.ik_bean:active.ik_bean6 {
   transform: rotate(-250deg);
 }
-.ik_bean:hover.ik_bean7 {
+.ik_bean:active.ik_bean7 {
   transform: rotate(250deg);
 }
-.ik_bean:hover.ik_bean8 {
+.ik_bean:active.ik_bean8 {
   transform: rotate(-360deg);
 }/*# sourceMappingURL=index.css.map */

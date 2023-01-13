@@ -12,6 +12,7 @@
 
 <!-- main  아래 본문시작 -->
 <main>
+
   <!-- particles.js container -->
   <div id="coffee-container"></div>
   <!-- particles.js container -->
