@@ -58,10 +58,8 @@ section.jey_prd_menu .jey_menu3 ul.jey_ul li figure img {
   transition: all 0.5s;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   box-shadow: 0 0 10px #666;
 }
 @media screen and (max-width: 1200px) {

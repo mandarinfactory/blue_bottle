@@ -3,22 +3,18 @@
 .ik_main3 {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
-  height: 50%;
+  width: 100%; height: 50%;
   max-width: 1800px;
   margin: 0 auto;
-  background: var(--white);
   overflow: hidden;
 
   > ul.ik_main_list_container {
     display: flex;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    width: 100%;
-    height: 45%;
+    width: 100%; height: 45%;
     z-index: 2;
     align-items: center;
 
@@ -45,6 +41,7 @@
           height: 100%;
           object-fit: cover;
           object-position: center;
+          transition: transform 20s linear;
         }
         a {
           position: absolute;
@@ -93,13 +90,11 @@
         p {
           position: absolute;
           opacity: 0;
-          top: 10%;
-          left: 5%;
-          width: 60%;
-          height: 60%;
+          top: 10%; left: 5%;
+          width: 60%; height: 60%;
           font-size: 1.1em;
           font-weight: 500;
-          color: var(--white);
+          color: var(--white);        
           transition: all 1s;
           transition-delay: 0.5s;
 
@@ -195,6 +190,11 @@
       &.active2 {
         background: var(--blue);
         .ik_left {
+
+          img{
+            transform: scale(1.5);
+          }
+
           > a {
             opacity: 1;
             top: 50%;
@@ -203,14 +203,16 @@
         }
 
         .ik_right {
-          h3 {
-            @media screen and (orientation: landscape) {
+          h3 {            
+            @media screen and (orientation : landscape) {
               left: 5%;
               font-size: 2.8em;
               transform: rotate(-90deg) translateX(-100%);
             }
-            @media screen and (orientation: portrait) {
+            @media screen and (orientation : portrait) {
+              
             }
+
           }
           p {
             top: 30%;
@@ -222,19 +224,24 @@
         }
       } //li.active2
     } //li
+
     li.ik_first_list_box {
       // 첫 번째 list box
       box-sizing: border-box;
       position: absolute;
-      top: 0;
-      right: 0;
-      width: 80%;
-      height: 100%;
-      background-image: url(../../img/sub_visual/coffee.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      top: 0; right: 0;
+      width: 80%; height: 100%;
+      overflow: hidden;
+
+      .ik_first_bg{
+        width: 100%; height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 20s;
+        animation: closeUp 100s linear infinite;
+      }
+   
+
 
       p {
         position: absolute;
@@ -266,5 +273,13 @@
         }
       }
     }
+
+    @keyframes closeUp {
+      0%{transform: scale(1);}
+      50%{transform: scale(1.5);}
+      100%{transform: scale(1);}
+    }
+
+
   } //ul
 } //ik_main3

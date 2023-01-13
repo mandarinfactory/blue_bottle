@@ -1,3 +1,18 @@
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+body main {
+  position: relative;
+  display: inline;
+  overflow: hidden;
+}
+
 .ik_middle {
   position: relative;
   box-sizing: border-box;
@@ -75,10 +90,8 @@
 
 .ik_bean {
   position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: contain;
+  object-position: center;
   z-index: 8;
   cursor: grab;
   transition: all 1s;
@@ -186,47 +199,28 @@
   }
 }
 .ik_bean.ik_bean1 {
-  -webkit-animation: jump 5s linear infinite;
-          animation: jump 5s linear infinite;
+  animation: jump 5s linear infinite;
 }
 .ik_bean.ik_bean2 {
-  -webkit-animation: slide 7s linear infinite;
-          animation: slide 7s linear infinite;
+  animation: slide 7s linear infinite;
 }
 .ik_bean.ik_bean3 {
-  -webkit-animation: jump 7s linear infinite;
-          animation: jump 7s linear infinite;
+  animation: jump 7s linear infinite;
 }
 .ik_bean.ik_bean4 {
-  -webkit-animation: slide 6s linear infinite;
-          animation: slide 6s linear infinite;
+  animation: slide 6s linear infinite;
 }
 .ik_bean.ik_bean5 {
-  -webkit-animation: slide 8s linear infinite;
-          animation: slide 8s linear infinite;
+  animation: slide 8s linear infinite;
 }
 .ik_bean.ik_bean6 {
-  -webkit-animation: jump 6s linear infinite;
-          animation: jump 6s linear infinite;
+  animation: jump 6s linear infinite;
 }
 .ik_bean.ik_bean7 {
-  -webkit-animation: slide 5.3s linear infinite;
-          animation: slide 5.3s linear infinite;
+  animation: slide 5.3s linear infinite;
 }
 .ik_bean.ik_bean8 {
-  -webkit-animation: jump 4s linear infinite;
-          animation: jump 4s linear infinite;
-}
-@-webkit-keyframes jump {
-  0% {
-    margin-top: 0;
-  }
-  50% {
-    margin-top: 20px;
-  }
-  100% {
-    margin-top: 0;
-  }
+  animation: jump 4s linear infinite;
 }
 @keyframes jump {
   0% {
@@ -237,17 +231,6 @@
   }
   100% {
     margin-top: 0;
-  }
-}
-@-webkit-keyframes slide {
-  0% {
-    margin-left: 0px;
-  }
-  50% {
-    margin-left: 20px;
-  }
-  100% {
-    margin-left: 0px;
   }
 }
 @keyframes slide {

@@ -19,25 +19,25 @@ window.backgroundArr = [
 window.main3Arr = [
   {
     title: 'espresso',
-    desc: "Limited-edition espresso with notes of dark chocolate, dried raspberry, and salted toffee <br><br> Our Winter Espresso is rich, complex, and velvety. It is pure luxury, and everyone deserves a moment of luxury this holiday season. A dark, brooding base is colored by bright wisps of tart fruit for a deep cup laced with nuance. ",
+    desc: "Limited-edition espresso with notes of dark chocolate, dried raspberry, and salted toffee <br><br> Our Winter Espresso is rich, complex, and velvety. It is pure luxury, and everyone deserves a moment of luxury this holiday season.",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid18.jpg",
   },
   {
     title: 'single origin',
-    desc: "Ethiopia Gedeb METAD Natural <br><br> Every holiday season, we find ourselves craving this single origin. With floral notes of honey and tart blueberry jam this naturally processed coffee boasts an overt fruitiness and complexity that dazzles and enlivens— the perfect accompaniment to all holiday gatherings.",
+    desc: "Ethiopia Gedeb METAD Natural <br><br> Every holiday season, we find ourselves craving this single origin.",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid10.jpg",
   },
   {
     title: 'winter blend',
-    desc: "Deeply fruited, limited-edition blend with notes of dark chocolate and molasses <br><br> Warm and full-bodied with a glimmer of brightness from an Ethiopian component, this blend is a beautiful embodiment of the season’s comfort. Rich notes of bittersweet chocolate and thick molasses are folded into layers of sweet and tart blackberry jam.",
+    desc: "Deeply fruited, limited-edition blend with notes of dark chocolate and molasses <br><br> Warm and full-bodied with a glimmer of brightness from an Ethiopian component, this blend is a beautiful embodiment of the season’s comfort.",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid02.jpg",
   },
   {
     title: 'cold brew',
-    desc: "Whole Bean Coffee Blends <br><br> We often call this trio of African coffees the single origin lover’s blend. Sparkling yet grounded, Three Africas is roasted dark enough to be rounded and full, yet light enough to let flecks of berries and citrus shine. It’s a coffee that gives more than what the drinker is asking for: fruit, nuance, radiance, and a deep sweetness that wins over just about everyone.",
+    desc: "Whole Bean Coffee Blends <br><br> We often call this trio of African coffees the single origin lover’s blend. ",
     cup: "./img/object/main_mug01.png",
     img: "./img/main_section/bb_grid14.jpg",
   },
