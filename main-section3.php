@@ -1,6 +1,7 @@
 <section class="ik_main3">
   <ul class="ik_main_list_container">
     <li class="ik_first_list_box">
+      <img class="ik_first_bg" src="./img/sub_visual/coffee.jpg" alt="">
       <p>Delicious Coffee Makes Life More Blissful</p>
       <button>
         <a href="./coffee.php">shop now</a>
